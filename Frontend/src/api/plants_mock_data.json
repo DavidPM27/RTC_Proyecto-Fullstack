@@ -1,0 +1,2119 @@
+[
+  {
+    "id": 1,
+    "common_name": "Swiss cheese plant",
+    "scientific_name": [
+      "Monstera deliciosa"
+    ],
+    "other_name": [],
+    "family": "Araceae",
+    "genus": "Monstera",
+    "origin": null,
+    "type": "Indoor",
+    "dimension": "Medium",
+    "cycle": "Perennial",
+    "care_level": "Average",
+    "watering": "Average",
+    "watering_general_benchmark": {
+      "value": "7-10 days",
+      "unit": "days"
+    },
+    "sunlight": [
+      "Part shade"
+    ],
+    "care_description": {
+      "watering": "Water when top inch of soil is dry. Mist leaves occasionally.",
+      "sunlight": "Bright, indirect light is best. Direct sun can burn leaves."
+    },
+    "hardiness": {
+      "min": "18°C",
+      "max": "27°C"
+    },
+    "default_image": {
+      "license": 451,
+      "license_name": "Mock Image Service",
+      "license_url": "",
+      "original_url": "https://images.unsplash.com/photo-1653404809389-f370ea4310dd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb25zdGVyYSUyMGRlbGljaW9zYSUyMHBsYW50fGVufDF8fHx8MTc3MTc2NDk1MHww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      "regular_url": "https://images.unsplash.com/photo-1653404809389-f370ea4310dd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb25zdGVyYSUyMGRlbGljaW9zYSUyMHBsYW50fGVufDF8fHx8MTc3MTc2NDk1MHww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      "medium_url": "https://images.unsplash.com/photo-1653404809389-f370ea4310dd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb25zdGVyYSUyMGRlbGljaW9zYSUyMHBsYW50fGVufDF8fHx8MTc3MTc2NDk1MHww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      "small_url": "https://images.unsplash.com/photo-1653404809389-f370ea4310dd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb25zdGVyYSUyMGRlbGljaW9zYSUyMHBsYW50fGVufDF8fHx8MTc3MTc2NDk1MHww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      "thumbnail": "https://images.unsplash.com/photo-1653404809389-f370ea4310dd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb25zdGVyYSUyMGRlbGljaW9zYSUyMHBsYW50fGVufDF8fHx8MTc3MTc2NDk1MHww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+    },
+    "description": "The Swiss cheese plant (Monstera deliciosa) is a beautiful indoor plant belonging to the Araceae family. It has a perennial life cycle and generally requires average care. For best growth, it needs part shade and average watering."
+  },
+  {
+    "id": 2,
+    "common_name": "Fiddle-leaf fig",
+    "scientific_name": [
+      "Ficus lyrata"
+    ],
+    "other_name": [],
+    "family": "Moraceae",
+    "genus": "Ficus",
+    "origin": null,
+    "type": "Indoor",
+    "dimension": "Medium",
+    "cycle": "Perennial",
+    "care_level": "Average",
+    "watering": "Average",
+    "watering_general_benchmark": {
+      "value": "7-10 days",
+      "unit": "days"
+    },
+    "sunlight": [
+      "Part shade"
+    ],
+    "care_description": {
+      "watering": "Water when top inch of soil is dry. Mist leaves occasionally.",
+      "sunlight": "Bright, indirect light is best. Direct sun can burn leaves."
+    },
+    "hardiness": {
+      "min": "18°C",
+      "max": "27°C"
+    },
+    "default_image": {
+      "license": 451,
+      "license_name": "Mock Image Service",
+      "license_url": "",
+      "original_url": "https://images.unsplash.com/photo-1580133318324-f2f76d987dd8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxmaWRkbGUlMjBsZWFmJTIwZmlnJTIwZmljdXN8ZW58MXx8fHwxNzcxODQ0Nzk5fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      "regular_url": "https://images.unsplash.com/photo-1580133318324-f2f76d987dd8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxmaWRkbGUlMjBsZWFmJTIwZmlnJTIwZmljdXN8ZW58MXx8fHwxNzcxODQ0Nzk5fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      "medium_url": "https://images.unsplash.com/photo-1580133318324-f2f76d987dd8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxmaWRkbGUlMjBsZWFmJTIwZmlnJTIwZmljdXN8ZW58MXx8fHwxNzcxODQ0Nzk5fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      "small_url": "https://images.unsplash.com/photo-1580133318324-f2f76d987dd8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxmaWRkbGUlMjBsZWFmJTIwZmlnJTIwZmljdXN8ZW58MXx8fHwxNzcxODQ0Nzk5fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      "thumbnail": "https://images.unsplash.com/photo-1580133318324-f2f76d987dd8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxmaWRkbGUlMjBsZWFmJTIwZmlnJTIwZmljdXN8ZW58MXx8fHwxNzcxODQ0Nzk5fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+    },
+    "description": "The Fiddle-leaf fig (Ficus lyrata) is a beautiful indoor plant belonging to the Moraceae family. It has a perennial life cycle and generally requires average care. For best growth, it needs part shade and average watering."
+  },
+  {
+    "id": 3,
+    "common_name": "Rubber fig",
+    "scientific_name": [
+      "Ficus elastica"
+    ],
+    "other_name": [],
+    "family": "Moraceae",
+    "genus": "Ficus",
+    "origin": null,
+    "type": "Indoor",
+    "dimension": "Medium",
+    "cycle": "Perennial",
+    "care_level": "Average",
+    "watering": "Average",
+    "watering_general_benchmark": {
+      "value": "7-10 days",
+      "unit": "days"
+    },
+    "sunlight": [
+      "Part shade"
+    ],
+    "care_description": {
+      "watering": "Water when top inch of soil is dry. Mist leaves occasionally.",
+      "sunlight": "Bright, indirect light is best. Direct sun can burn leaves."
+    },
+    "hardiness": {
+      "min": "18°C",
+      "max": "27°C"
+    },
+    "default_image": {
+      "license": 451,
+      "license_name": "Mock Image Service",
+      "license_url": "",
+      "original_url": "https://images.unsplash.com/photo-1623032693199-e9abd35e0a98?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxydWJiZXIlMjBwbGFudCUyMGZpY3VzJTIwZWxhc3RpY2F8ZW58MXx8fHwxNzcxODM3NTkxfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      "regular_url": "https://images.unsplash.com/photo-1623032693199-e9abd35e0a98?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxydWJiZXIlMjBwbGFudCUyMGZpY3VzJTIwZWxhc3RpY2F8ZW58MXx8fHwxNzcxODM3NTkxfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      "medium_url": "https://images.unsplash.com/photo-1623032693199-e9abd35e0a98?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxydWJiZXIlMjBwbGFudCUyMGZpY3VzJTIwZWxhc3RpY2F8ZW58MXx8fHwxNzcxODM3NTkxfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      "small_url": "https://images.unsplash.com/photo-1623032693199-e9abd35e0a98?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxydWJiZXIlMjBwbGFudCUyMGZpY3VzJTIwZWxhc3RpY2F8ZW58MXx8fHwxNzcxODM3NTkxfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      "thumbnail": "https://images.unsplash.com/photo-1623032693199-e9abd35e0a98?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxydWJiZXIlMjBwbGFudCUyMGZpY3VzJTIwZWxhc3RpY2F8ZW58MXx8fHwxNzcxODM3NTkxfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+    },
+    "description": "The Rubber fig (Ficus elastica) is a beautiful indoor plant belonging to the Moraceae family. It has a perennial life cycle and generally requires average care. For best growth, it needs part shade and average watering."
+  },
+  {
+    "id": 4,
+    "common_name": "Golden pothos",
+    "scientific_name": [
+      "Epipremnum aureum"
+    ],
+    "other_name": [],
+    "family": "Araceae",
+    "genus": "Epipremnum",
+    "origin": null,
+    "type": "Indoor",
+    "dimension": "Medium",
+    "cycle": "Perennial",
+    "care_level": "Average",
+    "watering": "Average",
+    "watering_general_benchmark": {
+      "value": "7-10 days",
+      "unit": "days"
+    },
+    "sunlight": [
+      "Part shade"
+    ],
+    "care_description": {
+      "watering": "Water when top inch of soil is dry. Mist leaves occasionally.",
+      "sunlight": "Bright, indirect light is best. Direct sun can burn leaves."
+    },
+    "hardiness": {
+      "min": "18°C",
+      "max": "27°C"
+    },
+    "default_image": {
+      "license": 451,
+      "license_name": "Mock Image Service",
+      "license_url": "",
+      "original_url": "https://images.unsplash.com/photo-1696457848618-876c47b30cfd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxnb2xkZW4lMjBwb3Rob3MlMjBwbGFudHxlbnwxfHx8fDE3NzE4NzUyMTJ8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      "regular_url": "https://images.unsplash.com/photo-1696457848618-876c47b30cfd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxnb2xkZW4lMjBwb3Rob3MlMjBwbGFudHxlbnwxfHx8fDE3NzE4NzUyMTJ8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      "medium_url": "https://images.unsplash.com/photo-1696457848618-876c47b30cfd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxnb2xkZW4lMjBwb3Rob3MlMjBwbGFudHxlbnwxfHx8fDE3NzE4NzUyMTJ8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      "small_url": "https://images.unsplash.com/photo-1696457848618-876c47b30cfd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxnb2xkZW4lMjBwb3Rob3MlMjBwbGFudHxlbnwxfHx8fDE3NzE4NzUyMTJ8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      "thumbnail": "https://images.unsplash.com/photo-1696457848618-876c47b30cfd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxnb2xkZW4lMjBwb3Rob3MlMjBwbGFudHxlbnwxfHx8fDE3NzE4NzUyMTJ8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+    },
+    "description": "The Golden pothos (Epipremnum aureum) is a beautiful indoor plant belonging to the Araceae family. It has a perennial life cycle and generally requires average care. For best growth, it needs part shade and average watering."
+  },
+  {
+    "id": 5,
+    "common_name": "Snake plant",
+    "scientific_name": [
+      "Dracaena trifasciata"
+    ],
+    "other_name": [],
+    "family": "Asparagaceae",
+    "genus": "Dracaena",
+    "origin": null,
+    "type": "Indoor",
+    "dimension": "Medium",
+    "cycle": "Perennial",
+    "care_level": "Average",
+    "watering": "Average",
+    "watering_general_benchmark": {
+      "value": "7-10 days",
+      "unit": "days"
+    },
+    "sunlight": [
+      "Part shade"
+    ],
+    "care_description": {
+      "watering": "Water weekly during growing season. Allow soil to dry slightly.",
+      "sunlight": "Bright, filtered light."
+    },
+    "hardiness": {
+      "min": "15°C",
+      "max": "25°C"
+    },
+    "default_image": {
+      "license": 451,
+      "license_name": "Mock Image Service",
+      "license_url": "",
+      "original_url": "https://images.unsplash.com/photo-1613498630970-f2a333cb4974?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzbmFrZSUyMHBsYW50JTIwc2Fuc2V2aWVyaWF8ZW58MXx8fHwxNzcxODcyMjYwfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      "regular_url": "https://images.unsplash.com/photo-1613498630970-f2a333cb4974?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzbmFrZSUyMHBsYW50JTIwc2Fuc2V2aWVyaWF8ZW58MXx8fHwxNzcxODcyMjYwfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      "medium_url": "https://images.unsplash.com/photo-1613498630970-f2a333cb4974?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzbmFrZSUyMHBsYW50JTIwc2Fuc2V2aWVyaWF8ZW58MXx8fHwxNzcxODcyMjYwfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      "small_url": "https://images.unsplash.com/photo-1613498630970-f2a333cb4974?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzbmFrZSUyMHBsYW50JTIwc2Fuc2V2aWVyaWF8ZW58MXx8fHwxNzcxODcyMjYwfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      "thumbnail": "https://images.unsplash.com/photo-1613498630970-f2a333cb4974?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzbmFrZSUyMHBsYW50JTIwc2Fuc2V2aWVyaWF8ZW58MXx8fHwxNzcxODcyMjYwfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+    },
+    "description": "The Snake plant (Dracaena trifasciata) is a beautiful indoor plant belonging to the Asparagaceae family. It has a perennial life cycle and generally requires average care. For best growth, it needs part shade and average watering."
+  },
+  {
+    "id": 6,
+    "common_name": "Peace lily",
+    "scientific_name": [
+      "Spathiphyllum wallisii"
+    ],
+    "other_name": [],
+    "family": "Araceae",
+    "genus": "Spathiphyllum",
+    "origin": null,
+    "type": "Indoor",
+    "dimension": "Medium",
+    "cycle": "Perennial",
+    "care_level": "Average",
+    "watering": "Average",
+    "watering_general_benchmark": {
+      "value": "7-10 days",
+      "unit": "days"
+    },
+    "sunlight": [
+      "Part shade"
+    ],
+    "care_description": {
+      "watering": "Water when top inch of soil is dry. Mist leaves occasionally.",
+      "sunlight": "Bright, indirect light is best. Direct sun can burn leaves."
+    },
+    "hardiness": {
+      "min": "18°C",
+      "max": "27°C"
+    },
+    "default_image": {
+      "license": 451,
+      "license_name": "Mock Image Service",
+      "license_url": "",
+      "original_url": "https://images.unsplash.com/photo-1707264689599-f4ab29ccbb1d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwZWFjZSUyMGxpbHklMjBzcGF0aGlwaHlsbHVtfGVufDF8fHx8MTc3MTgzNTU1MXww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      "regular_url": "https://images.unsplash.com/photo-1707264689599-f4ab29ccbb1d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwZWFjZSUyMGxpbHklMjBzcGF0aGlwaHlsbHVtfGVufDF8fHx8MTc3MTgzNTU1MXww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      "medium_url": "https://images.unsplash.com/photo-1707264689599-f4ab29ccbb1d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwZWFjZSUyMGxpbHklMjBzcGF0aGlwaHlsbHVtfGVufDF8fHx8MTc3MTgzNTU1MXww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      "small_url": "https://images.unsplash.com/photo-1707264689599-f4ab29ccbb1d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwZWFjZSUyMGxpbHklMjBzcGF0aGlwaHlsbHVtfGVufDF8fHx8MTc3MTgzNTU1MXww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      "thumbnail": "https://images.unsplash.com/photo-1707264689599-f4ab29ccbb1d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwZWFjZSUyMGxpbHklMjBzcGF0aGlwaHlsbHVtfGVufDF8fHx8MTc3MTgzNTU1MXww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+    },
+    "description": "The Peace lily (Spathiphyllum wallisii) is a beautiful indoor plant belonging to the Araceae family. It has a perennial life cycle and generally requires average care. For best growth, it needs part shade and average watering."
+  },
+  {
+    "id": 7,
+    "common_name": "Spider plant",
+    "scientific_name": [
+      "Chlorophytum comosum"
+    ],
+    "other_name": [],
+    "family": "Asparagaceae",
+    "genus": "Chlorophytum",
+    "origin": null,
+    "type": "Indoor",
+    "dimension": "Medium",
+    "cycle": "Perennial",
+    "care_level": "Average",
+    "watering": "Average",
+    "watering_general_benchmark": {
+      "value": "7-10 days",
+      "unit": "days"
+    },
+    "sunlight": [
+      "Part shade"
+    ],
+    "care_description": {
+      "watering": "Water weekly during growing season. Allow soil to dry slightly.",
+      "sunlight": "Bright, filtered light."
+    },
+    "hardiness": {
+      "min": "15°C",
+      "max": "25°C"
+    },
+    "default_image": {
+      "license": 451,
+      "license_name": "Mock Image Service",
+      "license_url": "",
+      "original_url": "https://images.unsplash.com/photo-1616668713144-3dd6bd1cad86?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzcGlkZXIlMjBwbGFudCUyMGNobG9yb3BoeXR1bXxlbnwxfHx8fDE3NzE3OTM0NTh8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      "regular_url": "https://images.unsplash.com/photo-1616668713144-3dd6bd1cad86?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzcGlkZXIlMjBwbGFudCUyMGNobG9yb3BoeXR1bXxlbnwxfHx8fDE3NzE3OTM0NTh8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      "medium_url": "https://images.unsplash.com/photo-1616668713144-3dd6bd1cad86?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzcGlkZXIlMjBwbGFudCUyMGNobG9yb3BoeXR1bXxlbnwxfHx8fDE3NzE3OTM0NTh8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      "small_url": "https://images.unsplash.com/photo-1616668713144-3dd6bd1cad86?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzcGlkZXIlMjBwbGFudCUyMGNobG9yb3BoeXR1bXxlbnwxfHx8fDE3NzE3OTM0NTh8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      "thumbnail": "https://images.unsplash.com/photo-1616668713144-3dd6bd1cad86?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzcGlkZXIlMjBwbGFudCUyMGNobG9yb3BoeXR1bXxlbnwxfHx8fDE3NzE3OTM0NTh8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+    },
+    "description": "The Spider plant (Chlorophytum comosum) is a beautiful indoor plant belonging to the Asparagaceae family. It has a perennial life cycle and generally requires average care. For best growth, it needs part shade and average watering."
+  },
+  {
+    "id": 8,
+    "common_name": "Aloe vera",
+    "scientific_name": [
+      "Aloe vera"
+    ],
+    "other_name": [],
+    "family": "Asphodelaceae",
+    "genus": "Aloe",
+    "origin": null,
+    "type": "Indoor",
+    "dimension": "Medium",
+    "cycle": "Perennial",
+    "care_level": "Minimum",
+    "watering": "Minimum",
+    "watering_general_benchmark": {
+      "value": "7-10 days",
+      "unit": "days"
+    },
+    "sunlight": [
+      "Full sun",
+      "Part shade"
+    ],
+    "care_description": {
+      "watering": "Allow soil to dry completely between waterings. Water sparingly in winter.",
+      "sunlight": "Thrives in bright, direct light but can tolerate some shade."
+    },
+    "hardiness": {
+      "min": "10°C",
+      "max": "30°C"
+    },
+    "default_image": {
+      "license": 451,
+      "license_name": "Mock Image Service",
+      "license_url": "",
+      "original_url": "https://images.unsplash.com/photo-1643717101835-ea24088aef16?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhbG9lJTIwdmVyYSUyMHN1Y2N1bGVudHxlbnwxfHx8fDE3NzE4MjU3MjZ8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      "regular_url": "https://images.unsplash.com/photo-1643717101835-ea24088aef16?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhbG9lJTIwdmVyYSUyMHN1Y2N1bGVudHxlbnwxfHx8fDE3NzE4MjU3MjZ8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      "medium_url": "https://images.unsplash.com/photo-1643717101835-ea24088aef16?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhbG9lJTIwdmVyYSUyMHN1Y2N1bGVudHxlbnwxfHx8fDE3NzE4MjU3MjZ8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      "small_url": "https://images.unsplash.com/photo-1643717101835-ea24088aef16?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhbG9lJTIwdmVyYSUyMHN1Y2N1bGVudHxlbnwxfHx8fDE3NzE4MjU3MjZ8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      "thumbnail": "https://images.unsplash.com/photo-1643717101835-ea24088aef16?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhbG9lJTIwdmVyYSUyMHN1Y2N1bGVudHxlbnwxfHx8fDE3NzE4MjU3MjZ8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+    },
+    "description": "The Aloe vera is a beautiful indoor plant belonging to the Asphodelaceae family. It has a perennial life cycle and generally requires minimum care. For best growth, it needs full sun and part shade and minimum watering."
+  },
+  {
+    "id": 9,
+    "common_name": "Jade plant",
+    "scientific_name": [
+      "Crassula ovata"
+    ],
+    "other_name": [],
+    "family": "Crassulaceae",
+    "genus": "Crassula",
+    "origin": null,
+    "type": "Indoor",
+    "dimension": "Medium",
+    "cycle": "Perennial",
+    "care_level": "Minimum",
+    "watering": "Minimum",
+    "watering_general_benchmark": {
+      "value": "7-10 days",
+      "unit": "days"
+    },
+    "sunlight": [
+      "Full sun",
+      "Part shade"
+    ],
+    "care_description": {
+      "watering": "Allow soil to dry completely between waterings. Water sparingly in winter.",
+      "sunlight": "Thrives in bright, direct light but can tolerate some shade."
+    },
+    "hardiness": {
+      "min": "10°C",
+      "max": "30°C"
+    },
+    "default_image": {
+      "license": 451,
+      "license_name": "Mock Image Service",
+      "license_url": "",
+      "original_url": "https://images.unsplash.com/photo-1597334133882-7027ac9bd95e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxqYWRlJTIwcGxhbnQlMjBzdWNjdWxlbnR8ZW58MXx8fHwxNzcxODI3NDcxfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      "regular_url": "https://images.unsplash.com/photo-1597334133882-7027ac9bd95e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxqYWRlJTIwcGxhbnQlMjBzdWNjdWxlbnR8ZW58MXx8fHwxNzcxODI3NDcxfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      "medium_url": "https://images.unsplash.com/photo-1597334133882-7027ac9bd95e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxqYWRlJTIwcGxhbnQlMjBzdWNjdWxlbnR8ZW58MXx8fHwxNzcxODI3NDcxfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      "small_url": "https://images.unsplash.com/photo-1597334133882-7027ac9bd95e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxqYWRlJTIwcGxhbnQlMjBzdWNjdWxlbnR8ZW58MXx8fHwxNzcxODI3NDcxfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      "thumbnail": "https://images.unsplash.com/photo-1597334133882-7027ac9bd95e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxqYWRlJTIwcGxhbnQlMjBzdWNjdWxlbnR8ZW58MXx8fHwxNzcxODI3NDcxfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+    },
+    "description": "The Jade plant (Crassula ovata) is a beautiful indoor plant belonging to the Crassulaceae family. It has a perennial life cycle and generally requires minimum care. For best growth, it needs full sun and part shade and minimum watering."
+  },
+  {
+    "id": 10,
+    "common_name": "ZZ plant",
+    "scientific_name": [
+      "Zamioculcas zamiifolia"
+    ],
+    "other_name": [],
+    "family": "Araceae",
+    "genus": "Zamioculcas",
+    "origin": null,
+    "type": "Indoor",
+    "dimension": "Medium",
+    "cycle": "Perennial",
+    "care_level": "Average",
+    "watering": "Average",
+    "watering_general_benchmark": {
+      "value": "7-10 days",
+      "unit": "days"
+    },
+    "sunlight": [
+      "Part shade"
+    ],
+    "care_description": {
+      "watering": "Water when top inch of soil is dry. Mist leaves occasionally.",
+      "sunlight": "Bright, indirect light is best. Direct sun can burn leaves."
+    },
+    "hardiness": {
+      "min": "18°C",
+      "max": "27°C"
+    },
+    "default_image": {
+      "license": 451,
+      "license_name": "Mock Image Service",
+      "license_url": "",
+      "original_url": "https://images.unsplash.com/photo-1536882240095-0379873feb4e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx6eiUyMHBsYW50JTIwemFtaW9jdWxjYXN8ZW58MXx8fHwxNzcxODcyMjY0fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      "regular_url": "https://images.unsplash.com/photo-1536882240095-0379873feb4e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx6eiUyMHBsYW50JTIwemFtaW9jdWxjYXN8ZW58MXx8fHwxNzcxODcyMjY0fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      "medium_url": "https://images.unsplash.com/photo-1536882240095-0379873feb4e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx6eiUyMHBsYW50JTIwemFtaW9jdWxjYXN8ZW58MXx8fHwxNzcxODcyMjY0fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      "small_url": "https://images.unsplash.com/photo-1536882240095-0379873feb4e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx6eiUyMHBsYW50JTIwemFtaW9jdWxjYXN8ZW58MXx8fHwxNzcxODcyMjY0fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      "thumbnail": "https://images.unsplash.com/photo-1536882240095-0379873feb4e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx6eiUyMHBsYW50JTIwemFtaW9jdWxjYXN8ZW58MXx8fHwxNzcxODcyMjY0fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+    },
+    "description": "The ZZ plant (Zamioculcas zamiifolia) is a beautiful indoor plant belonging to the Araceae family. It has a perennial life cycle and generally requires average care. For best growth, it needs part shade and average watering."
+  },
+  {
+    "id": 11,
+    "common_name": "Chinese money plant",
+    "scientific_name": [
+      "Pilea peperomioides"
+    ],
+    "other_name": [],
+    "family": "Urticaceae",
+    "genus": "Pilea",
+    "origin": null,
+    "type": "Indoor",
+    "dimension": "Medium",
+    "cycle": "Perennial",
+    "care_level": "Average",
+    "watering": "Average",
+    "watering_general_benchmark": {
+      "value": "7-10 days",
+      "unit": "days"
+    },
+    "sunlight": [
+      "Part shade"
+    ],
+    "care_description": {
+      "watering": "Water when top inch of soil is dry. Mist leaves occasionally.",
+      "sunlight": "Bright, indirect light is best. Direct sun can burn leaves."
+    },
+    "hardiness": {
+      "min": "18°C",
+      "max": "27°C"
+    },
+    "default_image": {
+      "license": 451,
+      "license_name": "Mock Image Service",
+      "license_url": "",
+      "original_url": "https://images.unsplash.com/photo-1728297523666-ebbd1698083c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwaWxlYSUyMHBlcGVyb21pb2lkZXMlMjBjaGluZXNlJTIwbW9uZXl8ZW58MXx8fHwxNzcxODc1MjEyfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      "regular_url": "https://images.unsplash.com/photo-1728297523666-ebbd1698083c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwaWxlYSUyMHBlcGVyb21pb2lkZXMlMjBjaGluZXNlJTIwbW9uZXl8ZW58MXx8fHwxNzcxODc1MjEyfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      "medium_url": "https://images.unsplash.com/photo-1728297523666-ebbd1698083c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwaWxlYSUyMHBlcGVyb21pb2lkZXMlMjBjaGluZXNlJTIwbW9uZXl8ZW58MXx8fHwxNzcxODc1MjEyfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      "small_url": "https://images.unsplash.com/photo-1728297523666-ebbd1698083c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwaWxlYSUyMHBlcGVyb21pb2lkZXMlMjBjaGluZXNlJTIwbW9uZXl8ZW58MXx8fHwxNzcxODc1MjEyfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      "thumbnail": "https://images.unsplash.com/photo-1728297523666-ebbd1698083c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwaWxlYSUyMHBlcGVyb21pb2lkZXMlMjBjaGluZXNlJTIwbW9uZXl8ZW58MXx8fHwxNzcxODc1MjEyfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+    },
+    "description": "The Chinese money plant (Pilea peperomioides) is a beautiful indoor plant belonging to the Urticaceae family. It has a perennial life cycle and generally requires average care. For best growth, it needs part shade and average watering."
+  },
+  {
+    "id": 12,
+    "common_name": "Peacock plant",
+    "scientific_name": [
+      "Goeppertia makoyana"
+    ],
+    "other_name": [],
+    "family": "Marantaceae",
+    "genus": "Goeppertia",
+    "origin": null,
+    "type": "Indoor",
+    "dimension": "Medium",
+    "cycle": "Perennial",
+    "care_level": "Average",
+    "watering": "Average",
+    "watering_general_benchmark": {
+      "value": "7-10 days",
+      "unit": "days"
+    },
+    "sunlight": [
+      "Part shade"
+    ],
+    "care_description": {
+      "watering": "Water when top inch of soil is dry. Mist leaves occasionally.",
+      "sunlight": "Bright, indirect light is best. Direct sun can burn leaves."
+    },
+    "hardiness": {
+      "min": "18°C",
+      "max": "27°C"
+    },
+    "default_image": {
+      "license": 451,
+      "license_name": "Mock Image Service",
+      "license_url": "",
+      "original_url": "https://images.unsplash.com/photo-1616276595426-81d5a3cfc772?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjYWxhdGhlYSUyMHBlYWNvY2slMjBwbGFudHxlbnwxfHx8fDE3NzE4NzUyMTJ8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      "regular_url": "https://images.unsplash.com/photo-1616276595426-81d5a3cfc772?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjYWxhdGhlYSUyMHBlYWNvY2slMjBwbGFudHxlbnwxfHx8fDE3NzE4NzUyMTJ8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      "medium_url": "https://images.unsplash.com/photo-1616276595426-81d5a3cfc772?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjYWxhdGhlYSUyMHBlYWNvY2slMjBwbGFudHxlbnwxfHx8fDE3NzE4NzUyMTJ8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      "small_url": "https://images.unsplash.com/photo-1616276595426-81d5a3cfc772?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjYWxhdGhlYSUyMHBlYWNvY2slMjBwbGFudHxlbnwxfHx8fDE3NzE4NzUyMTJ8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      "thumbnail": "https://images.unsplash.com/photo-1616276595426-81d5a3cfc772?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjYWxhdGhlYSUyMHBlYWNvY2slMjBwbGFudHxlbnwxfHx8fDE3NzE4NzUyMTJ8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+    },
+    "description": "The Peacock plant (Goeppertia makoyana) is a beautiful indoor plant belonging to the Marantaceae family. It has a perennial life cycle and generally requires average care. For best growth, it needs part shade and average watering."
+  },
+  {
+    "id": 13,
+    "common_name": "English ivy",
+    "scientific_name": [
+      "Hedera helix"
+    ],
+    "other_name": [],
+    "family": "Araliaceae",
+    "genus": "Hedera",
+    "origin": null,
+    "type": "Indoor",
+    "dimension": "Medium",
+    "cycle": "Perennial",
+    "care_level": "Average",
+    "watering": "Average",
+    "watering_general_benchmark": {
+      "value": "7-10 days",
+      "unit": "days"
+    },
+    "sunlight": [
+      "Part shade"
+    ],
+    "care_description": {
+      "watering": "Water weekly during growing season. Allow soil to dry slightly.",
+      "sunlight": "Bright, filtered light."
+    },
+    "hardiness": {
+      "min": "15°C",
+      "max": "25°C"
+    },
+    "default_image": {
+      "license": 451,
+      "license_name": "Mock Image Service",
+      "license_url": "",
+      "original_url": "https://images.unsplash.com/photo-1708166993453-1ea2c86c7c01?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxlbmdsaXNoJTIwaXZ5JTIwaGVkZXJhfGVufDF8fHx8MTc3MTg3NTIxM3ww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      "regular_url": "https://images.unsplash.com/photo-1708166993453-1ea2c86c7c01?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxlbmdsaXNoJTIwaXZ5JTIwaGVkZXJhfGVufDF8fHx8MTc3MTg3NTIxM3ww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      "medium_url": "https://images.unsplash.com/photo-1708166993453-1ea2c86c7c01?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxlbmdsaXNoJTIwaXZ5JTIwaGVkZXJhfGVufDF8fHx8MTc3MTg3NTIxM3ww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      "small_url": "https://images.unsplash.com/photo-1708166993453-1ea2c86c7c01?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxlbmdsaXNoJTIwaXZ5JTIwaGVkZXJhfGVufDF8fHx8MTc3MTg3NTIxM3ww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      "thumbnail": "https://images.unsplash.com/photo-1708166993453-1ea2c86c7c01?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxlbmdsaXNoJTIwaXZ5JTIwaGVkZXJhfGVufDF8fHx8MTc3MTg3NTIxM3ww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+    },
+    "description": "The English ivy (Hedera helix) is a beautiful indoor plant belonging to the Araliaceae family. It has a perennial life cycle and generally requires average care. For best growth, it needs part shade and average watering."
+  },
+  {
+    "id": 14,
+    "common_name": "Dragon tree",
+    "scientific_name": [
+      "Dracaena marginata"
+    ],
+    "other_name": [],
+    "family": "Asparagaceae",
+    "genus": "Dracaena",
+    "origin": null,
+    "type": "Indoor",
+    "dimension": "Medium",
+    "cycle": "Perennial",
+    "care_level": "Average",
+    "watering": "Average",
+    "watering_general_benchmark": {
+      "value": "7-10 days",
+      "unit": "days"
+    },
+    "sunlight": [
+      "Part shade"
+    ],
+    "care_description": {
+      "watering": "Water weekly during growing season. Allow soil to dry slightly.",
+      "sunlight": "Bright, filtered light."
+    },
+    "hardiness": {
+      "min": "15°C",
+      "max": "25°C"
+    },
+    "default_image": {
+      "license": 451,
+      "license_name": "Mock Image Service",
+      "license_url": "",
+      "original_url": "https://images.unsplash.com/photo-1769184614135-f2e714e17230?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxkcmFjYWVuYSUyMG1hcmdpbmF0YSUyMGRyYWdvbiUyMHRyZWV8ZW58MXx8fHwxNzcxODc1MjEzfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      "regular_url": "https://images.unsplash.com/photo-1769184614135-f2e714e17230?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxkcmFjYWVuYSUyMG1hcmdpbmF0YSUyMGRyYWdvbiUyMHRyZWV8ZW58MXx8fHwxNzcxODc1MjEzfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      "medium_url": "https://images.unsplash.com/photo-1769184614135-f2e714e17230?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxkcmFjYWVuYSUyMG1hcmdpbmF0YSUyMGRyYWdvbiUyMHRyZWV8ZW58MXx8fHwxNzcxODc1MjEzfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      "small_url": "https://images.unsplash.com/photo-1769184614135-f2e714e17230?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxkcmFjYWVuYSUyMG1hcmdpbmF0YSUyMGRyYWdvbiUyMHRyZWV8ZW58MXx8fHwxNzcxODc1MjEzfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      "thumbnail": "https://images.unsplash.com/photo-1769184614135-f2e714e17230?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxkcmFjYWVuYSUyMG1hcmdpbmF0YSUyMGRyYWdvbiUyMHRyZWV8ZW58MXx8fHwxNzcxODc1MjEzfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+    },
+    "description": "The Dragon tree (Dracaena marginata) is a beautiful indoor plant belonging to the Asparagaceae family. It has a perennial life cycle and generally requires average care. For best growth, it needs part shade and average watering."
+  },
+  {
+    "id": 15,
+    "common_name": "Chinese evergreen",
+    "scientific_name": [
+      "Aglaonema commutatum"
+    ],
+    "other_name": [],
+    "family": "Araceae",
+    "genus": "Aglaonema",
+    "origin": null,
+    "type": "Indoor",
+    "dimension": "Medium",
+    "cycle": "Perennial",
+    "care_level": "Average",
+    "watering": "Average",
+    "watering_general_benchmark": {
+      "value": "7-10 days",
+      "unit": "days"
+    },
+    "sunlight": [
+      "Part shade"
+    ],
+    "care_description": {
+      "watering": "Water when top inch of soil is dry. Mist leaves occasionally.",
+      "sunlight": "Bright, indirect light is best. Direct sun can burn leaves."
+    },
+    "hardiness": {
+      "min": "18°C",
+      "max": "27°C"
+    },
+    "default_image": {
+      "license": 451,
+      "license_name": "Mock Image Service",
+      "license_url": "",
+      "original_url": "https://images.unsplash.com/photo-1568151492546-1db658d0fc42?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhZ2xhb25lbWElMjBjaGluZXNlJTIwZXZlcmdyZWVufGVufDF8fHx8MTc3MTg3NTIxM3ww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      "regular_url": "https://images.unsplash.com/photo-1568151492546-1db658d0fc42?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhZ2xhb25lbWElMjBjaGluZXNlJTIwZXZlcmdyZWVufGVufDF8fHx8MTc3MTg3NTIxM3ww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      "medium_url": "https://images.unsplash.com/photo-1568151492546-1db658d0fc42?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhZ2xhb25lbWElMjBjaGluZXNlJTIwZXZlcmdyZWVufGVufDF8fHx8MTc3MTg3NTIxM3ww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      "small_url": "https://images.unsplash.com/photo-1568151492546-1db658d0fc42?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhZ2xhb25lbWElMjBjaGluZXNlJTIwZXZlcmdyZWVufGVufDF8fHx8MTc3MTg3NTIxM3ww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      "thumbnail": "https://images.unsplash.com/photo-1568151492546-1db658d0fc42?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhZ2xhb25lbWElMjBjaGluZXNlJTIwZXZlcmdyZWVufGVufDF8fHx8MTc3MTg3NTIxM3ww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+    },
+    "description": "The Chinese evergreen (Aglaonema commutatum) is a beautiful indoor plant belonging to the Araceae family. It has a perennial life cycle and generally requires average care. For best growth, it needs part shade and average watering."
+  },
+  {
+    "id": 16,
+    "common_name": "Inch plant",
+    "scientific_name": [
+      "Tradescantia zebrina"
+    ],
+    "other_name": [],
+    "family": "Commelinaceae",
+    "genus": "Tradescantia",
+    "origin": null,
+    "type": "Indoor",
+    "dimension": "Medium",
+    "cycle": "Perennial",
+    "care_level": "Average",
+    "watering": "Average",
+    "watering_general_benchmark": {
+      "value": "7-10 days",
+      "unit": "days"
+    },
+    "sunlight": [
+      "Part shade"
+    ],
+    "care_description": {
+      "watering": "Water weekly during growing season. Allow soil to dry slightly.",
+      "sunlight": "Bright, filtered light."
+    },
+    "hardiness": {
+      "min": "15°C",
+      "max": "25°C"
+    },
+    "default_image": {
+      "license": 451,
+      "license_name": "Mock Image Service",
+      "license_url": "",
+      "original_url": "https://images.unsplash.com/photo-1587398411636-48f716ba0b54?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx0cmFkZXNjYW50aWElMjB6ZWJyaW5hJTIwd2FuZGVyaW5nJTIwamV3fGVufDF8fHx8MTc3MTg3NTIxNHww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      "regular_url": "https://images.unsplash.com/photo-1587398411636-48f716ba0b54?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx0cmFkZXNjYW50aWElMjB6ZWJyaW5hJTIwd2FuZGVyaW5nJTIwamV3fGVufDF8fHx8MTc3MTg3NTIxNHww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      "medium_url": "https://images.unsplash.com/photo-1587398411636-48f716ba0b54?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx0cmFkZXNjYW50aWElMjB6ZWJyaW5hJTIwd2FuZGVyaW5nJTIwamV3fGVufDF8fHx8MTc3MTg3NTIxNHww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      "small_url": "https://images.unsplash.com/photo-1587398411636-48f716ba0b54?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx0cmFkZXNjYW50aWElMjB6ZWJyaW5hJTIwd2FuZGVyaW5nJTIwamV3fGVufDF8fHx8MTc3MTg3NTIxNHww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      "thumbnail": "https://images.unsplash.com/photo-1587398411636-48f716ba0b54?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx0cmFkZXNjYW50aWElMjB6ZWJyaW5hJTIwd2FuZGVyaW5nJTIwamV3fGVufDF8fHx8MTc3MTg3NTIxNHww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+    },
+    "description": "The Inch plant (Tradescantia zebrina) is a beautiful indoor plant belonging to the Commelinaceae family. It has a perennial life cycle and generally requires average care. For best growth, it needs part shade and average watering."
+  },
+  {
+    "id": 17,
+    "common_name": "Baby rubberplant",
+    "scientific_name": [
+      "Peperomia obtusifolia"
+    ],
+    "other_name": [],
+    "family": "Piperaceae",
+    "genus": "Peperomia",
+    "origin": null,
+    "type": "Indoor",
+    "dimension": "Medium",
+    "cycle": "Perennial",
+    "care_level": "Average",
+    "watering": "Average",
+    "watering_general_benchmark": {
+      "value": "7-10 days",
+      "unit": "days"
+    },
+    "sunlight": [
+      "Part shade"
+    ],
+    "care_description": {
+      "watering": "Water when top inch of soil is dry. Mist leaves occasionally.",
+      "sunlight": "Bright, indirect light is best. Direct sun can burn leaves."
+    },
+    "hardiness": {
+      "min": "18°C",
+      "max": "27°C"
+    },
+    "default_image": {
+      "license": 451,
+      "license_name": "Mock Image Service",
+      "license_url": "",
+      "original_url": "https://images.unsplash.com/photo-1719854800255-0b18066bd67c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwZXBlcm9taWElMjBvYnR1c2lmb2xpYSUyMHBsYW50fGVufDF8fHx8MTc3MTg3NTIxNHww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      "regular_url": "https://images.unsplash.com/photo-1719854800255-0b18066bd67c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwZXBlcm9taWElMjBvYnR1c2lmb2xpYSUyMHBsYW50fGVufDF8fHx8MTc3MTg3NTIxNHww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      "medium_url": "https://images.unsplash.com/photo-1719854800255-0b18066bd67c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwZXBlcm9taWElMjBvYnR1c2lmb2xpYSUyMHBsYW50fGVufDF8fHx8MTc3MTg3NTIxNHww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      "small_url": "https://images.unsplash.com/photo-1719854800255-0b18066bd67c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwZXBlcm9taWElMjBvYnR1c2lmb2xpYSUyMHBsYW50fGVufDF8fHx8MTc3MTg3NTIxNHww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      "thumbnail": "https://images.unsplash.com/photo-1719854800255-0b18066bd67c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwZXBlcm9taWElMjBvYnR1c2lmb2xpYSUyMHBsYW50fGVufDF8fHx8MTc3MTg3NTIxNHww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+    },
+    "description": "The Baby rubberplant (Peperomia obtusifolia) is a beautiful indoor plant belonging to the Piperaceae family. It has a perennial life cycle and generally requires average care. For best growth, it needs part shade and average watering."
+  },
+  {
+    "id": 18,
+    "common_name": "Arrowhead plant",
+    "scientific_name": [
+      "Syngonium podophyllum"
+    ],
+    "other_name": [],
+    "family": "Araceae",
+    "genus": "Syngonium",
+    "origin": null,
+    "type": "Indoor",
+    "dimension": "Medium",
+    "cycle": "Perennial",
+    "care_level": "Average",
+    "watering": "Average",
+    "watering_general_benchmark": {
+      "value": "7-10 days",
+      "unit": "days"
+    },
+    "sunlight": [
+      "Part shade"
+    ],
+    "care_description": {
+      "watering": "Water when top inch of soil is dry. Mist leaves occasionally.",
+      "sunlight": "Bright, indirect light is best. Direct sun can burn leaves."
+    },
+    "hardiness": {
+      "min": "18°C",
+      "max": "27°C"
+    },
+    "default_image": {
+      "license": 451,
+      "license_name": "Mock Image Service",
+      "license_url": "",
+      "original_url": "https://images.unsplash.com/photo-1606979608471-6478324d9097?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzeW5nb25pdW0lMjBhcnJvd2hlYWQlMjBwbGFudHxlbnwxfHx8fDE3NzE4NzUyMTR8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      "regular_url": "https://images.unsplash.com/photo-1606979608471-6478324d9097?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzeW5nb25pdW0lMjBhcnJvd2hlYWQlMjBwbGFudHxlbnwxfHx8fDE3NzE4NzUyMTR8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      "medium_url": "https://images.unsplash.com/photo-1606979608471-6478324d9097?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzeW5nb25pdW0lMjBhcnJvd2hlYWQlMjBwbGFudHxlbnwxfHx8fDE3NzE4NzUyMTR8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      "small_url": "https://images.unsplash.com/photo-1606979608471-6478324d9097?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzeW5nb25pdW0lMjBhcnJvd2hlYWQlMjBwbGFudHxlbnwxfHx8fDE3NzE4NzUyMTR8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      "thumbnail": "https://images.unsplash.com/photo-1606979608471-6478324d9097?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzeW5nb25pdW0lMjBhcnJvd2hlYWQlMjBwbGFudHxlbnwxfHx8fDE3NzE4NzUyMTR8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+    },
+    "description": "The Arrowhead plant (Syngonium podophyllum) is a beautiful indoor plant belonging to the Araceae family. It has a perennial life cycle and generally requires average care. For best growth, it needs part shade and average watering."
+  },
+  {
+    "id": 19,
+    "common_name": "Heartleaf philodendron",
+    "scientific_name": [
+      "Philodendron hederaceum"
+    ],
+    "other_name": [],
+    "family": "Araceae",
+    "genus": "Philodendron",
+    "origin": null,
+    "type": "Indoor",
+    "dimension": "Medium",
+    "cycle": "Perennial",
+    "care_level": "Average",
+    "watering": "Average",
+    "watering_general_benchmark": {
+      "value": "7-10 days",
+      "unit": "days"
+    },
+    "sunlight": [
+      "Part shade"
+    ],
+    "care_description": {
+      "watering": "Water when top inch of soil is dry. Mist leaves occasionally.",
+      "sunlight": "Bright, indirect light is best. Direct sun can burn leaves."
+    },
+    "hardiness": {
+      "min": "18°C",
+      "max": "27°C"
+    },
+    "default_image": {
+      "license": 451,
+      "license_name": "Mock Image Service",
+      "license_url": "",
+      "original_url": "https://images.unsplash.com/photo-1758153694189-33866902d68a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwaGlsb2RlbmRyb24lMjBoZWRlcmFjZXVtJTIwaGVhcnQlMjBsZWFmfGVufDF8fHx8MTc3MTg3NTIxNXww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      "regular_url": "https://images.unsplash.com/photo-1758153694189-33866902d68a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwaGlsb2RlbmRyb24lMjBoZWRlcmFjZXVtJTIwaGVhcnQlMjBsZWFmfGVufDF8fHx8MTc3MTg3NTIxNXww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      "medium_url": "https://images.unsplash.com/photo-1758153694189-33866902d68a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwaGlsb2RlbmRyb24lMjBoZWRlcmFjZXVtJTIwaGVhcnQlMjBsZWFmfGVufDF8fHx8MTc3MTg3NTIxNXww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      "small_url": "https://images.unsplash.com/photo-1758153694189-33866902d68a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwaGlsb2RlbmRyb24lMjBoZWRlcmFjZXVtJTIwaGVhcnQlMjBsZWFmfGVufDF8fHx8MTc3MTg3NTIxNXww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      "thumbnail": "https://images.unsplash.com/photo-1758153694189-33866902d68a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwaGlsb2RlbmRyb24lMjBoZWRlcmFjZXVtJTIwaGVhcnQlMjBsZWFmfGVufDF8fHx8MTc3MTg3NTIxNXww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+    },
+    "description": "The Heartleaf philodendron (Philodendron hederaceum) is a beautiful indoor plant belonging to the Araceae family. It has a perennial life cycle and generally requires average care. For best growth, it needs part shade and average watering."
+  },
+  {
+    "id": 20,
+    "common_name": "Christmas cactus",
+    "scientific_name": [
+      "Schlumbergera truncata"
+    ],
+    "other_name": [],
+    "family": "Cactaceae",
+    "genus": "Schlumbergera",
+    "origin": null,
+    "type": "Indoor",
+    "dimension": "Medium",
+    "cycle": "Perennial",
+    "care_level": "Minimum",
+    "watering": "Minimum",
+    "watering_general_benchmark": {
+      "value": "7-10 days",
+      "unit": "days"
+    },
+    "sunlight": [
+      "Full sun",
+      "Part shade"
+    ],
+    "care_description": {
+      "watering": "Allow soil to dry completely between waterings. Water sparingly in winter.",
+      "sunlight": "Thrives in bright, direct light but can tolerate some shade."
+    },
+    "hardiness": {
+      "min": "10°C",
+      "max": "30°C"
+    },
+    "default_image": {
+      "license": 451,
+      "license_name": "Mock Image Service",
+      "license_url": "",
+      "original_url": "https://images.unsplash.com/photo-1745688713223-7fc1b37381e8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjaHJpc3RtYXMlMjBjYWN0dXMlMjBzY2hsdW1iZXJnZXJhfGVufDF8fHx8MTc3MTg3NTIxNXww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      "regular_url": "https://images.unsplash.com/photo-1745688713223-7fc1b37381e8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjaHJpc3RtYXMlMjBjYWN0dXMlMjBzY2hsdW1iZXJnZXJhfGVufDF8fHx8MTc3MTg3NTIxNXww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      "medium_url": "https://images.unsplash.com/photo-1745688713223-7fc1b37381e8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjaHJpc3RtYXMlMjBjYWN0dXMlMjBzY2hsdW1iZXJnZXJhfGVufDF8fHx8MTc3MTg3NTIxNXww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      "small_url": "https://images.unsplash.com/photo-1745688713223-7fc1b37381e8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjaHJpc3RtYXMlMjBjYWN0dXMlMjBzY2hsdW1iZXJnZXJhfGVufDF8fHx8MTc3MTg3NTIxNXww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      "thumbnail": "https://images.unsplash.com/photo-1745688713223-7fc1b37381e8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjaHJpc3RtYXMlMjBjYWN0dXMlMjBzY2hsdW1iZXJnZXJhfGVufDF8fHx8MTc3MTg3NTIxNXww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+    },
+    "description": "The Christmas cactus (Schlumbergera truncata) is a beautiful indoor plant belonging to the Cactaceae family. It has a perennial life cycle and generally requires minimum care. For best growth, it needs full sun and part shade and minimum watering."
+  },
+  {
+    "id": 21,
+    "common_name": "Poinsettia",
+    "scientific_name": [
+      "Euphorbia pulcherrima"
+    ],
+    "other_name": [],
+    "family": "Euphorbiaceae",
+    "genus": "Euphorbia",
+    "origin": null,
+    "type": "Indoor",
+    "dimension": "Medium",
+    "cycle": "Perennial",
+    "care_level": "Minimum",
+    "watering": "Minimum",
+    "watering_general_benchmark": {
+      "value": "7-10 days",
+      "unit": "days"
+    },
+    "sunlight": [
+      "Full sun",
+      "Part shade"
+    ],
+    "care_description": {
+      "watering": "Allow soil to dry completely between waterings. Water sparingly in winter.",
+      "sunlight": "Thrives in bright, direct light but can tolerate some shade."
+    },
+    "hardiness": {
+      "min": "10°C",
+      "max": "30°C"
+    },
+    "default_image": {
+      "license": 451,
+      "license_name": "Mock Image Service",
+      "license_url": "",
+      "original_url": "https://images.unsplash.com/photo-1708794897552-926bee3d98ae?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwb2luc2V0dGlhJTIwcmVkJTIwcGxhbnR8ZW58MXx8fHwxNzcxODc1MjE2fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      "regular_url": "https://images.unsplash.com/photo-1708794897552-926bee3d98ae?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwb2luc2V0dGlhJTIwcmVkJTIwcGxhbnR8ZW58MXx8fHwxNzcxODc1MjE2fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      "medium_url": "https://images.unsplash.com/photo-1708794897552-926bee3d98ae?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwb2luc2V0dGlhJTIwcmVkJTIwcGxhbnR8ZW58MXx8fHwxNzcxODc1MjE2fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      "small_url": "https://images.unsplash.com/photo-1708794897552-926bee3d98ae?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwb2luc2V0dGlhJTIwcmVkJTIwcGxhbnR8ZW58MXx8fHwxNzcxODc1MjE2fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      "thumbnail": "https://images.unsplash.com/photo-1708794897552-926bee3d98ae?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwb2luc2V0dGlhJTIwcmVkJTIwcGxhbnR8ZW58MXx8fHwxNzcxODc1MjE2fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+    },
+    "description": "The Poinsettia (Euphorbia pulcherrima) is a beautiful indoor plant belonging to the Euphorbiaceae family. It has a perennial life cycle and generally requires minimum care. For best growth, it needs full sun and part shade and minimum watering."
+  },
+  {
+    "id": 22,
+    "common_name": "Moth orchid",
+    "scientific_name": [
+      "Phalaenopsis aphrodite"
+    ],
+    "other_name": [],
+    "family": "Orchidaceae",
+    "genus": "Phalaenopsis",
+    "origin": null,
+    "type": "Indoor",
+    "dimension": "Medium",
+    "cycle": "Perennial",
+    "care_level": "Average",
+    "watering": "Average",
+    "watering_general_benchmark": {
+      "value": "7-10 days",
+      "unit": "days"
+    },
+    "sunlight": [
+      "Part shade"
+    ],
+    "care_description": {
+      "watering": "Water weekly during growing season. Allow soil to dry slightly.",
+      "sunlight": "Bright, filtered light."
+    },
+    "hardiness": {
+      "min": "15°C",
+      "max": "25°C"
+    },
+    "default_image": {
+      "license": 451,
+      "license_name": "Mock Image Service",
+      "license_url": "",
+      "original_url": "https://images.unsplash.com/photo-1716878271671-0076fa53fecd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwaGFsYWVub3BzaXMlMjBtb3RoJTIwb3JjaGlkfGVufDF8fHx8MTc3MTg3NTIxNnww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      "regular_url": "https://images.unsplash.com/photo-1716878271671-0076fa53fecd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwaGFsYWVub3BzaXMlMjBtb3RoJTIwb3JjaGlkfGVufDF8fHx8MTc3MTg3NTIxNnww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      "medium_url": "https://images.unsplash.com/photo-1716878271671-0076fa53fecd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwaGFsYWVub3BzaXMlMjBtb3RoJTIwb3JjaGlkfGVufDF8fHx8MTc3MTg3NTIxNnww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      "small_url": "https://images.unsplash.com/photo-1716878271671-0076fa53fecd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwaGFsYWVub3BzaXMlMjBtb3RoJTIwb3JjaGlkfGVufDF8fHx8MTc3MTg3NTIxNnww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      "thumbnail": "https://images.unsplash.com/photo-1716878271671-0076fa53fecd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwaGFsYWVub3BzaXMlMjBtb3RoJTIwb3JjaGlkfGVufDF8fHx8MTc3MTg3NTIxNnww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+    },
+    "description": "The Moth orchid (Phalaenopsis aphrodite) is a beautiful indoor plant belonging to the Orchidaceae family. It has a perennial life cycle and generally requires average care. For best growth, it needs part shade and average watering."
+  },
+  {
+    "id": 23,
+    "common_name": "Flamingo flower",
+    "scientific_name": [
+      "Anthurium andraeanum"
+    ],
+    "other_name": [],
+    "family": "Araceae",
+    "genus": "Anthurium",
+    "origin": null,
+    "type": "Indoor",
+    "dimension": "Medium",
+    "cycle": "Perennial",
+    "care_level": "Average",
+    "watering": "Average",
+    "watering_general_benchmark": {
+      "value": "7-10 days",
+      "unit": "days"
+    },
+    "sunlight": [
+      "Part shade"
+    ],
+    "care_description": {
+      "watering": "Water when top inch of soil is dry. Mist leaves occasionally.",
+      "sunlight": "Bright, indirect light is best. Direct sun can burn leaves."
+    },
+    "hardiness": {
+      "min": "18°C",
+      "max": "27°C"
+    },
+    "default_image": {
+      "license": 451,
+      "license_name": "Mock Image Service",
+      "license_url": "",
+      "original_url": "https://images.unsplash.com/photo-1704113972939-b7dca1235da6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhbnRodXJpdW0lMjBmbGFtaW5nbyUyMGZsb3dlcnxlbnwxfHx8fDE3NzE4NzUyMTZ8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      "regular_url": "https://images.unsplash.com/photo-1704113972939-b7dca1235da6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhbnRodXJpdW0lMjBmbGFtaW5nbyUyMGZsb3dlcnxlbnwxfHx8fDE3NzE4NzUyMTZ8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      "medium_url": "https://images.unsplash.com/photo-1704113972939-b7dca1235da6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhbnRodXJpdW0lMjBmbGFtaW5nbyUyMGZsb3dlcnxlbnwxfHx8fDE3NzE4NzUyMTZ8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      "small_url": "https://images.unsplash.com/photo-1704113972939-b7dca1235da6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhbnRodXJpdW0lMjBmbGFtaW5nbyUyMGZsb3dlcnxlbnwxfHx8fDE3NzE4NzUyMTZ8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      "thumbnail": "https://images.unsplash.com/photo-1704113972939-b7dca1235da6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhbnRodXJpdW0lMjBmbGFtaW5nbyUyMGZsb3dlcnxlbnwxfHx8fDE3NzE4NzUyMTZ8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+    },
+    "description": "The Flamingo flower (Anthurium andraeanum) is a beautiful indoor plant belonging to the Araceae family. It has a perennial life cycle and generally requires average care. For best growth, it needs part shade and average watering."
+  },
+  {
+    "id": 24,
+    "common_name": "Polka dot begonia",
+    "scientific_name": [
+      "Begonia maculata"
+    ],
+    "other_name": [],
+    "family": "Begoniaceae",
+    "genus": "Begonia",
+    "origin": null,
+    "type": "Indoor",
+    "dimension": "Medium",
+    "cycle": "Perennial",
+    "care_level": "Average",
+    "watering": "Average",
+    "watering_general_benchmark": {
+      "value": "7-10 days",
+      "unit": "days"
+    },
+    "sunlight": [
+      "Part shade"
+    ],
+    "care_description": {
+      "watering": "Water weekly during growing season. Allow soil to dry slightly.",
+      "sunlight": "Bright, filtered light."
+    },
+    "hardiness": {
+      "min": "15°C",
+      "max": "25°C"
+    },
+    "default_image": {
+      "license": 451,
+      "license_name": "Mock Image Service",
+      "license_url": "",
+      "original_url": "https://images.unsplash.com/photo-1663647733214-3286521f6660?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxiZWdvbmlhJTIwbWFjdWxhdGElMjBwb2xrYSUyMGRvdHxlbnwxfHx8fDE3NzE4NzUyMTZ8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      "regular_url": "https://images.unsplash.com/photo-1663647733214-3286521f6660?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxiZWdvbmlhJTIwbWFjdWxhdGElMjBwb2xrYSUyMGRvdHxlbnwxfHx8fDE3NzE4NzUyMTZ8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      "medium_url": "https://images.unsplash.com/photo-1663647733214-3286521f6660?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxiZWdvbmlhJTIwbWFjdWxhdGElMjBwb2xrYSUyMGRvdHxlbnwxfHx8fDE3NzE4NzUyMTZ8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      "small_url": "https://images.unsplash.com/photo-1663647733214-3286521f6660?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxiZWdvbmlhJTIwbWFjdWxhdGElMjBwb2xrYSUyMGRvdHxlbnwxfHx8fDE3NzE4NzUyMTZ8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      "thumbnail": "https://images.unsplash.com/photo-1663647733214-3286521f6660?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxiZWdvbmlhJTIwbWFjdWxhdGElMjBwb2xrYSUyMGRvdHxlbnwxfHx8fDE3NzE4NzUyMTZ8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+    },
+    "description": "The Polka dot begonia (Begonia maculata) is a beautiful indoor plant belonging to the Begoniaceae family. It has a perennial life cycle and generally requires average care. For best growth, it needs part shade and average watering."
+  },
+  {
+    "id": 25,
+    "common_name": "African mask",
+    "scientific_name": [
+      "Alocasia amazonica"
+    ],
+    "other_name": [],
+    "family": "Araceae",
+    "genus": "Alocasia",
+    "origin": null,
+    "type": "Indoor",
+    "dimension": "Medium",
+    "cycle": "Perennial",
+    "care_level": "Average",
+    "watering": "Average",
+    "watering_general_benchmark": {
+      "value": "7-10 days",
+      "unit": "days"
+    },
+    "sunlight": [
+      "Part shade"
+    ],
+    "care_description": {
+      "watering": "Water when top inch of soil is dry. Mist leaves occasionally.",
+      "sunlight": "Bright, indirect light is best. Direct sun can burn leaves."
+    },
+    "hardiness": {
+      "min": "18°C",
+      "max": "27°C"
+    },
+    "default_image": {
+      "license": 451,
+      "license_name": "Mock Image Service",
+      "license_url": "",
+      "original_url": "https://images.unsplash.com/photo-1759520277895-69185ef95e4f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhbG9jYXNpYSUyMGFtYXpvbmljYSUyMGVsZXBoYW50JTIwZWFyfGVufDF8fHx8MTc3MTg3NTIxN3ww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      "regular_url": "https://images.unsplash.com/photo-1759520277895-69185ef95e4f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhbG9jYXNpYSUyMGFtYXpvbmljYSUyMGVsZXBoYW50JTIwZWFyfGVufDF8fHx8MTc3MTg3NTIxN3ww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      "medium_url": "https://images.unsplash.com/photo-1759520277895-69185ef95e4f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhbG9jYXNpYSUyMGFtYXpvbmljYSUyMGVsZXBoYW50JTIwZWFyfGVufDF8fHx8MTc3MTg3NTIxN3ww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      "small_url": "https://images.unsplash.com/photo-1759520277895-69185ef95e4f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhbG9jYXNpYSUyMGFtYXpvbmljYSUyMGVsZXBoYW50JTIwZWFyfGVufDF8fHx8MTc3MTg3NTIxN3ww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      "thumbnail": "https://images.unsplash.com/photo-1759520277895-69185ef95e4f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhbG9jYXNpYSUyMGFtYXpvbmljYSUyMGVsZXBoYW50JTIwZWFyfGVufDF8fHx8MTc3MTg3NTIxN3ww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+    },
+    "description": "The African mask (Alocasia amazonica) is a beautiful indoor plant belonging to the Araceae family. It has a perennial life cycle and generally requires average care. For best growth, it needs part shade and average watering."
+  },
+  {
+    "id": 26,
+    "common_name": "Nerve plant",
+    "scientific_name": [
+      "Fittonia albivenis"
+    ],
+    "other_name": [],
+    "family": "Acanthaceae",
+    "genus": "Fittonia",
+    "origin": null,
+    "type": "Indoor",
+    "dimension": "Medium",
+    "cycle": "Perennial",
+    "care_level": "Average",
+    "watering": "Average",
+    "watering_general_benchmark": {
+      "value": "7-10 days",
+      "unit": "days"
+    },
+    "sunlight": [
+      "Part shade"
+    ],
+    "care_description": {
+      "watering": "Water weekly during growing season. Allow soil to dry slightly.",
+      "sunlight": "Bright, filtered light."
+    },
+    "hardiness": {
+      "min": "15°C",
+      "max": "25°C"
+    },
+    "default_image": {
+      "license": 451,
+      "license_name": "Mock Image Service",
+      "license_url": "",
+      "original_url": "https://images.unsplash.com/photo-1751147465529-34222ac0ab4a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxmaXR0b25pYSUyMG5lcnZlJTIwcGxhbnR8ZW58MXx8fHwxNzcxODc1MjE3fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      "regular_url": "https://images.unsplash.com/photo-1751147465529-34222ac0ab4a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxmaXR0b25pYSUyMG5lcnZlJTIwcGxhbnR8ZW58MXx8fHwxNzcxODc1MjE3fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      "medium_url": "https://images.unsplash.com/photo-1751147465529-34222ac0ab4a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxmaXR0b25pYSUyMG5lcnZlJTIwcGxhbnR8ZW58MXx8fHwxNzcxODc1MjE3fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      "small_url": "https://images.unsplash.com/photo-1751147465529-34222ac0ab4a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxmaXR0b25pYSUyMG5lcnZlJTIwcGxhbnR8ZW58MXx8fHwxNzcxODc1MjE3fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      "thumbnail": "https://images.unsplash.com/photo-1751147465529-34222ac0ab4a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxmaXR0b25pYSUyMG5lcnZlJTIwcGxhbnR8ZW58MXx8fHwxNzcxODc1MjE3fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+    },
+    "description": "The Nerve plant (Fittonia albivenis) is a beautiful indoor plant belonging to the Acanthaceae family. It has a perennial life cycle and generally requires average care. For best growth, it needs part shade and average watering."
+  },
+  {
+    "id": 27,
+    "common_name": "Prayer plant",
+    "scientific_name": [
+      "Maranta leuconeura"
+    ],
+    "other_name": [],
+    "family": "Marantaceae",
+    "genus": "Maranta",
+    "origin": null,
+    "type": "Indoor",
+    "dimension": "Medium",
+    "cycle": "Perennial",
+    "care_level": "Average",
+    "watering": "Average",
+    "watering_general_benchmark": {
+      "value": "7-10 days",
+      "unit": "days"
+    },
+    "sunlight": [
+      "Part shade"
+    ],
+    "care_description": {
+      "watering": "Water when top inch of soil is dry. Mist leaves occasionally.",
+      "sunlight": "Bright, indirect light is best. Direct sun can burn leaves."
+    },
+    "hardiness": {
+      "min": "18°C",
+      "max": "27°C"
+    },
+    "default_image": {
+      "license": 451,
+      "license_name": "Mock Image Service",
+      "license_url": "",
+      "original_url": "https://images.unsplash.com/photo-1677747639865-f95f16ec976c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtYXJhbnRhJTIwcHJheWVyJTIwcGxhbnR8ZW58MXx8fHwxNzcxODc1MjE4fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      "regular_url": "https://images.unsplash.com/photo-1677747639865-f95f16ec976c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtYXJhbnRhJTIwcHJheWVyJTIwcGxhbnR8ZW58MXx8fHwxNzcxODc1MjE4fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      "medium_url": "https://images.unsplash.com/photo-1677747639865-f95f16ec976c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtYXJhbnRhJTIwcHJheWVyJTIwcGxhbnR8ZW58MXx8fHwxNzcxODc1MjE4fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      "small_url": "https://images.unsplash.com/photo-1677747639865-f95f16ec976c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtYXJhbnRhJTIwcHJheWVyJTIwcGxhbnR8ZW58MXx8fHwxNzcxODc1MjE4fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      "thumbnail": "https://images.unsplash.com/photo-1677747639865-f95f16ec976c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtYXJhbnRhJTIwcHJheWVyJTIwcGxhbnR8ZW58MXx8fHwxNzcxODc1MjE4fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+    },
+    "description": "The Prayer plant (Maranta leuconeura) is a beautiful indoor plant belonging to the Marantaceae family. It has a perennial life cycle and generally requires average care. For best growth, it needs part shade and average watering."
+  },
+  {
+    "id": 28,
+    "common_name": "Ponytail palm",
+    "scientific_name": [
+      "Beaucarnea recurvata"
+    ],
+    "other_name": [],
+    "family": "Asparagaceae",
+    "genus": "Beaucarnea",
+    "origin": null,
+    "type": "Indoor",
+    "dimension": "Medium",
+    "cycle": "Perennial",
+    "care_level": "Minimum",
+    "watering": "Minimum",
+    "watering_general_benchmark": {
+      "value": "7-10 days",
+      "unit": "days"
+    },
+    "sunlight": [
+      "Full sun",
+      "Part shade"
+    ],
+    "care_description": {
+      "watering": "Allow soil to dry completely between waterings. Water sparingly in winter.",
+      "sunlight": "Thrives in bright, direct light but can tolerate some shade."
+    },
+    "hardiness": {
+      "min": "10°C",
+      "max": "30°C"
+    },
+    "default_image": {
+      "license": 451,
+      "license_name": "Mock Image Service",
+      "license_url": "",
+      "original_url": "https://images.unsplash.com/photo-1661233319632-b0e21ee46f81?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwb255dGFpbCUyMHBhbG0lMjBiZWF1Y2FybmVhfGVufDF8fHx8MTc3MTg3NTIxOHww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      "regular_url": "https://images.unsplash.com/photo-1661233319632-b0e21ee46f81?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwb255dGFpbCUyMHBhbG0lMjBiZWF1Y2FybmVhfGVufDF8fHx8MTc3MTg3NTIxOHww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      "medium_url": "https://images.unsplash.com/photo-1661233319632-b0e21ee46f81?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwb255dGFpbCUyMHBhbG0lMjBiZWF1Y2FybmVhfGVufDF8fHx8MTc3MTg3NTIxOHww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      "small_url": "https://images.unsplash.com/photo-1661233319632-b0e21ee46f81?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwb255dGFpbCUyMHBhbG0lMjBiZWF1Y2FybmVhfGVufDF8fHx8MTc3MTg3NTIxOHww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      "thumbnail": "https://images.unsplash.com/photo-1661233319632-b0e21ee46f81?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwb255dGFpbCUyMHBhbG0lMjBiZWF1Y2FybmVhfGVufDF8fHx8MTc3MTg3NTIxOHww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+    },
+    "description": "The Ponytail palm (Beaucarnea recurvata) is a beautiful indoor plant belonging to the Asparagaceae family. It has a perennial life cycle and generally requires minimum care. For best growth, it needs full sun and part shade and minimum watering."
+  },
+  {
+    "id": 29,
+    "common_name": "Spineless yucca",
+    "scientific_name": [
+      "Yucca elephantipes"
+    ],
+    "other_name": [],
+    "family": "Asparagaceae",
+    "genus": "Yucca",
+    "origin": null,
+    "type": "Indoor",
+    "dimension": "Medium",
+    "cycle": "Perennial",
+    "care_level": "Minimum",
+    "watering": "Minimum",
+    "watering_general_benchmark": {
+      "value": "7-10 days",
+      "unit": "days"
+    },
+    "sunlight": [
+      "Full sun",
+      "Part shade"
+    ],
+    "care_description": {
+      "watering": "Allow soil to dry completely between waterings. Water sparingly in winter.",
+      "sunlight": "Thrives in bright, direct light but can tolerate some shade."
+    },
+    "hardiness": {
+      "min": "10°C",
+      "max": "30°C"
+    },
+    "default_image": {
+      "license": 451,
+      "license_name": "Mock Image Service",
+      "license_url": "",
+      "original_url": "https://images.unsplash.com/photo-1623859342982-1a5001a1f17d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx5dWNjYSUyMGVsZXBoYW50aXBlcyUyMHBsYW50fGVufDF8fHx8MTc3MTg3NTIxOHww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      "regular_url": "https://images.unsplash.com/photo-1623859342982-1a5001a1f17d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx5dWNjYSUyMGVsZXBoYW50aXBlcyUyMHBsYW50fGVufDF8fHx8MTc3MTg3NTIxOHww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      "medium_url": "https://images.unsplash.com/photo-1623859342982-1a5001a1f17d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx5dWNjYSUyMGVsZXBoYW50aXBlcyUyMHBsYW50fGVufDF8fHx8MTc3MTg3NTIxOHww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      "small_url": "https://images.unsplash.com/photo-1623859342982-1a5001a1f17d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx5dWNjYSUyMGVsZXBoYW50aXBlcyUyMHBsYW50fGVufDF8fHx8MTc3MTg3NTIxOHww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      "thumbnail": "https://images.unsplash.com/photo-1623859342982-1a5001a1f17d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx5dWNjYSUyMGVsZXBoYW50aXBlcyUyMHBsYW50fGVufDF8fHx8MTc3MTg3NTIxOHww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+    },
+    "description": "The Spineless yucca (Yucca elephantipes) is a beautiful indoor plant belonging to the Asparagaceae family. It has a perennial life cycle and generally requires minimum care. For best growth, it needs full sun and part shade and minimum watering."
+  },
+  {
+    "id": 30,
+    "common_name": "Norfolk Island pine",
+    "scientific_name": [
+      "Araucaria heterophylla"
+    ],
+    "other_name": [],
+    "family": "Araucariaceae",
+    "genus": "Araucaria",
+    "origin": null,
+    "type": "Indoor",
+    "dimension": "Medium",
+    "cycle": "Perennial",
+    "care_level": "Average",
+    "watering": "Average",
+    "watering_general_benchmark": {
+      "value": "7-10 days",
+      "unit": "days"
+    },
+    "sunlight": [
+      "Part shade"
+    ],
+    "care_description": {
+      "watering": "Water weekly during growing season. Allow soil to dry slightly.",
+      "sunlight": "Bright, filtered light."
+    },
+    "hardiness": {
+      "min": "15°C",
+      "max": "25°C"
+    },
+    "default_image": {
+      "license": 451,
+      "license_name": "Mock Image Service",
+      "license_url": "",
+      "original_url": "https://images.unsplash.com/photo-1730366784712-79647d2e4154?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxub3Jmb2xrJTIwaXNsYW5kJTIwcGluZSUyMGFyYXVjYXJpYXxlbnwxfHx8fDE3NzE4NzUyMTh8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      "regular_url": "https://images.unsplash.com/photo-1730366784712-79647d2e4154?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxub3Jmb2xrJTIwaXNsYW5kJTIwcGluZSUyMGFyYXVjYXJpYXxlbnwxfHx8fDE3NzE4NzUyMTh8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      "medium_url": "https://images.unsplash.com/photo-1730366784712-79647d2e4154?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxub3Jmb2xrJTIwaXNsYW5kJTIwcGluZSUyMGFyYXVjYXJpYXxlbnwxfHx8fDE3NzE4NzUyMTh8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      "small_url": "https://images.unsplash.com/photo-1730366784712-79647d2e4154?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxub3Jmb2xrJTIwaXNsYW5kJTIwcGluZSUyMGFyYXVjYXJpYXxlbnwxfHx8fDE3NzE4NzUyMTh8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      "thumbnail": "https://images.unsplash.com/photo-1730366784712-79647d2e4154?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxub3Jmb2xrJTIwaXNsYW5kJTIwcGluZSUyMGFyYXVjYXJpYXxlbnwxfHx8fDE3NzE4NzUyMTh8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+    },
+    "description": "The Norfolk Island pine (Araucaria heterophylla) is a beautiful indoor plant belonging to the Araucariaceae family. It has a perennial life cycle and generally requires average care. For best growth, it needs part shade and average watering."
+  },
+  {
+    "id": 31,
+    "common_name": "Parlor palm",
+    "scientific_name": [
+      "Chamaedorea elegans"
+    ],
+    "other_name": [],
+    "family": "Arecaceae",
+    "genus": "Chamaedorea",
+    "origin": null,
+    "type": "Indoor",
+    "dimension": "Medium",
+    "cycle": "Perennial",
+    "care_level": "Average",
+    "watering": "Average",
+    "watering_general_benchmark": {
+      "value": "7-10 days",
+      "unit": "days"
+    },
+    "sunlight": [
+      "Part shade",
+      "Full sun"
+    ],
+    "care_description": {
+      "watering": "Keep soil moist but well-drained. Sensitive to overwatering.",
+      "sunlight": "Bright, indirect light. Some varieties tolerate lower light."
+    },
+    "hardiness": {
+      "min": "16°C",
+      "max": "28°C"
+    },
+    "default_image": {
+      "license": 451,
+      "license_name": "Mock Image Service",
+      "license_url": "",
+      "original_url": "https://images.unsplash.com/photo-1687269111857-3b398711c2f4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjaGFtYWVkb3JlYSUyMHBhcmxvciUyMHBhbG18ZW58MXx8fHwxNzcxODc1MjE5fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      "regular_url": "https://images.unsplash.com/photo-1687269111857-3b398711c2f4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjaGFtYWVkb3JlYSUyMHBhcmxvciUyMHBhbG18ZW58MXx8fHwxNzcxODc1MjE5fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      "medium_url": "https://images.unsplash.com/photo-1687269111857-3b398711c2f4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjaGFtYWVkb3JlYSUyMHBhcmxvciUyMHBhbG18ZW58MXx8fHwxNzcxODc1MjE5fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      "small_url": "https://images.unsplash.com/photo-1687269111857-3b398711c2f4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjaGFtYWVkb3JlYSUyMHBhcmxvciUyMHBhbG18ZW58MXx8fHwxNzcxODc1MjE5fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      "thumbnail": "https://images.unsplash.com/photo-1687269111857-3b398711c2f4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjaGFtYWVkb3JlYSUyMHBhcmxvciUyMHBhbG18ZW58MXx8fHwxNzcxODc1MjE5fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+    },
+    "description": "The Parlor palm (Chamaedorea elegans) is a beautiful indoor plant belonging to the Arecaceae family. It has a perennial life cycle and generally requires average care. For best growth, it needs part shade and full sun and average watering."
+  },
+  {
+    "id": 32,
+    "common_name": "Areca palm",
+    "scientific_name": [
+      "Dypsis lutescens"
+    ],
+    "other_name": [],
+    "family": "Arecaceae",
+    "genus": "Dypsis",
+    "origin": null,
+    "type": "Indoor",
+    "dimension": "Medium",
+    "cycle": "Perennial",
+    "care_level": "Average",
+    "watering": "Average",
+    "watering_general_benchmark": {
+      "value": "7-10 days",
+      "unit": "days"
+    },
+    "sunlight": [
+      "Part shade",
+      "Full sun"
+    ],
+    "care_description": {
+      "watering": "Keep soil moist but well-drained. Sensitive to overwatering.",
+      "sunlight": "Bright, indirect light. Some varieties tolerate lower light."
+    },
+    "hardiness": {
+      "min": "16°C",
+      "max": "28°C"
+    },
+    "default_image": {
+      "license": 451,
+      "license_name": "Mock Image Service",
+      "license_url": "",
+      "original_url": "https://images.unsplash.com/photo-1598531403144-43fdb36c9ae8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhcmVjYSUyMHBhbG0lMjBpbmRvb3IlMjBwbGFudHxlbnwxfHx8fDE3NzE4NzUyMjh8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      "regular_url": "https://images.unsplash.com/photo-1598531403144-43fdb36c9ae8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhcmVjYSUyMHBhbG0lMjBpbmRvb3IlMjBwbGFudHxlbnwxfHx8fDE3NzE4NzUyMjh8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      "medium_url": "https://images.unsplash.com/photo-1598531403144-43fdb36c9ae8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhcmVjYSUyMHBhbG0lMjBpbmRvb3IlMjBwbGFudHxlbnwxfHx8fDE3NzE4NzUyMjh8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      "small_url": "https://images.unsplash.com/photo-1598531403144-43fdb36c9ae8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhcmVjYSUyMHBhbG0lMjBpbmRvb3IlMjBwbGFudHxlbnwxfHx8fDE3NzE4NzUyMjh8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      "thumbnail": "https://images.unsplash.com/photo-1598531403144-43fdb36c9ae8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhcmVjYSUyMHBhbG0lMjBpbmRvb3IlMjBwbGFudHxlbnwxfHx8fDE3NzE4NzUyMjh8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+    },
+    "description": "The Areca palm (Dypsis lutescens) is a beautiful indoor plant belonging to the Arecaceae family. It has a perennial life cycle and generally requires average care. For best growth, it needs part shade and full sun and average watering."
+  },
+  {
+    "id": 33,
+    "common_name": "Lady palm",
+    "scientific_name": [
+      "Rhapis excelsa"
+    ],
+    "other_name": [],
+    "family": "Arecaceae",
+    "genus": "Rhapis",
+    "origin": null,
+    "type": "Indoor",
+    "dimension": "Medium",
+    "cycle": "Perennial",
+    "care_level": "Average",
+    "watering": "Average",
+    "watering_general_benchmark": {
+      "value": "7-10 days",
+      "unit": "days"
+    },
+    "sunlight": [
+      "Part shade",
+      "Full sun"
+    ],
+    "care_description": {
+      "watering": "Keep soil moist but well-drained. Sensitive to overwatering.",
+      "sunlight": "Bright, indirect light. Some varieties tolerate lower light."
+    },
+    "hardiness": {
+      "min": "16°C",
+      "max": "28°C"
+    },
+    "default_image": {
+      "license": 451,
+      "license_name": "Mock Image Service",
+      "license_url": "",
+      "original_url": "https://images.unsplash.com/photo-1731831337181-3ce6a6f39e02?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxyaGFwaXMlMjBsYWR5JTIwcGFsbXxlbnwxfHx8fDE3NzE4NzUyMTl8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      "regular_url": "https://images.unsplash.com/photo-1731831337181-3ce6a6f39e02?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxyaGFwaXMlMjBsYWR5JTIwcGFsbXxlbnwxfHx8fDE3NzE4NzUyMTl8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      "medium_url": "https://images.unsplash.com/photo-1731831337181-3ce6a6f39e02?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxyaGFwaXMlMjBsYWR5JTIwcGFsbXxlbnwxfHx8fDE3NzE4NzUyMTl8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      "small_url": "https://images.unsplash.com/photo-1731831337181-3ce6a6f39e02?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxyaGFwaXMlMjBsYWR5JTIwcGFsbXxlbnwxfHx8fDE3NzE4NzUyMTl8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      "thumbnail": "https://images.unsplash.com/photo-1731831337181-3ce6a6f39e02?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxyaGFwaXMlMjBsYWR5JTIwcGFsbXxlbnwxfHx8fDE3NzE4NzUyMTl8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+    },
+    "description": "The Lady palm (Rhapis excelsa) is a beautiful indoor plant belonging to the Arecaceae family. It has a perennial life cycle and generally requires average care. For best growth, it needs part shade and full sun and average watering."
+  },
+  {
+    "id": 34,
+    "common_name": "Kentia palm",
+    "scientific_name": [
+      "Howea forsteriana"
+    ],
+    "other_name": [],
+    "family": "Arecaceae",
+    "genus": "Howea",
+    "origin": null,
+    "type": "Indoor",
+    "dimension": "Medium",
+    "cycle": "Perennial",
+    "care_level": "Average",
+    "watering": "Average",
+    "watering_general_benchmark": {
+      "value": "7-10 days",
+      "unit": "days"
+    },
+    "sunlight": [
+      "Part shade",
+      "Full sun"
+    ],
+    "care_description": {
+      "watering": "Keep soil moist but well-drained. Sensitive to overwatering.",
+      "sunlight": "Bright, indirect light. Some varieties tolerate lower light."
+    },
+    "hardiness": {
+      "min": "16°C",
+      "max": "28°C"
+    },
+    "default_image": {
+      "license": 451,
+      "license_name": "Mock Image Service",
+      "license_url": "",
+      "original_url": "https://images.unsplash.com/photo-1652954352097-29f2d0526f08?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxrZW50aWElMjBwYWxtJTIwaG93ZWF8ZW58MXx8fHwxNzcxODc1MjE5fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      "regular_url": "https://images.unsplash.com/photo-1652954352097-29f2d0526f08?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxrZW50aWElMjBwYWxtJTIwaG93ZWF8ZW58MXx8fHwxNzcxODc1MjE5fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      "medium_url": "https://images.unsplash.com/photo-1652954352097-29f2d0526f08?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxrZW50aWElMjBwYWxtJTIwaG93ZWF8ZW58MXx8fHwxNzcxODc1MjE5fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      "small_url": "https://images.unsplash.com/photo-1652954352097-29f2d0526f08?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxrZW50aWElMjBwYWxtJTIwaG93ZWF8ZW58MXx8fHwxNzcxODc1MjE5fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      "thumbnail": "https://images.unsplash.com/photo-1652954352097-29f2d0526f08?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxrZW50aWElMjBwYWxtJTIwaG93ZWF8ZW58MXx8fHwxNzcxODc1MjE5fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+    },
+    "description": "The Kentia palm (Howea forsteriana) is a beautiful indoor plant belonging to the Arecaceae family. It has a perennial life cycle and generally requires average care. For best growth, it needs part shade and full sun and average watering."
+  },
+  {
+    "id": 35,
+    "common_name": "Boston fern",
+    "scientific_name": [
+      "Nephrolepis exaltata"
+    ],
+    "other_name": [],
+    "family": "Nephrolepidaceae",
+    "genus": "Nephrolepis",
+    "origin": null,
+    "type": "Indoor",
+    "dimension": "Medium",
+    "cycle": "Perennial",
+    "care_level": "Frequent",
+    "watering": "Frequent",
+    "watering_general_benchmark": {
+      "value": "7-10 days",
+      "unit": "days"
+    },
+    "sunlight": [
+      "Part shade",
+      "Full shade"
+    ],
+    "care_description": {
+      "watering": "Keep soil consistently moist but not waterlogged. High humidity required.",
+      "sunlight": "Prefers indirect light or dappled shade. Avoid direct sun."
+    },
+    "hardiness": {
+      "min": "15°C",
+      "max": "24°C"
+    },
+    "default_image": {
+      "license": 451,
+      "license_name": "Mock Image Service",
+      "license_url": "",
+      "original_url": "https://images.unsplash.com/photo-1704869727879-25ed3c235e7d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxib3N0b24lMjBmZXJuJTIwaGFuZ2luZyUyMHBsYW50fGVufDF8fHx8MTc3MTg3NTIyOHww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      "regular_url": "https://images.unsplash.com/photo-1704869727879-25ed3c235e7d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxib3N0b24lMjBmZXJuJTIwaGFuZ2luZyUyMHBsYW50fGVufDF8fHx8MTc3MTg3NTIyOHww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      "medium_url": "https://images.unsplash.com/photo-1704869727879-25ed3c235e7d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxib3N0b24lMjBmZXJuJTIwaGFuZ2luZyUyMHBsYW50fGVufDF8fHx8MTc3MTg3NTIyOHww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      "small_url": "https://images.unsplash.com/photo-1704869727879-25ed3c235e7d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxib3N0b24lMjBmZXJuJTIwaGFuZ2luZyUyMHBsYW50fGVufDF8fHx8MTc3MTg3NTIyOHww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      "thumbnail": "https://images.unsplash.com/photo-1704869727879-25ed3c235e7d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxib3N0b24lMjBmZXJuJTIwaGFuZ2luZyUyMHBsYW50fGVufDF8fHx8MTc3MTg3NTIyOHww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+    },
+    "description": "The Boston fern (Nephrolepis exaltata) is a beautiful indoor plant belonging to the Nephrolepidaceae family. It has a perennial life cycle and generally requires frequent care. For best growth, it needs part shade and full shade and frequent watering."
+  },
+  {
+    "id": 36,
+    "common_name": "Bird's nest fern",
+    "scientific_name": [
+      "Asplenium nidus"
+    ],
+    "other_name": [],
+    "family": "Aspleniaceae",
+    "genus": "Asplenium",
+    "origin": null,
+    "type": "Indoor",
+    "dimension": "Medium",
+    "cycle": "Perennial",
+    "care_level": "Frequent",
+    "watering": "Frequent",
+    "watering_general_benchmark": {
+      "value": "7-10 days",
+      "unit": "days"
+    },
+    "sunlight": [
+      "Part shade",
+      "Full shade"
+    ],
+    "care_description": {
+      "watering": "Keep soil consistently moist but not waterlogged. High humidity required.",
+      "sunlight": "Prefers indirect light or dappled shade. Avoid direct sun."
+    },
+    "hardiness": {
+      "min": "15°C",
+      "max": "24°C"
+    },
+    "default_image": {
+      "license": 451,
+      "license_name": "Mock Image Service",
+      "license_url": "",
+      "original_url": "https://images.unsplash.com/photo-1740643059108-5e93b2a56719?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxiaXJkcyUyMG5lc3QlMjBmZXJuJTIwYXNwbGVuaXVtfGVufDF8fHx8MTc3MTg3NTIyMHww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      "regular_url": "https://images.unsplash.com/photo-1740643059108-5e93b2a56719?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxiaXJkcyUyMG5lc3QlMjBmZXJuJTIwYXNwbGVuaXVtfGVufDF8fHx8MTc3MTg3NTIyMHww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      "medium_url": "https://images.unsplash.com/photo-1740643059108-5e93b2a56719?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxiaXJkcyUyMG5lc3QlMjBmZXJuJTIwYXNwbGVuaXVtfGVufDF8fHx8MTc3MTg3NTIyMHww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      "small_url": "https://images.unsplash.com/photo-1740643059108-5e93b2a56719?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxiaXJkcyUyMG5lc3QlMjBmZXJuJTIwYXNwbGVuaXVtfGVufDF8fHx8MTc3MTg3NTIyMHww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      "thumbnail": "https://images.unsplash.com/photo-1740643059108-5e93b2a56719?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxiaXJkcyUyMG5lc3QlMjBmZXJuJTIwYXNwbGVuaXVtfGVufDF8fHx8MTc3MTg3NTIyMHww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+    },
+    "description": "The Bird's nest fern (Asplenium nidus) is a beautiful indoor plant belonging to the Aspleniaceae family. It has a perennial life cycle and generally requires frequent care. For best growth, it needs part shade and full shade and frequent watering."
+  },
+  {
+    "id": 37,
+    "common_name": "Delta maidenhair fern",
+    "scientific_name": [
+      "Adiantum raddianum"
+    ],
+    "other_name": [],
+    "family": "Pteridaceae",
+    "genus": "Adiantum",
+    "origin": null,
+    "type": "Indoor",
+    "dimension": "Medium",
+    "cycle": "Perennial",
+    "care_level": "Frequent",
+    "watering": "Frequent",
+    "watering_general_benchmark": {
+      "value": "7-10 days",
+      "unit": "days"
+    },
+    "sunlight": [
+      "Part shade",
+      "Full shade"
+    ],
+    "care_description": {
+      "watering": "Keep soil consistently moist but not waterlogged. High humidity required.",
+      "sunlight": "Prefers indirect light or dappled shade. Avoid direct sun."
+    },
+    "hardiness": {
+      "min": "15°C",
+      "max": "24°C"
+    },
+    "default_image": {
+      "license": 451,
+      "license_name": "Mock Image Service",
+      "license_url": "",
+      "original_url": "https://images.unsplash.com/photo-1762952318948-51fec88f6a7f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtYWlkZW5oYWlyJTIwZmVybiUyMGFkaWFudHVtfGVufDF8fHx8MTc3MTg3NTIyMHww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      "regular_url": "https://images.unsplash.com/photo-1762952318948-51fec88f6a7f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtYWlkZW5oYWlyJTIwZmVybiUyMGFkaWFudHVtfGVufDF8fHx8MTc3MTg3NTIyMHww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      "medium_url": "https://images.unsplash.com/photo-1762952318948-51fec88f6a7f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtYWlkZW5oYWlyJTIwZmVybiUyMGFkaWFudHVtfGVufDF8fHx8MTc3MTg3NTIyMHww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      "small_url": "https://images.unsplash.com/photo-1762952318948-51fec88f6a7f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtYWlkZW5oYWlyJTIwZmVybiUyMGFkaWFudHVtfGVufDF8fHx8MTc3MTg3NTIyMHww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      "thumbnail": "https://images.unsplash.com/photo-1762952318948-51fec88f6a7f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtYWlkZW5oYWlyJTIwZmVybiUyMGFkaWFudHVtfGVufDF8fHx8MTc3MTg3NTIyMHww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+    },
+    "description": "The Delta maidenhair fern (Adiantum raddianum) is a beautiful indoor plant belonging to the Pteridaceae family. It has a perennial life cycle and generally requires frequent care. For best growth, it needs part shade and full shade and frequent watering."
+  },
+  {
+    "id": 38,
+    "common_name": "Staghorn fern",
+    "scientific_name": [
+      "Platycerium bifurcatum"
+    ],
+    "other_name": [],
+    "family": "Polypodiaceae",
+    "genus": "Platycerium",
+    "origin": null,
+    "type": "Indoor",
+    "dimension": "Medium",
+    "cycle": "Perennial",
+    "care_level": "Frequent",
+    "watering": "Frequent",
+    "watering_general_benchmark": {
+      "value": "7-10 days",
+      "unit": "days"
+    },
+    "sunlight": [
+      "Part shade",
+      "Full shade"
+    ],
+    "care_description": {
+      "watering": "Keep soil consistently moist but not waterlogged. High humidity required.",
+      "sunlight": "Prefers indirect light or dappled shade. Avoid direct sun."
+    },
+    "hardiness": {
+      "min": "15°C",
+      "max": "24°C"
+    },
+    "default_image": {
+      "license": 451,
+      "license_name": "Mock Image Service",
+      "license_url": "",
+      "original_url": "https://images.unsplash.com/photo-1667715318212-7dbf21da371f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzdGFnaG9ybiUyMGZlcm4lMjBwbGF0eWNlcml1bXxlbnwxfHx8fDE3NzE4NzUyMjB8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      "regular_url": "https://images.unsplash.com/photo-1667715318212-7dbf21da371f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzdGFnaG9ybiUyMGZlcm4lMjBwbGF0eWNlcml1bXxlbnwxfHx8fDE3NzE4NzUyMjB8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      "medium_url": "https://images.unsplash.com/photo-1667715318212-7dbf21da371f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzdGFnaG9ybiUyMGZlcm4lMjBwbGF0eWNlcml1bXxlbnwxfHx8fDE3NzE4NzUyMjB8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      "small_url": "https://images.unsplash.com/photo-1667715318212-7dbf21da371f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzdGFnaG9ybiUyMGZlcm4lMjBwbGF0eWNlcml1bXxlbnwxfHx8fDE3NzE4NzUyMjB8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      "thumbnail": "https://images.unsplash.com/photo-1667715318212-7dbf21da371f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzdGFnaG9ybiUyMGZlcm4lMjBwbGF0eWNlcml1bXxlbnwxfHx8fDE3NzE4NzUyMjB8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+    },
+    "description": "The Staghorn fern (Platycerium bifurcatum) is a beautiful indoor plant belonging to the Polypodiaceae family. It has a perennial life cycle and generally requires frequent care. For best growth, it needs part shade and full shade and frequent watering."
+  },
+  {
+    "id": 39,
+    "common_name": "African violet",
+    "scientific_name": [
+      "Saintpaulia ionantha"
+    ],
+    "other_name": [],
+    "family": "Gesneriaceae",
+    "genus": "Saintpaulia",
+    "origin": null,
+    "type": "Indoor",
+    "dimension": "Medium",
+    "cycle": "Perennial",
+    "care_level": "Average",
+    "watering": "Average",
+    "watering_general_benchmark": {
+      "value": "7-10 days",
+      "unit": "days"
+    },
+    "sunlight": [
+      "Part shade"
+    ],
+    "care_description": {
+      "watering": "Water weekly during growing season. Allow soil to dry slightly.",
+      "sunlight": "Bright, filtered light."
+    },
+    "hardiness": {
+      "min": "15°C",
+      "max": "25°C"
+    },
+    "default_image": {
+      "license": 451,
+      "license_name": "Mock Image Service",
+      "license_url": "",
+      "original_url": "https://images.unsplash.com/photo-1680272144322-09f005585f15?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhZnJpY2FuJTIwdmlvbGV0JTIwc2FpbnRwYXVsaWF8ZW58MXx8fHwxNzcxODc1MjIwfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      "regular_url": "https://images.unsplash.com/photo-1680272144322-09f005585f15?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhZnJpY2FuJTIwdmlvbGV0JTIwc2FpbnRwYXVsaWF8ZW58MXx8fHwxNzcxODc1MjIwfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      "medium_url": "https://images.unsplash.com/photo-1680272144322-09f005585f15?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhZnJpY2FuJTIwdmlvbGV0JTIwc2FpbnRwYXVsaWF8ZW58MXx8fHwxNzcxODc1MjIwfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      "small_url": "https://images.unsplash.com/photo-1680272144322-09f005585f15?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhZnJpY2FuJTIwdmlvbGV0JTIwc2FpbnRwYXVsaWF8ZW58MXx8fHwxNzcxODc1MjIwfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      "thumbnail": "https://images.unsplash.com/photo-1680272144322-09f005585f15?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhZnJpY2FuJTIwdmlvbGV0JTIwc2FpbnRwYXVsaWF8ZW58MXx8fHwxNzcxODc1MjIwfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+    },
+    "description": "The African violet (Saintpaulia ionantha) is a beautiful indoor plant belonging to the Gesneriaceae family. It has a perennial life cycle and generally requires average care. For best growth, it needs part shade and average watering."
+  },
+  {
+    "id": 40,
+    "common_name": "Persian cyclamen",
+    "scientific_name": [
+      "Cyclamen persicum"
+    ],
+    "other_name": [],
+    "family": "Primulaceae",
+    "genus": "Cyclamen",
+    "origin": null,
+    "type": "Indoor",
+    "dimension": "Medium",
+    "cycle": "Perennial",
+    "care_level": "Average",
+    "watering": "Average",
+    "watering_general_benchmark": {
+      "value": "7-10 days",
+      "unit": "days"
+    },
+    "sunlight": [
+      "Part shade"
+    ],
+    "care_description": {
+      "watering": "Water weekly during growing season. Allow soil to dry slightly.",
+      "sunlight": "Bright, filtered light."
+    },
+    "hardiness": {
+      "min": "15°C",
+      "max": "25°C"
+    },
+    "default_image": {
+      "license": 451,
+      "license_name": "Mock Image Service",
+      "license_url": "",
+      "original_url": "https://images.unsplash.com/photo-1607518066388-d2f19343931b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjeWNsYW1lbiUyMHBlcnNpY3VtJTIwZmxvd2VyfGVufDF8fHx8MTc3MTg3NTIyMXww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      "regular_url": "https://images.unsplash.com/photo-1607518066388-d2f19343931b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjeWNsYW1lbiUyMHBlcnNpY3VtJTIwZmxvd2VyfGVufDF8fHx8MTc3MTg3NTIyMXww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      "medium_url": "https://images.unsplash.com/photo-1607518066388-d2f19343931b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjeWNsYW1lbiUyMHBlcnNpY3VtJTIwZmxvd2VyfGVufDF8fHx8MTc3MTg3NTIyMXww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      "small_url": "https://images.unsplash.com/photo-1607518066388-d2f19343931b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjeWNsYW1lbiUyMHBlcnNpY3VtJTIwZmxvd2VyfGVufDF8fHx8MTc3MTg3NTIyMXww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      "thumbnail": "https://images.unsplash.com/photo-1607518066388-d2f19343931b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjeWNsYW1lbiUyMHBlcnNpY3VtJTIwZmxvd2VyfGVufDF8fHx8MTc3MTg3NTIyMXww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+    },
+    "description": "The Persian cyclamen (Cyclamen persicum) is a beautiful indoor plant belonging to the Primulaceae family. It has a perennial life cycle and generally requires average care. For best growth, it needs part shade and average watering."
+  },
+  {
+    "id": 41,
+    "common_name": "Flaming katy",
+    "scientific_name": [
+      "Kalanchoe blossfeldiana"
+    ],
+    "other_name": [],
+    "family": "Crassulaceae",
+    "genus": "Kalanchoe",
+    "origin": null,
+    "type": "Indoor",
+    "dimension": "Medium",
+    "cycle": "Perennial",
+    "care_level": "Minimum",
+    "watering": "Minimum",
+    "watering_general_benchmark": {
+      "value": "7-10 days",
+      "unit": "days"
+    },
+    "sunlight": [
+      "Full sun",
+      "Part shade"
+    ],
+    "care_description": {
+      "watering": "Allow soil to dry completely between waterings. Water sparingly in winter.",
+      "sunlight": "Thrives in bright, direct light but can tolerate some shade."
+    },
+    "hardiness": {
+      "min": "10°C",
+      "max": "30°C"
+    },
+    "default_image": {
+      "license": 451,
+      "license_name": "Mock Image Service",
+      "license_url": "",
+      "original_url": "https://images.unsplash.com/photo-1681769689116-252ac9081af8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxrYWxhbmNob2UlMjBibG9zc2ZlbGRpYW5hJTIwc3VjY3VsZW50fGVufDF8fHx8MTc3MTg3NTIyMXww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      "regular_url": "https://images.unsplash.com/photo-1681769689116-252ac9081af8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxrYWxhbmNob2UlMjBibG9zc2ZlbGRpYW5hJTIwc3VjY3VsZW50fGVufDF8fHx8MTc3MTg3NTIyMXww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      "medium_url": "https://images.unsplash.com/photo-1681769689116-252ac9081af8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxrYWxhbmNob2UlMjBibG9zc2ZlbGRpYW5hJTIwc3VjY3VsZW50fGVufDF8fHx8MTc3MTg3NTIyMXww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      "small_url": "https://images.unsplash.com/photo-1681769689116-252ac9081af8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxrYWxhbmNob2UlMjBibG9zc2ZlbGRpYW5hJTIwc3VjY3VsZW50fGVufDF8fHx8MTc3MTg3NTIyMXww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      "thumbnail": "https://images.unsplash.com/photo-1681769689116-252ac9081af8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxrYWxhbmNob2UlMjBibG9zc2ZlbGRpYW5hJTIwc3VjY3VsZW50fGVufDF8fHx8MTc3MTg3NTIyMXww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+    },
+    "description": "The Flaming katy (Kalanchoe blossfeldiana) is a beautiful indoor plant belonging to the Crassulaceae family. It has a perennial life cycle and generally requires minimum care. For best growth, it needs full sun and part shade and minimum watering."
+  },
+  {
+    "id": 42,
+    "common_name": "Coleus",
+    "scientific_name": [
+      "Solenostemon scutellarioides"
+    ],
+    "other_name": [],
+    "family": "Lamiaceae",
+    "genus": "Solenostemon",
+    "origin": null,
+    "type": "Indoor",
+    "dimension": "Medium",
+    "cycle": "Perennial",
+    "care_level": "Average",
+    "watering": "Average",
+    "watering_general_benchmark": {
+      "value": "7-10 days",
+      "unit": "days"
+    },
+    "sunlight": [
+      "Part shade"
+    ],
+    "care_description": {
+      "watering": "Water weekly during growing season. Allow soil to dry slightly.",
+      "sunlight": "Bright, filtered light."
+    },
+    "hardiness": {
+      "min": "15°C",
+      "max": "25°C"
+    },
+    "default_image": {
+      "license": 451,
+      "license_name": "Mock Image Service",
+      "license_url": "",
+      "original_url": "https://images.unsplash.com/photo-1641100710199-7f841ee78d44?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjb2xldXMlMjBjb2xvcmZ1bCUyMGZvbGlhZ2V8ZW58MXx8fHwxNzcxODc1MjIxfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      "regular_url": "https://images.unsplash.com/photo-1641100710199-7f841ee78d44?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjb2xldXMlMjBjb2xvcmZ1bCUyMGZvbGlhZ2V8ZW58MXx8fHwxNzcxODc1MjIxfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      "medium_url": "https://images.unsplash.com/photo-1641100710199-7f841ee78d44?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjb2xldXMlMjBjb2xvcmZ1bCUyMGZvbGlhZ2V8ZW58MXx8fHwxNzcxODc1MjIxfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      "small_url": "https://images.unsplash.com/photo-1641100710199-7f841ee78d44?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjb2xldXMlMjBjb2xvcmZ1bCUyMGZvbGlhZ2V8ZW58MXx8fHwxNzcxODc1MjIxfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      "thumbnail": "https://images.unsplash.com/photo-1641100710199-7f841ee78d44?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjb2xldXMlMjBjb2xvcmZ1bCUyMGZvbGlhZ2V8ZW58MXx8fHwxNzcxODc1MjIxfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+    },
+    "description": "The Coleus (Solenostemon scutellarioides) is a beautiful indoor plant belonging to the Lamiaceae family. It has a perennial life cycle and generally requires average care. For best growth, it needs part shade and average watering."
+  },
+  {
+    "id": 43,
+    "common_name": "Croton",
+    "scientific_name": [
+      "Codiaeum variegatum"
+    ],
+    "other_name": [],
+    "family": "Euphorbiaceae",
+    "genus": "Codiaeum",
+    "origin": null,
+    "type": "Indoor",
+    "dimension": "Medium",
+    "cycle": "Perennial",
+    "care_level": "Minimum",
+    "watering": "Minimum",
+    "watering_general_benchmark": {
+      "value": "7-10 days",
+      "unit": "days"
+    },
+    "sunlight": [
+      "Full sun",
+      "Part shade"
+    ],
+    "care_description": {
+      "watering": "Allow soil to dry completely between waterings. Water sparingly in winter.",
+      "sunlight": "Thrives in bright, direct light but can tolerate some shade."
+    },
+    "hardiness": {
+      "min": "10°C",
+      "max": "30°C"
+    },
+    "default_image": {
+      "license": 451,
+      "license_name": "Mock Image Service",
+      "license_url": "",
+      "original_url": "https://images.unsplash.com/photo-1641906101577-58759637055b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjcm90b24lMjBjb2RpYWV1bSUyMHZhcmllZ2F0ZWR8ZW58MXx8fHwxNzcxODc1MjIyfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      "regular_url": "https://images.unsplash.com/photo-1641906101577-58759637055b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjcm90b24lMjBjb2RpYWV1bSUyMHZhcmllZ2F0ZWR8ZW58MXx8fHwxNzcxODc1MjIyfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      "medium_url": "https://images.unsplash.com/photo-1641906101577-58759637055b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjcm90b24lMjBjb2RpYWV1bSUyMHZhcmllZ2F0ZWR8ZW58MXx8fHwxNzcxODc1MjIyfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      "small_url": "https://images.unsplash.com/photo-1641906101577-58759637055b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjcm90b24lMjBjb2RpYWV1bSUyMHZhcmllZ2F0ZWR8ZW58MXx8fHwxNzcxODc1MjIyfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      "thumbnail": "https://images.unsplash.com/photo-1641906101577-58759637055b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjcm90b24lMjBjb2RpYWV1bSUyMHZhcmllZ2F0ZWR8ZW58MXx8fHwxNzcxODc1MjIyfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+    },
+    "description": "The Croton (Codiaeum variegatum) is a beautiful indoor plant belonging to the Euphorbiaceae family. It has a perennial life cycle and generally requires minimum care. For best growth, it needs full sun and part shade and minimum watering."
+  },
+  {
+    "id": 44,
+    "common_name": "Dwarf umbrella tree",
+    "scientific_name": [
+      "Schefflera arboricola"
+    ],
+    "other_name": [],
+    "family": "Araliaceae",
+    "genus": "Schefflera",
+    "origin": null,
+    "type": "Indoor",
+    "dimension": "Medium",
+    "cycle": "Perennial",
+    "care_level": "Average",
+    "watering": "Average",
+    "watering_general_benchmark": {
+      "value": "7-10 days",
+      "unit": "days"
+    },
+    "sunlight": [
+      "Part shade"
+    ],
+    "care_description": {
+      "watering": "Water weekly during growing season. Allow soil to dry slightly.",
+      "sunlight": "Bright, filtered light."
+    },
+    "hardiness": {
+      "min": "15°C",
+      "max": "25°C"
+    },
+    "default_image": {
+      "license": 451,
+      "license_name": "Mock Image Service",
+      "license_url": "",
+      "original_url": "https://images.unsplash.com/photo-1639714795430-f96b8957a793?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzY2hlZmZsZXJhJTIwdW1icmVsbGElMjB0cmVlfGVufDF8fHx8MTc3MTg3NTIyMnww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      "regular_url": "https://images.unsplash.com/photo-1639714795430-f96b8957a793?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzY2hlZmZsZXJhJTIwdW1icmVsbGElMjB0cmVlfGVufDF8fHx8MTc3MTg3NTIyMnww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      "medium_url": "https://images.unsplash.com/photo-1639714795430-f96b8957a793?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzY2hlZmZsZXJhJTIwdW1icmVsbGElMjB0cmVlfGVufDF8fHx8MTc3MTg3NTIyMnww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      "small_url": "https://images.unsplash.com/photo-1639714795430-f96b8957a793?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzY2hlZmZsZXJhJTIwdW1icmVsbGElMjB0cmVlfGVufDF8fHx8MTc3MTg3NTIyMnww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      "thumbnail": "https://images.unsplash.com/photo-1639714795430-f96b8957a793?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzY2hlZmZsZXJhJTIwdW1icmVsbGElMjB0cmVlfGVufDF8fHx8MTc3MTg3NTIyMnww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+    },
+    "description": "The Dwarf umbrella tree (Schefflera arboricola) is a beautiful indoor plant belonging to the Araliaceae family. It has a perennial life cycle and generally requires average care. For best growth, it needs part shade and average watering."
+  },
+  {
+    "id": 45,
+    "common_name": "Paper plant",
+    "scientific_name": [
+      "Fatsia japonica"
+    ],
+    "other_name": [],
+    "family": "Araliaceae",
+    "genus": "Fatsia",
+    "origin": null,
+    "type": "Indoor",
+    "dimension": "Medium",
+    "cycle": "Perennial",
+    "care_level": "Average",
+    "watering": "Average",
+    "watering_general_benchmark": {
+      "value": "7-10 days",
+      "unit": "days"
+    },
+    "sunlight": [
+      "Part shade"
+    ],
+    "care_description": {
+      "watering": "Water weekly during growing season. Allow soil to dry slightly.",
+      "sunlight": "Bright, filtered light."
+    },
+    "hardiness": {
+      "min": "15°C",
+      "max": "25°C"
+    },
+    "default_image": {
+      "license": 451,
+      "license_name": "Mock Image Service",
+      "license_url": "",
+      "original_url": "https://images.unsplash.com/photo-1604305086821-05e8322c8d87?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxmYXRzaWElMjBqYXBvbmljYSUyMHBsYW50fGVufDF8fHx8MTc3MTg3NTIyMnww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      "regular_url": "https://images.unsplash.com/photo-1604305086821-05e8322c8d87?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxmYXRzaWElMjBqYXBvbmljYSUyMHBsYW50fGVufDF8fHx8MTc3MTg3NTIyMnww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      "medium_url": "https://images.unsplash.com/photo-1604305086821-05e8322c8d87?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxmYXRzaWElMjBqYXBvbmljYSUyMHBsYW50fGVufDF8fHx8MTc3MTg3NTIyMnww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      "small_url": "https://images.unsplash.com/photo-1604305086821-05e8322c8d87?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxmYXRzaWElMjBqYXBvbmljYSUyMHBsYW50fGVufDF8fHx8MTc3MTg3NTIyMnww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      "thumbnail": "https://images.unsplash.com/photo-1604305086821-05e8322c8d87?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxmYXRzaWElMjBqYXBvbmljYSUyMHBsYW50fGVufDF8fHx8MTc3MTg3NTIyMnww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+    },
+    "description": "The Paper plant (Fatsia japonica) is a beautiful indoor plant belonging to the Araliaceae family. It has a perennial life cycle and generally requires average care. For best growth, it needs part shade and average watering."
+  },
+  {
+    "id": 46,
+    "common_name": "Cast iron plant",
+    "scientific_name": [
+      "Aspidistra elatior"
+    ],
+    "other_name": [],
+    "family": "Asparagaceae",
+    "genus": "Aspidistra",
+    "origin": null,
+    "type": "Indoor",
+    "dimension": "Medium",
+    "cycle": "Perennial",
+    "care_level": "Average",
+    "watering": "Average",
+    "watering_general_benchmark": {
+      "value": "7-10 days",
+      "unit": "days"
+    },
+    "sunlight": [
+      "Part shade"
+    ],
+    "care_description": {
+      "watering": "Water weekly during growing season. Allow soil to dry slightly.",
+      "sunlight": "Bright, filtered light."
+    },
+    "hardiness": {
+      "min": "15°C",
+      "max": "25°C"
+    },
+    "default_image": {
+      "license": 451,
+      "license_name": "Mock Image Service",
+      "license_url": "",
+      "original_url": "https://images.unsplash.com/photo-1718443447370-73996990f61b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhc3BpZGlzdHJhJTIwZWxhdGlvciUyMGdyZWVuJTIwbGVhdmVzfGVufDF8fHx8MTc3MTg3NTIyOXww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      "regular_url": "https://images.unsplash.com/photo-1718443447370-73996990f61b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhc3BpZGlzdHJhJTIwZWxhdGlvciUyMGdyZWVuJTIwbGVhdmVzfGVufDF8fHx8MTc3MTg3NTIyOXww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      "medium_url": "https://images.unsplash.com/photo-1718443447370-73996990f61b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhc3BpZGlzdHJhJTIwZWxhdGlvciUyMGdyZWVuJTIwbGVhdmVzfGVufDF8fHx8MTc3MTg3NTIyOXww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      "small_url": "https://images.unsplash.com/photo-1718443447370-73996990f61b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhc3BpZGlzdHJhJTIwZWxhdGlvciUyMGdyZWVuJTIwbGVhdmVzfGVufDF8fHx8MTc3MTg3NTIyOXww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      "thumbnail": "https://images.unsplash.com/photo-1718443447370-73996990f61b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhc3BpZGlzdHJhJTIwZWxhdGlvciUyMGdyZWVuJTIwbGVhdmVzfGVufDF8fHx8MTc3MTg3NTIyOXww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+    },
+    "description": "The Cast iron plant (Aspidistra elatior) is a beautiful indoor plant belonging to the Asparagaceae family. It has a perennial life cycle and generally requires average care. For best growth, it needs part shade and average watering."
+  },
+  {
+    "id": 47,
+    "common_name": "Porcelainflower",
+    "scientific_name": [
+      "Hoya carnosa"
+    ],
+    "other_name": [],
+    "family": "Apocynaceae",
+    "genus": "Hoya",
+    "origin": null,
+    "type": "Indoor",
+    "dimension": "Medium",
+    "cycle": "Perennial",
+    "care_level": "Average",
+    "watering": "Average",
+    "watering_general_benchmark": {
+      "value": "7-10 days",
+      "unit": "days"
+    },
+    "sunlight": [
+      "Part shade"
+    ],
+    "care_description": {
+      "watering": "Water weekly during growing season. Allow soil to dry slightly.",
+      "sunlight": "Bright, filtered light."
+    },
+    "hardiness": {
+      "min": "15°C",
+      "max": "25°C"
+    },
+    "default_image": {
+      "license": 451,
+      "license_name": "Mock Image Service",
+      "license_url": "",
+      "original_url": "https://images.unsplash.com/photo-1769346442881-b63ba7476b77?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxob3lhJTIwY2Fybm9zYSUyMHdheCUyMHBsYW50fGVufDF8fHx8MTc3MTg3NTIyM3ww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      "regular_url": "https://images.unsplash.com/photo-1769346442881-b63ba7476b77?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxob3lhJTIwY2Fybm9zYSUyMHdheCUyMHBsYW50fGVufDF8fHx8MTc3MTg3NTIyM3ww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      "medium_url": "https://images.unsplash.com/photo-1769346442881-b63ba7476b77?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxob3lhJTIwY2Fybm9zYSUyMHdheCUyMHBsYW50fGVufDF8fHx8MTc3MTg3NTIyM3ww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      "small_url": "https://images.unsplash.com/photo-1769346442881-b63ba7476b77?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxob3lhJTIwY2Fybm9zYSUyMHdheCUyMHBsYW50fGVufDF8fHx8MTc3MTg3NTIyM3ww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      "thumbnail": "https://images.unsplash.com/photo-1769346442881-b63ba7476b77?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxob3lhJTIwY2Fybm9zYSUyMHdheCUyMHBsYW50fGVufDF8fHx8MTc3MTg3NTIyM3ww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+    },
+    "description": "The Porcelainflower (Hoya carnosa) is a beautiful indoor plant belonging to the Apocynaceae family. It has a perennial life cycle and generally requires average care. For best growth, it needs part shade and average watering."
+  },
+  {
+    "id": 48,
+    "common_name": "String of pearls",
+    "scientific_name": [
+      "Senecio rowleyanus"
+    ],
+    "other_name": [],
+    "family": "Asteraceae",
+    "genus": "Senecio",
+    "origin": null,
+    "type": "Indoor",
+    "dimension": "Medium",
+    "cycle": "Perennial",
+    "care_level": "Minimum",
+    "watering": "Minimum",
+    "watering_general_benchmark": {
+      "value": "7-10 days",
+      "unit": "days"
+    },
+    "sunlight": [
+      "Full sun",
+      "Part shade"
+    ],
+    "care_description": {
+      "watering": "Allow soil to dry completely between waterings. Water sparingly in winter.",
+      "sunlight": "Thrives in bright, direct light but can tolerate some shade."
+    },
+    "hardiness": {
+      "min": "10°C",
+      "max": "30°C"
+    },
+    "default_image": {
+      "license": 451,
+      "license_name": "Mock Image Service",
+      "license_url": "",
+      "original_url": "https://images.unsplash.com/photo-1648070024741-43f8fa965966?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzdHJpbmclMjBvZiUyMHBlYXJscyUyMHN1Y2N1bGVudHxlbnwxfHx8fDE3NzE4NzUyMjN8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      "regular_url": "https://images.unsplash.com/photo-1648070024741-43f8fa965966?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzdHJpbmclMjBvZiUyMHBlYXJscyUyMHN1Y2N1bGVudHxlbnwxfHx8fDE3NzE4NzUyMjN8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      "medium_url": "https://images.unsplash.com/photo-1648070024741-43f8fa965966?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzdHJpbmclMjBvZiUyMHBlYXJscyUyMHN1Y2N1bGVudHxlbnwxfHx8fDE3NzE4NzUyMjN8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      "small_url": "https://images.unsplash.com/photo-1648070024741-43f8fa965966?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzdHJpbmclMjBvZiUyMHBlYXJscyUyMHN1Y2N1bGVudHxlbnwxfHx8fDE3NzE4NzUyMjN8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      "thumbnail": "https://images.unsplash.com/photo-1648070024741-43f8fa965966?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzdHJpbmclMjBvZiUyMHBlYXJscyUyMHN1Y2N1bGVudHxlbnwxfHx8fDE3NzE4NzUyMjN8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+    },
+    "description": "The String of pearls (Senecio rowleyanus) is a beautiful indoor plant belonging to the Asteraceae family. It has a perennial life cycle and generally requires minimum care. For best growth, it needs full sun and part shade and minimum watering."
+  },
+  {
+    "id": 49,
+    "common_name": "String of hearts",
+    "scientific_name": [
+      "Ceropegia woodii"
+    ],
+    "other_name": [],
+    "family": "Apocynaceae",
+    "genus": "Ceropegia",
+    "origin": null,
+    "type": "Indoor",
+    "dimension": "Medium",
+    "cycle": "Perennial",
+    "care_level": "Average",
+    "watering": "Average",
+    "watering_general_benchmark": {
+      "value": "7-10 days",
+      "unit": "days"
+    },
+    "sunlight": [
+      "Part shade"
+    ],
+    "care_description": {
+      "watering": "Water weekly during growing season. Allow soil to dry slightly.",
+      "sunlight": "Bright, filtered light."
+    },
+    "hardiness": {
+      "min": "15°C",
+      "max": "25°C"
+    },
+    "default_image": {
+      "license": 451,
+      "license_name": "Mock Image Service",
+      "license_url": "",
+      "original_url": "https://images.unsplash.com/photo-1762008085205-19e90e73611a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzdHJpbmclMjBvZiUyMGhlYXJ0cyUyMGNlcm9wZWdpYXxlbnwxfHx8fDE3NzE4NzUyMjN8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      "regular_url": "https://images.unsplash.com/photo-1762008085205-19e90e73611a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzdHJpbmclMjBvZiUyMGhlYXJ0cyUyMGNlcm9wZWdpYXxlbnwxfHx8fDE3NzE4NzUyMjN8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      "medium_url": "https://images.unsplash.com/photo-1762008085205-19e90e73611a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzdHJpbmclMjBvZiUyMGhlYXJ0cyUyMGNlcm9wZWdpYXxlbnwxfHx8fDE3NzE4NzUyMjN8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      "small_url": "https://images.unsplash.com/photo-1762008085205-19e90e73611a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzdHJpbmclMjBvZiUyMGhlYXJ0cyUyMGNlcm9wZWdpYXxlbnwxfHx8fDE3NzE4NzUyMjN8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      "thumbnail": "https://images.unsplash.com/photo-1762008085205-19e90e73611a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzdHJpbmclMjBvZiUyMGhlYXJ0cyUyMGNlcm9wZWdpYXxlbnwxfHx8fDE3NzE4NzUyMjN8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+    },
+    "description": "The String of hearts (Ceropegia woodii) is a beautiful indoor plant belonging to the Apocynaceae family. It has a perennial life cycle and generally requires average care. For best growth, it needs part shade and average watering."
+  },
+  {
+    "id": 50,
+    "common_name": "Spanish moss",
+    "scientific_name": [
+      "Tillandsia usneoides"
+    ],
+    "other_name": [],
+    "family": "Bromeliaceae",
+    "genus": "Tillandsia",
+    "origin": null,
+    "type": "Indoor",
+    "dimension": "Medium",
+    "cycle": "Perennial",
+    "care_level": "Average",
+    "watering": "Average",
+    "watering_general_benchmark": {
+      "value": "7-10 days",
+      "unit": "days"
+    },
+    "sunlight": [
+      "Part shade"
+    ],
+    "care_description": {
+      "watering": "Water weekly during growing season. Allow soil to dry slightly.",
+      "sunlight": "Bright, filtered light."
+    },
+    "hardiness": {
+      "min": "15°C",
+      "max": "25°C"
+    },
+    "default_image": {
+      "license": 451,
+      "license_name": "Mock Image Service",
+      "license_url": "",
+      "original_url": "https://images.unsplash.com/photo-1653764921246-cf5c91b32c6a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx0aWxsYW5kc2lhJTIwYWlyJTIwcGxhbnR8ZW58MXx8fHwxNzcxODc1MjI0fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      "regular_url": "https://images.unsplash.com/photo-1653764921246-cf5c91b32c6a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx0aWxsYW5kc2lhJTIwYWlyJTIwcGxhbnR8ZW58MXx8fHwxNzcxODc1MjI0fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      "medium_url": "https://images.unsplash.com/photo-1653764921246-cf5c91b32c6a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx0aWxsYW5kc2lhJTIwYWlyJTIwcGxhbnR8ZW58MXx8fHwxNzcxODc1MjI0fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      "small_url": "https://images.unsplash.com/photo-1653764921246-cf5c91b32c6a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx0aWxsYW5kc2lhJTIwYWlyJTIwcGxhbnR8ZW58MXx8fHwxNzcxODc1MjI0fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      "thumbnail": "https://images.unsplash.com/photo-1653764921246-cf5c91b32c6a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx0aWxsYW5kc2lhJTIwYWlyJTIwcGxhbnR8ZW58MXx8fHwxNzcxODc1MjI0fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+    },
+    "description": "The Spanish moss (Tillandsia usneoides) is a beautiful indoor plant belonging to the Bromeliaceae family. It has a perennial life cycle and generally requires average care. For best growth, it needs part shade and average watering."
+  }
+]

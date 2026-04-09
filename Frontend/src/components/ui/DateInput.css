@@ -1,0 +1,9 @@
+/* Estilos para el input date */
+.date-input {
+  color-scheme: dark;
+}
+
+/* Estilos del picker calendar (para navegadores que lo soportan) */
+.date-input::-webkit-calendar-picker-indicator {
+  cursor: pointer;
+}

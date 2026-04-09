@@ -1,0 +1,427 @@
+{
+	"_type": "export",
+	"__export_format": 4,
+	"__export_date": "2026-04-07T16:03:37.000Z",
+	"__export_source": "insomnia.desktop.app:v2023.5.8",
+	"resources": [
+		{
+			"_id": "wrk_hydrogrow",
+			"parentId": null,
+			"modified": 1712498617000,
+			"created": 1712498617000,
+			"name": "HydroGrow API",
+			"description": "API collection for HydroGrow project",
+			"scope": "collection",
+			"_type": "workspace"
+		},
+		{
+			"_id": "env_base",
+			"parentId": "wrk_hydrogrow",
+			"modified": 1712498617000,
+			"created": 1712498617000,
+			"name": "Base Environment",
+			"data": {
+				"base_url": "http://localhost:3000",
+				"token": ""
+			},
+			"dataPropertyOrder": {
+				"&": [
+					"base_url",
+					"token"
+				]
+			},
+			"color": null,
+			"isPrivate": false,
+			"metaSortKey": 1712498617000,
+			"_type": "environment"
+		},
+		{
+			"_id": "fld_users",
+			"parentId": "wrk_hydrogrow",
+			"modified": 1712498617000,
+			"created": 1712498617000,
+			"name": "Users",
+			"description": "",
+			"environment": {},
+			"environmentPropertyOrder": null,
+			"metaSortKey": -1712498617000,
+			"_type": "request_group"
+		},
+		{
+			"_id": "req_user_register",
+			"parentId": "fld_users",
+			"modified": 1712498617000,
+			"created": 1712498617000,
+			"url": "{{ _.base_url }}/users/register",
+			"name": "Register User",
+			"description": "",
+			"method": "POST",
+			"body": {
+				"mimeType": "multipart/form-data",
+				"params": [
+					{
+						"name": "username",
+						"value": "nuevo_usuario",
+						"id": "pair_1"
+					},
+					{
+						"name": "password",
+						"value": "password123",
+						"id": "pair_2"
+					},
+					{
+						"name": "email",
+						"value": "test@test.com",
+						"id": "pair_3"
+					},
+					{
+						"name": "image",
+						"type": "file",
+						"value": "",
+						"id": "pair_4"
+					}
+				]
+			},
+			"parameters": [],
+			"headers": [
+				{
+					"name": "Content-Type",
+					"value": "multipart/form-data"
+				}
+			],
+			"authentication": {},
+			"metaSortKey": -1712498617000,
+			"isPrivate": false,
+			"_type": "request"
+		},
+		{
+			"_id": "req_user_login",
+			"parentId": "fld_users",
+			"modified": 1712498617000,
+			"created": 1712498617000,
+			"url": "{{ _.base_url }}/users/login",
+			"name": "Login User",
+			"description": "",
+			"method": "POST",
+			"body": {
+				"mimeType": "application/json",
+				"text": "{\n\t\"email\": \"juan.perez@gmail.com\",\n\t\"password\": \"password123\"\n}"
+			},
+			"parameters": [],
+			"headers": [
+				{
+					"name": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"authentication": {},
+			"metaSortKey": -1712498616000,
+			"isPrivate": false,
+			"_type": "request"
+		},
+		{
+			"_id": "req_get_all_users",
+			"parentId": "fld_users",
+			"modified": 1712498617000,
+			"created": 1712498617000,
+			"url": "{{ _.base_url }}/users",
+			"name": "Get All Users (Admin)",
+			"description": "",
+			"method": "GET",
+			"body": {},
+			"parameters": [],
+			"headers": [
+				{
+					"name": "Authorization",
+					"value": "Bearer {{ _.token }}"
+				}
+			],
+			"authentication": {},
+			"metaSortKey": -1712498615000,
+			"isPrivate": false,
+			"_type": "request"
+		},
+		{
+			"_id": "fld_plants",
+			"parentId": "wrk_hydrogrow",
+			"modified": 1712498617000,
+			"created": 1712498617000,
+			"name": "Plants",
+			"description": "",
+			"environment": {},
+			"environmentPropertyOrder": null,
+			"metaSortKey": -1712498616000,
+			"_type": "request_group"
+		},
+		{
+			"_id": "req_get_all_plants",
+			"parentId": "fld_plants",
+			"modified": 1712498617000,
+			"created": 1712498617000,
+			"url": "{{ _.base_url }}/plants",
+			"name": "Get All Plants",
+			"description": "",
+			"method": "GET",
+			"body": {},
+			"parameters": [],
+			"headers": [],
+			"authentication": {},
+			"metaSortKey": -1712498617000,
+			"isPrivate": false,
+			"_type": "request"
+		},
+		{
+			"_id": "req_get_plant_by_id",
+			"parentId": "fld_plants",
+			"modified": 1712498617000,
+			"created": 1712498617000,
+			"url": "{{ _.base_url }}/plants/:id",
+			"name": "Get Plant By ID",
+			"description": "",
+			"method": "GET",
+			"body": {},
+			"parameters": [],
+			"headers": [],
+			"authentication": {},
+			"metaSortKey": -1712498616000,
+			"isPrivate": false,
+			"_type": "request"
+		},
+		{
+			"_id": "req_add_plant_to_user",
+			"parentId": "fld_plants",
+			"modified": 1712498617000,
+			"created": 1712498617000,
+			"url": "{{ _.base_url }}/plants/:plantId/addToUser",
+			"name": "Add Plant To User",
+			"description": "",
+			"method": "POST",
+			"body": {},
+			"parameters": [],
+			"headers": [
+				{
+					"name": "Authorization",
+					"value": "Bearer {{ _.token }}"
+				}
+			],
+			"authentication": {},
+			"metaSortKey": -1712498615000,
+			"isPrivate": false,
+			"_type": "request"
+		},
+		{
+			"_id": "req_create_plant",
+			"parentId": "fld_plants",
+			"modified": 1712498617000,
+			"created": 1712498617000,
+			"url": "{{ _.base_url }}/plants",
+			"name": "Create Plant (Admin)",
+			"description": "",
+			"method": "POST",
+			"body": {
+				"mimeType": "multipart/form-data",
+				"params": [
+					{
+						"name": "common_name",
+						"value": "Nueva Planta",
+						"id": "pair_1"
+					},
+					{
+						"name": "scientific_name",
+						"value": "Planta Scientifica",
+						"id": "pair_2"
+					},
+					{
+						"name": "image",
+						"type": "file",
+						"value": "",
+						"id": "pair_3"
+					}
+				]
+			},
+			"parameters": [],
+			"headers": [
+				{
+					"name": "Authorization",
+					"value": "Bearer {{ _.token }}"
+				}
+			],
+			"authentication": {},
+			"metaSortKey": -1712498614000,
+			"isPrivate": false,
+			"_type": "request"
+		},
+		{
+			"_id": "req_delete_user",
+			"parentId": "fld_users",
+			"modified": 1712498617000,
+			"created": 1712498617000,
+			"url": "{{ _.base_url }}/users/:id",
+			"name": "Delete User",
+			"description": "",
+			"method": "DELETE",
+			"body": {},
+			"parameters": [],
+			"headers": [
+				{
+					"name": "Authorization",
+					"value": "Bearer {{ _.token }}"
+				}
+			],
+			"authentication": {},
+			"metaSortKey": -1712498614000,
+			"isPrivate": false,
+			"_type": "request"
+		},
+		{
+			"_id": "req_change_user_role",
+			"parentId": "fld_users",
+			"modified": 1712498617000,
+			"created": 1712498617000,
+			"url": "{{ _.base_url }}/users/changeRole/:id",
+			"name": "Change User Role (Admin)",
+			"description": "",
+			"method": "PUT",
+			"body": {
+				"mimeType": "application/json",
+				"text": "{\n\t\"role\": \"admin\"\n}"
+			},
+			"parameters": [],
+			"headers": [
+				{
+					"name": "Authorization",
+					"value": "Bearer {{ _.token }}"
+				},
+				{
+					"name": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"authentication": {},
+			"metaSortKey": -1712498613000,
+			"isPrivate": false,
+			"_type": "request"
+		},
+		{
+			"_id": "req_update_user",
+			"parentId": "fld_users",
+			"modified": 1712498617000,
+			"created": 1712498617000,
+			"url": "{{ _.base_url }}/users/:id",
+			"name": "Update User",
+			"description": "",
+			"method": "PUT",
+			"body": {
+				"mimeType": "multipart/form-data",
+				"params": [
+					{
+						"name": "username",
+						"value": "usuario_actualizado",
+						"id": "pair_1"
+					},
+					{
+						"name": "image",
+						"type": "file",
+						"value": "",
+						"id": "pair_2"
+					}
+				]
+			},
+			"parameters": [],
+			"headers": [
+				{
+					"name": "Authorization",
+					"value": "Bearer {{ _.token }}"
+				},
+				{
+					"name": "Content-Type",
+					"value": "multipart/form-data"
+				}
+			],
+			"authentication": {},
+			"metaSortKey": -1712498612000,
+			"isPrivate": false,
+			"_type": "request"
+		},
+		{
+			"_id": "req_get_user_by_id",
+			"parentId": "fld_users",
+			"modified": 1712498617000,
+			"created": 1712498617000,
+			"url": "{{ _.base_url }}/users/:id",
+			"name": "Get User By ID",
+			"description": "",
+			"method": "GET",
+			"body": {},
+			"parameters": [],
+			"headers": [],
+			"authentication": {},
+			"metaSortKey": -1712498611000,
+			"isPrivate": false,
+			"_type": "request"
+		},
+		{
+			"_id": "req_update_plant",
+			"parentId": "fld_plants",
+			"modified": 1712498617000,
+			"created": 1712498617000,
+			"url": "{{ _.base_url }}/plants/:id",
+			"name": "Update Plant (Admin)",
+			"description": "",
+			"method": "PUT",
+			"body": {
+				"mimeType": "multipart/form-data",
+				"params": [
+					{
+						"name": "common_name",
+						"value": "Planta Actualizada",
+						"id": "pair_1"
+					},
+					{
+						"name": "image",
+						"type": "file",
+						"value": "",
+						"id": "pair_2"
+					}
+				]
+			},
+			"parameters": [],
+			"headers": [
+				{
+					"name": "Authorization",
+					"value": "Bearer {{ _.token }}"
+				},
+				{
+					"name": "Content-Type",
+					"value": "multipart/form-data"
+				}
+			],
+			"authentication": {},
+			"metaSortKey": -1712498613000,
+			"isPrivate": false,
+			"_type": "request"
+		},
+		{
+			"_id": "req_delete_plant",
+			"parentId": "fld_plants",
+			"modified": 1712498617000,
+			"created": 1712498617000,
+			"url": "{{ _.base_url }}/plants/:id",
+			"name": "Delete Plant (Admin)",
+			"description": "",
+			"method": "DELETE",
+			"body": {},
+			"parameters": [],
+			"headers": [
+				{
+					"name": "Authorization",
+					"value": "Bearer {{ _.token }}"
+				}
+			],
+			"authentication": {},
+			"metaSortKey": -1712498612000,
+			"isPrivate": false,
+			"_type": "request"
+		}
+	]
+}
