@@ -30,9 +30,9 @@ export const GardenProvider = ({ children }) => {
       
       newPlant = {
         id: crypto.randomUUID(),
-        apiId: plantData.id || plantData.apiId,
-        species: plantData.common_name || plantData.scientific_name?.[0] || 'Unknown Plant',
-        imageUrl: plantData.default_image?.medium_url || plantData.default_image?.thumbnail || plantData.imageUrl || 'https://via.placeholder.com/400',
+        apiId: plantData._id || plantData.id || plantData.apiId,
+        species: plantData.common_name || plantData.scientific_name || 'Unknown Plant',
+        imageUrl: plantData.default_image || plantData.imageUrl || 'https://via.placeholder.com/400',
         category: plantData.type || plantData.category || 'Plant',
         stats: {
           plantedAt: plantData.stats?.plantedAt || new Date().toISOString().split('T')[0],
@@ -56,6 +56,7 @@ export const GardenProvider = ({ children }) => {
       newPlant = {
         ...plantData,
         id: crypto.randomUUID(),
+        apiId: plantData._id,
         stats: {
           ...plantData.stats,
           plantedAt: new Date().toISOString().split('T')[0],

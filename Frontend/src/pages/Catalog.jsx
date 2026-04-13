@@ -18,7 +18,7 @@ import { useNavigate } from "react-router-dom";
 import { capitalize } from "../utils/capitalize";
 import Menu from "../components/layout/Menu";
 import GlassCard from "../components/ui/GlassCard";
-import plantsData from "../api/plants_mock_data.json";
+import { fetchPlants } from "../api/plantsApi";
 
 const Catalog = () => {
   const [plants, setPlants] = useState([]);
@@ -27,25 +27,31 @@ const Catalog = () => {
   const inputRef = useRef();
   const navigate = useNavigate();
 
-  const handleSearch = () => {
+  const handleSearch = async () => {
     const query = inputRef.current.value.trim().toLowerCase();
     if (!query) return;
 
     setLoading(true);
     setHasSearched(true);
 
-    const results = plantsData.filter((plant) => {
-      const matchesCommon = plant.common_name
-        ?.toLowerCase()
-        .includes(query);
-      const matchesScientific = plant.scientific_name?.some((name) =>
-        name.toLowerCase().includes(query)
-      );
-      return matchesCommon || matchesScientific;
-    });
-
-    setPlants(results);
-    setLoading(false);
+    try {
+      const allPlants = await fetchPlants();
+      const results = allPlants.filter((plant) => {
+        const matchesCommon = plant.common_name
+          ?.toLowerCase()
+          .includes(query);
+        const matchesScientific = plant.scientific_name
+          ?.toLowerCase()
+          .includes(query);
+        return matchesCommon || matchesScientific;
+      });
+      setPlants(results);
+    } catch (error) {
+      console.error(error);
+      setPlants([]);
+    } finally {
+      setLoading(false);
+    }
   };
 
   if (hasSearched) {
@@ -150,7 +156,7 @@ const Catalog = () => {
               >
                 {plants.map((plant) => (
                   <GlassCard
-                    key={plant.id}
+                    key={plant._id}
                     borderRadius="2xl"
                     overflow="hidden"
                     transition="all 0.3s"
@@ -159,7 +165,7 @@ const Catalog = () => {
                     _hover={{
                       transform: "translateY(-8px)",
                     }}
-                    onClick={() => navigate(`/plant/${plant.id}`)}
+                    onClick={() => navigate(`/plant/${plant._id}`)}
                     cursor="pointer"
                   >
                     <Box position="relative" overflow="hidden" h="250px">
@@ -167,7 +173,7 @@ const Catalog = () => {
                         w="100%"
                         h="100%"
                         src={
-                          plant.default_image?.thumbnail ||
+                          plant.default_image ||
                           "https://images.unsplash.com/photo-1545241047-6083a3684587?q=80&w=1200&auto=format&fit=crop"
                         }
                         objectFit="cover"
@@ -178,7 +184,7 @@ const Catalog = () => {
                     <Box p={4}>
                       <Heading size="md" color="brand.50" noOfLines={1} mb={1}>
                         {capitalize(
-                          plant.common_name || plant.scientific_name?.[0]
+                          plant.common_name || plant.scientific_name
                         )}
                       </Heading>
                       <Text
@@ -187,7 +193,7 @@ const Catalog = () => {
                         noOfLines={1}
                         fontStyle="italic"
                       >
-                        {plant.scientific_name?.[0]}
+                        {plant.scientific_name}
                       </Text>
                     </Box>
                   </GlassCard>

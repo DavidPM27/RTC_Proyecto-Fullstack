@@ -17,7 +17,7 @@ import { FiArrowLeft } from "react-icons/fi";
 import { capitalize } from "../utils/capitalize";
 import Menu from "../components/layout/Menu";
 import { useGarden } from "../hooks/useGarden";
-import plantsData from "../api/plants_mock_data.json";
+import { fetchPlantById } from "../api/plantsApi";
 
 const Detail = () => {
   const { id } = useParams();
@@ -28,13 +28,21 @@ const Detail = () => {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    const found = plantsData.find((p) => String(p.id) === String(id));
-    if (found) {
-      setPlant(found);
-    } else {
-      setError("Plant not found");
-    }
-    setLoading(false);
+    const loadPlant = async () => {
+      try {
+        const found = await fetchPlantById(id);
+        if (found) {
+          setPlant(found);
+        } else {
+          setError("Plant not found");
+        }
+      } catch (err) {
+        setError("Error loading plant");
+      } finally {
+        setLoading(false);
+      }
+    };
+    loadPlant();
   }, [id]);
 
   if (loading) {
@@ -139,7 +147,7 @@ const Detail = () => {
               >
                 <Image
                   src={
-                    plant.default_image?.original_url ||
+                    plant.default_image ||
                     "https://via.placeholder.com/500x500?text=No+Image"
                   }
                   objectFit="contain"
@@ -165,7 +173,7 @@ const Detail = () => {
                       mb={2}
                     >
                       {capitalize(
-                        plant.common_name || plant.scientific_name?.[0]
+                        plant.common_name || plant.scientific_name
                       )}
                     </Heading>
                     <Text
@@ -173,7 +181,7 @@ const Detail = () => {
                       fontSize="lg"
                       fontStyle="italic"
                     >
-                      {plant.scientific_name?.[0]}
+                      {plant.scientific_name}
                     </Text>
                   </Box>
 
@@ -205,30 +213,25 @@ const Detail = () => {
                       </Box>
                     )}
 
-                                      {plant.sunlight &&
-                    Array.isArray(plant.sunlight) &&
-                    plant.sunlight.length > 0 && (
+                  {plant.sunlight && typeof plant.sunlight === "string" && (
                       <Box>
                         <Text color="brand.300" fontSize="xs" fontWeight="bold" textTransform="uppercase" mb={2}>
                           Sunlight
                         </Text>
                         <Flex wrap="wrap" gap={2} alignItems="center" justifyContent="center">
-                          {plant.sunlight.map((sun, idx) => (
-                            <Badge
-                              key={idx}
-                              bg="brandSecondary.500/20"
-                              color="brandSecondary.300"
-                              border="1px solid"
-                              borderColor="brandSecondary.500/30"
-                              px={3}
-                              py={1}
-                              borderRadius="full"
-                              fontSize="xs"
-                              textTransform="capitalize"
-                            >
-                              {sun}
-                            </Badge>
-                          ))}
+                          <Badge
+                            bg="brandSecondary.500/20"
+                            color="brandSecondary.300"
+                            border="1px solid"
+                            borderColor="brandSecondary.500/30"
+                            px={3}
+                            py={1}
+                            borderRadius="full"
+                            fontSize="xs"
+                            textTransform="capitalize"
+                          >
+                            {plant.sunlight}
+                          </Badge>
                         </Flex>
                       </Box>
                     )}
