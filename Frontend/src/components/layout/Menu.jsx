@@ -23,7 +23,7 @@ const DesktopMenu = ({ pathname, navigate }) => (
     bg="bg.primary"
     borderRight="1px solid"
     borderColor="brand.800/40"
-    height="100%"
+    minHeight="100vh"
     px={8}
     display={{ base: "none", md: "block" }}
   >
