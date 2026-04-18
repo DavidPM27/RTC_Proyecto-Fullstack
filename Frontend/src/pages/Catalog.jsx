@@ -13,17 +13,19 @@ import {
   Spinner,
 } from "@chakra-ui/react";
 import { FiSearch } from "react-icons/fi";
-import { useState, useRef, useEffect, useMemo } from "react";
+import { useState, useRef, useEffect, useMemo, useCallback } from "react";
 import { useNavigate } from "react-router-dom";
-import { capitalize } from "../utils/capitalize";
 import Menu from "../components/layout/Menu";
-import GlassCard from "../components/ui/GlassCard";
+import PlantCard from "../components/common/PlantCatalogCard";
 import { fetchPlants } from "../api/plantsApi";
+
+const PLANTS_PER_PAGE = 20;
 
 const Catalog = () => {
   const [allPlants, setAllPlants] = useState([]);
   const [loading, setLoading] = useState(true);
   const [searchQuery, setSearchQuery] = useState("");
+  const [visibleCount, setVisibleCount] = useState(PLANTS_PER_PAGE);
 
   const inputRef = useRef();
   const navigate = useNavigate();
@@ -45,7 +47,7 @@ const Catalog = () => {
   }, []);
 
   // Filter plants based on search query
-  const displayedPlants = useMemo(() => {
+  const filteredPlants = useMemo(() => {
     if (!searchQuery) return allPlants;
 
     const q = searchQuery.toLowerCase();
@@ -58,19 +60,43 @@ const Catalog = () => {
     });
   }, [allPlants, searchQuery]);
 
-  const handleSearch = () => {
+  // Slice only the visible portion for rendering
+  const displayedPlants = useMemo(
+    () => filteredPlants.slice(0, visibleCount),
+    [filteredPlants, visibleCount]
+  );
+
+  const hasMore = visibleCount < filteredPlants.length;
+
+  const handleSearch = useCallback(() => {
     const query = inputRef.current.value.trim();
     setSearchQuery(query);
-  };
+    setVisibleCount(PLANTS_PER_PAGE); // Reset pagination on new search
+  }, []);
 
-  const handleClearSearch = () => {
+  const handleClearSearch = useCallback(() => {
     setSearchQuery("");
+    setVisibleCount(PLANTS_PER_PAGE);
     if (inputRef.current) inputRef.current.value = "";
-  };
+  }, []);
 
-  const handleKeyDown = (e) => {
-    if (e.key === "Enter") handleSearch();
-  };
+  const handleKeyDown = useCallback(
+    (e) => {
+      if (e.key === "Enter") handleSearch();
+    },
+    [handleSearch]
+  );
+
+  const handleLoadMore = useCallback(() => {
+    setVisibleCount((prev) => prev + PLANTS_PER_PAGE);
+  }, []);
+
+  const handleNavigate = useCallback(
+    (id) => {
+      navigate(`/plant/${id}`);
+    },
+    [navigate]
+  );
 
   return (
     <Flex direction={{ base: "column", md: "row" }} minHeight="100vh">
@@ -85,7 +111,7 @@ const Catalog = () => {
         pb={{ base: 32, md: 0 }}
       >
 
-        {/* ── Hero Section ── */}
+        {/* Hero Section */}
         <Container maxW="container.xl" mt={16} mb={16} p={{ base: 6, md: 10 }} borderRadius="3xl" bg="brand.700">
           <Grid
             templateColumns={{ base: "1fr", lg: "1fr 1fr" }}
@@ -198,7 +224,7 @@ const Catalog = () => {
           </Grid>
         </Container>
 
-        {/* ── Categories + Plants Grid ── */}
+        {/* Plants Grid */}
         <Container maxW="container.xl" px={{ base: 4, md: 8 }} pb={16}>
 
           <Flex
@@ -213,12 +239,15 @@ const Catalog = () => {
                 ? `Results for "${searchQuery}"`
                 : "All Plants"}
             </Heading>
+            <Text color="brand.300" fontSize="sm">
+              Showing {displayedPlants.length} of {filteredPlants.length}
+            </Text>
           </Flex>
 
           {/* Results count */}
           {searchQuery && (
             <Text color="brand.300" mb={6} fontSize="sm">
-              {displayedPlants.length} plant{displayedPlants.length !== 1 && "s"} found
+              {filteredPlants.length} plant{filteredPlants.length !== 1 && "s"} found
             </Text>
           )}
 
@@ -228,79 +257,48 @@ const Catalog = () => {
               <Spinner color="brandSecondary.500" size="xl" />
             </Flex>
           ) : displayedPlants.length > 0 ? (
-            <Grid
-              templateColumns={{
-                base: "1fr",
-                sm: "repeat(2, 1fr)",
-                md: "repeat(2, 1fr)",
-                lg: "repeat(3, 1fr)",
-                xl: "repeat(4, 1fr)",
-              }}
-              gap={6}
-            >
-              {displayedPlants.map((plant) => (
-                <GlassCard
-                  key={plant._id}
-                  borderRadius="2xl"
-                  overflow="hidden"
-                  transition="all 0.3s"
-                  p={0}
-                  mb={0}
-                  role="group"
-                  _hover={{
-                    transform: "translateY(-8px)",
-                    boxShadow: "0 20px 40px rgba(0,0,0,0.3)",
-                  }}
-                  onClick={() => navigate(`/plant/${plant._id}`)}
-                  cursor="pointer"
-                >
-                  <Box position="relative" overflow="hidden" h="280px">
-                    <Image
-                      w="100%"
-                      h="100%"
-                      src={
-                        plant.default_image ||
-                        "https://images.unsplash.com/photo-1545241047-6083a3684587?q=80&w=1200&auto=format&fit=crop"
-                      }
-                      objectFit="cover"
-                      transition="transform 0.5s ease"
-                      _groupHover={{ transform: "scale(1.08)" }}
-                    />
-                    {/* Gradient overlay at bottom */}
-                    <Box
-                      position="absolute"
-                      bottom="0"
-                      left="0"
-                      right="0"
-                      h="50%"
-                      bgGradient="linear(to-t, blackAlpha.700, transparent)"
-                      pointerEvents="none"
-                    />
-                  </Box>
-                  <Box p={5}>
-                    <Heading
-                      size="md"
-                      color="brand.50"
-                      noOfLines={1}
-                      mb={1}
-                      fontWeight="semibold"
-                    >
-                      {capitalize(
-                        plant.common_name || plant.scientific_name
-                      )}
-                    </Heading>
-                    <Text
-                      fontSize="xs"
-                      color="brand.300"
-                      noOfLines={1}
-                      fontStyle="italic"
-                    >
-                      {plant.scientific_name}
-                    </Text>
-                  </Box>
-                </GlassCard>
-              ))}
-            </Grid>
+            <>
+              <Grid
+                templateColumns={{
+                  base: "1fr",
+                  sm: "repeat(2, 1fr)",
+                  md: "repeat(2, 1fr)",
+                  lg: "repeat(3, 1fr)",
+                  xl: "repeat(4, 1fr)",
+                }}
+                gap={6}
+              >
+                {displayedPlants.map((plant) => (
+                  <PlantCard
+                    key={plant._id}
+                    plant={plant}
+                    onClick={() => handleNavigate(plant._id)}
+                  />
+                ))}
+              </Grid>
+
+              {hasMore && (
+                <Flex justify="center" mt={10}>
+                  <Button
+                    size="lg"
+                    px={10}
+                    bg="whiteAlpha.100"
+                    color="brand.100"
+                    borderRadius="xl"
+                    border="1px solid"
+                    borderColor="whiteAlpha.200"
+                    _hover={{
+                      bg: "whiteAlpha.200",
+                      transform: "translateY(-2px)",
+                    }}
+                    transition="all 0.2s"
+                    onClick={handleLoadMore}
+                  >
+                    Load more ({filteredPlants.length - visibleCount} remaining)
+                  </Button>
+                </Flex>
+              )}
+            </>
           ) : (
             <Flex
               justify="center"
