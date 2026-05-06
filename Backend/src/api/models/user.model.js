@@ -12,6 +12,7 @@ const userSchema = new mongoose.Schema(
     },
     email: { type: String, trim: true, unique: true },
     role: { type: String, enum: ["user", "admin"], default: "user" },
+    image: { type: String, trim: true },
     plants: [
       {
         plant: { type: mongoose.Schema.Types.ObjectId, ref: "plants" },

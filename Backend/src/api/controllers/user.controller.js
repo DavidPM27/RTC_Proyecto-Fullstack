@@ -151,4 +151,31 @@ async function getUser(req, res, _) {
   }
 } 
 
-module.exports = { getAllUsers, registerUser, loginUser, deleteUser, updateUser, changeUserRole, getUser }
+// Reset password (no email verification)
+async function resetPassword(req, res, _) {
+  try {
+    const { email, newPassword } = req.body;
+
+    if (!email || !newPassword) {
+      return res.status(400).json("Email and new password are required");
+    }
+
+    if (newPassword.length < 6) {
+      return res.status(400).json("Password requires at least 6 characters");
+    }
+
+    const user = await User.findOne({ email });
+    if (!user) {
+      return res.status(404).json("No account found with that email");
+    }
+
+    user.password = newPassword; // pre-save hook will hash it
+    await user.save();
+
+    return res.status(200).json("Password reset successfully");
+  } catch (error) {
+    return res.status(400).json("Error resetting password");
+  }
+}
+
+module.exports = { getAllUsers, registerUser, loginUser, deleteUser, updateUser, changeUserRole, getUser, resetPassword }

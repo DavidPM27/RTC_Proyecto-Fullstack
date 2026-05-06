@@ -5,7 +5,8 @@ const {
   deleteUser,
   changeUserRole,
   updateUser,
-  getUser
+  getUser,
+  resetPassword
 } = require('../controllers/user.controller')
 const { auth } = require('../../middlewares/auth');
 const { upload } = require('../../middlewares/img');
@@ -19,5 +20,6 @@ userRouter.delete('/:id', auth(),  deleteUser);
 userRouter.put('/changeRole/:id', auth('admin'), changeUserRole);
 userRouter.put('/:id', auth(), upload.single("image"), updateUser);
 userRouter.get('/:id', getUser);
+userRouter.put('/resetPassword/:id', auth(), resetPassword);
 
 module.exports = userRouter;
