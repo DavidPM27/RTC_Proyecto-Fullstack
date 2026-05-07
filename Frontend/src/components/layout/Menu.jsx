@@ -7,9 +7,15 @@ import {
   Link as ChakraLink,
   Flex,
 } from "@chakra-ui/react";
-import { LuLeaf, LuLayoutGrid, LuSearch, LuUser } from "react-icons/lu";
+import { LuLeaf, LuLayoutGrid, LuSearch, LuUser, LuLogOut } from "react-icons/lu";
 import { useLocation, useNavigate } from "react-router-dom";
 import GlassCard from "../ui/GlassCard";
+
+const logout = (navigate) => {
+  localStorage.removeItem('token');
+  sessionStorage.removeItem('token');
+  navigate('/login', { replace: true });
+};
 
 const navItems = [
   { label: "Home", icon: LuLayoutGrid, href: "/" },
@@ -91,6 +97,24 @@ const DesktopMenu = ({ pathname, navigate }) => (
           );
         })}
       </VStack>
+
+      <HStack
+        w="100%"
+        gap={4}
+        px={4}
+        py={3}
+        mt={10}
+        borderRadius="lg"
+        transition="all 0.3s ease"
+        _hover={{ bg: "state.alert/20" }}
+        cursor="pointer"
+        onClick={() => logout(navigate)}
+      >
+        <Icon as={LuLogOut} color="state.alert" />
+        <Text fontSize="sm" fontWeight="500" color="state.alert">
+          Log out
+        </Text>
+      </HStack>
     </VStack>
   </Box>
 );
@@ -177,6 +201,25 @@ const MobileMenu = ({ pathname, navigate }) => (
           </Flex>
         );
       })}
+
+      <Flex
+        direction="column"
+        align="center"
+        justify="center"
+        w="14"
+        h="14"
+        cursor="pointer"
+        onClick={() => logout(navigate)}
+        color="state.alert"
+        px={2}
+        transition="opacity 0.2s"
+        _hover={{ opacity: 0.7 }}
+      >
+        <Icon as={LuLogOut} boxSize={5} mb={1} />
+        <Text fontSize="xs" fontWeight="medium" opacity="0.8">
+          Exit
+        </Text>
+      </Flex>
     </GlassCard>
   </Box>
 );
