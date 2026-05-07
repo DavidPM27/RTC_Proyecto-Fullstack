@@ -1,4 +1,5 @@
-import { useState } from "react";
+import { useState, useContext } from "react";
+import { GardenContext } from "../context/GardenContext";
 import {
   Flex,
   Box,
@@ -26,6 +27,7 @@ const Login = () => {
   const [apiError, setApiError] = useState(null);
   const [isLoading, setIsLoading] = useState(false);
   const navigate = useNavigate();
+  const { loadGarden } = useContext(GardenContext);
 
   const {
     register,
@@ -56,6 +58,7 @@ const Login = () => {
           sessionStorage.setItem("token", token);
         }
 
+        loadGarden(token);
         navigate("/");
       } else if (mode === "register") {
         await registerUser({
@@ -67,6 +70,7 @@ const Login = () => {
         // Auto-login after successful register
         const token = await loginUser(data.email, data.password);
         sessionStorage.setItem("token", token);
+        loadGarden(token);
         navigate("/");
       } else if (mode === "forgot") {
         await resetPassword(data.email, data.newPassword);

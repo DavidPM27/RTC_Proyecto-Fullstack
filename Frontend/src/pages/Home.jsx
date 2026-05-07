@@ -19,13 +19,14 @@ import { LuCloudSun, LuDroplets, LuWind } from "react-icons/lu";
 import GlassCard from "../components/ui/GlassCard";
 
 const Home = () => {
-  const { weather, weatherLoading, weatherError, myGarden } = useGarden();
+  const { weather, weatherLoading, weatherError, myGarden, gardenLoading } = useGarden();
 
   if (weatherLoading || !weather) {
-
-   return <Flex as="main" minHeight="100vh" align="center" justify="center">
-     <Spinner size="lg" color="brand.500" margin="auto" />
-   </Flex>;
+    return (
+      <Flex as="main" minHeight="100vh" align="center" justify="center">
+        <Spinner size="lg" color="brand.500" margin="auto" />
+      </Flex>
+    );
   }
 
   if (weatherError) return <Text color="red.400">{weatherError}</Text>;
@@ -106,24 +107,33 @@ const Home = () => {
         >
           My Plants
         </Text>
-        <Grid 
-          templateColumns={{ 
-            base: "1fr", 
-            sm: "repeat(2, 1fr)", 
-            lg: "repeat(3, 1fr)", 
-            xl: "repeat(4, 1fr)" 
-          }} 
-          gap={8}
-        >
-          {myGarden.map((plant) => (
-            <GridItem
-              key={plant.id}
-              display="flex"
-            >
-              <PlantCard {...plant} />
-            </GridItem>
-          ))}
-        </Grid>
+        {gardenLoading ? (
+          <Flex justify="center" py={12}>
+            <Spinner size="lg" color="brand.500" />
+          </Flex>
+        ) : myGarden.length === 0 ? (
+          <Flex justify="center" py={12}>
+            <Text fontSize="lg" color="text.secondary">
+              No tienes plantas todavía. ¡Añade tu primera planta!
+            </Text>
+          </Flex>
+        ) : (
+          <Grid
+            templateColumns={{
+              base: "1fr",
+              sm: "repeat(2, 1fr)",
+              lg: "repeat(3, 1fr)",
+              xl: "repeat(4, 1fr)",
+            }}
+            gap={8}
+          >
+            {myGarden.map((plant) => (
+              <GridItem key={plant.id} display="flex">
+                <PlantCard {...plant} />
+              </GridItem>
+            ))}
+          </Grid>
+        )}
       </Box>
     </Flex>
   );

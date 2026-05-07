@@ -178,4 +178,15 @@ async function resetPassword(req, res, _) {
   }
 }
 
-module.exports = { getAllUsers, registerUser, loginUser, deleteUser, updateUser, changeUserRole, getUser, resetPassword }
+// Get the authenticated user's garden (plants with full details)
+async function getUserGarden(req, res, _) {
+  try {
+    const user = await User.findById(req.user._id).populate('plants.plant');
+    if (!user) return res.status(404).json("User not found");
+    return res.status(200).json(user.plants);
+  } catch (error) {
+    return res.status(400).json("Error fetching user garden");
+  }
+}
+
+module.exports = { getAllUsers, registerUser, loginUser, deleteUser, updateUser, changeUserRole, getUser, resetPassword, getUserGarden }

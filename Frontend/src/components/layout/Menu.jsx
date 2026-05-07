@@ -11,10 +11,10 @@ import { LuLeaf, LuLayoutGrid, LuSearch, LuUser, LuLogOut } from "react-icons/lu
 import { useLocation, useNavigate } from "react-router-dom";
 import GlassCard from "../ui/GlassCard";
 
-const logout = (navigate) => {
+const logout = () => {
   localStorage.removeItem('token');
   sessionStorage.removeItem('token');
-  navigate('/login', { replace: true });
+  window.location.replace('/login');
 };
 
 const navItems = [
@@ -108,7 +108,7 @@ const DesktopMenu = ({ pathname, navigate }) => (
         transition="all 0.3s ease"
         _hover={{ bg: "state.alert/20" }}
         cursor="pointer"
-        onClick={() => logout(navigate)}
+        onClick={() => logout()}
       >
         <Icon as={LuLogOut} color="state.alert" />
         <Text fontSize="sm" fontWeight="500" color="state.alert">
@@ -209,7 +209,7 @@ const MobileMenu = ({ pathname, navigate }) => (
         w="14"
         h="14"
         cursor="pointer"
-        onClick={() => logout(navigate)}
+        onClick={() => logout()}
         color="state.alert"
         px={2}
         transition="opacity 0.2s"

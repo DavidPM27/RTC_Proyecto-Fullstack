@@ -1,0 +1,124 @@
+ID Usuario,Nombre,Email,Rol,ID Planta,Nombre Común,Nombre Científico,Categoría,Nivel de Cuidado,Riego,Luz Solar,Temp. Mínima,Temp. Máxima,Precio,Último Riego
+1,Juan Pérez,juan.perez@gmail.com,admin,15,Chinese evergreen,Aglaonema commutatum,Low Light,Average,Average,Part shade,18°C,27°C,$34.00,Hace 1 día
+1,Juan Pérez,juan.perez@gmail.com,admin,42,Coleus,Solenostemon scutellarioides,Interior,Average,Average,Part shade,15°C,25°C,$16.00,Hace 5 días
+2,María González,maria.g@gmail.com,user,7,Spider plant,Chlorophytum comosum,Hanging Plants,Average,Average,Part shade,15°C,25°C,$18.00,Hace 2 días
+3,Carlos Rodríguez,carlos.r@gmail.com,user,88,Raven ZZ plant,Zamioculcas zamiifolia 'Raven',Rare Finds,Average,Minimum,Low light,18°C,27°C,$52.00,Hace 3 días
+4,Laura Martínez,laura.m@gmail.com,user,12,Peacock plant,Goeppertia makoyana,Rare Finds,Average,Average,Part shade,18°C,27°C,$44.00,Hace 5 días
+4,Laura Martínez,laura.m@gmail.com,user,34,Kentia palm,Howea forsteriana,Rare Finds,Average,Average,Part shade,16°C,28°C,$72.00,Hace 2 semanas
+5,Roberto Sánchez,roberto.s@gmail.com,user,56,Bougainvillea,Bougainvillea glabra,Rare Finds,Minimum,Average,Full sun,10°C,30°C,$42.00,Hace 1 semana
+6,Ana López,ana.l@gmail.com,user,2,Fiddle-leaf fig,Ficus lyrata,Rare Finds,Average,Average,Part shade,18°C,27°C,$55.00,Hace 10 días
+7,Javier Torres,javier.t@gmail.com,user,19,Heartleaf philodendron,Philodendron hederaceum,Beginner Friendly,Average,Average,Part shade,18°C,27°C,$27.00,Hace 2 semanas
+8,Isabel Ramírez,isabel.r@gmail.com,user,99,String of bananas,Senecio radicans,Succulents,Minimum,Minimum,Part shade,10°C,30°C,$23.00,Hoy
+8,Isabel Ramírez,isabel.r@gmail.com,user,3,Rubber fig,Ficus elastica,Air Purifying,Average,Average,Part shade,18°C,27°C,$38.00,Hace 3 días
+8,Isabel Ramírez,isabel.r@gmail.com,user,25,African mask,Alocasia amazonica,Rare Finds,Average,Average,Part shade,18°C,27°C,$64.00,Hace 10 días
+9,Alejandro Fernández,alejandro.f@gmail.com,user,10,ZZ plant,Zamioculcas zamiifolia,Low Light,Average,Average,Part shade,18°C,27°C,$36.00,Hace 1 día
+10,Laura Díaz,laura.d@gmail.com,user,77,Polka dot plant,Hypoestes phyllostachya,Pet Friendly,Average,Average,Part shade,15°C,25°C,$14.00,Hace 2 días
+11,Andrés Silva,andres.s@gmail.com,user,4,Golden pothos,Epipremnum aureum,Beginner Friendly,Average,Average,Part shade,18°C,27°C,$22.00,Hace 3 días
+11,Andrés Silva,andres.s@gmail.com,user,18,Arrowhead plant,Syngonium podophyllum,Interior,Average,Average,Part shade,18°C,27°C,$25.00,Hace 10 días
+12,Patricia López,patricia.l@gmail.com,user,65,Echeveria,Echeveria elegans,Succulents,Minimum,Minimum,Full sun,5°C,30°C,$15.00,Hace 5 días
+13,Ricardo García,ricardo.g@gmail.com,user,31,Parlor palm,Chamaedorea elegans,Air Purifying,Average,Average,Part shade,16°C,28°C,$38.00,Hace 1 semana
+14,Gabriela Ruiz,gabriela.r@gmail.com,user,9,Jade plant,Crassula ovata,Succulents,Minimum,Minimum,Full sun,10°C,30°C,$24.00,Hace 10 días
+15,José Martínez,jose.m@gmail.com,user,55,Hibiscus,Hibiscus rosa-sinensis,Interior,Average,Average,Full sun,15°C,30°C,$38.00,Hace 2 semanas
+15,José Martínez,jose.m@gmail.com,user,62,Venus flytrap,Dionaea muscipula,Rare Finds,Average,Frequent,Full sun,5°C,35°C,$18.00,Hace 2 días
+16,Marta Fernández,marta.f@gmail.com,user,11,Chinese money plant,Pilea peperomioides,Beginner Friendly,Average,Average,Part shade,18°C,27°C,$26.00,Hoy
+17,Alejandro Díaz,alejandro.d@gmail.com,user,44,Dwarf umbrella tree,Schefflera arboricola,Interior,Average,Average,Part shade,15°C,25°C,$42.00,Hace 1 día
+18,Laura Herrera,laura.h@gmail.com,user,80,Silver pothos,Scindapsus pictus,Beginner Friendly,Average,Average,Low light,15°C,27°C,$29.00,Hace 2 días
+19,Javier Sánchez,javier.s@gmail.com,user,23,Flamingo flower,Anthurium andraeanum,Air Purifying,Average,Average,Part shade,18°C,27°C,$46.00,Hace 3 días
+20,Carolina Gómez,carolina.g@gmail.com,user,1,Swiss cheese plant,Monstera deliciosa,Interior,Average,Average,Part shade,18°C,27°C,$42.00,Hace 5 días
+20,Carolina Gómez,carolina.g@gmail.com,user,5,Snake plant,Dracaena trifasciata,Low Light,Average,Minimum,Part shade,15°C,25°C,$28.00,Hace 2 semanas
+21,Sergio Ramírez,sergio.r@gmail.com,user,90,Red prayer plant,Maranta leuconeura 'Erythroneura',Interior,Average,Average,Part shade,18°C,27°C,$32.00,Hace 1 semana
+22,Carolina Martínez,carolina.m@gmail.com,user,48,String of pearls,Senecio rowleyanus,Succulents,Minimum,Minimum,Full sun,10°C,30°C,$26.00,Hace 10 días
+23,Juan Carlos Gómez,juan.g@gmail.com,user,14,Dragon tree,Dracaena marginata,Interior,Average,Average,Part shade,15°C,25°C,$48.00,Hace 2 semanas
+24,Gabriela Torres,gabriela.t@gmail.com,user,6,Peace lily,Spathiphyllum wallisii,Air Purifying,Average,Average,Part shade,18°C,27°C,$32.00,Hoy
+25,Sebastián López,sebastian.l@gmail.com,user,49,String of hearts,Ceropegia woodii,Hanging Plants,Average,Average,Part shade,15°C,25°C,$30.00,Hace 1 día
+25,Sebastián López,sebastian.l@gmail.com,user,72,Easter cactus,Rhipsalidopsis gaertneri,Succulents,Minimum,Average,Part shade,10°C,25°C,$23.00,Hace 5 días
+26,Valeria Rodríguez,valeria.r@gmail.com,user,100,String of dolphins,Senecio peregrinus,Rare Finds,Minimum,Minimum,Part shade,10°C,30°C,$35.00,Hace 2 días
+27,José Luis Martínez,joseluis.m@gmail.com,user,33,Lady palm,Rhapis excelsa,Interior,Average,Average,Part shade,16°C,28°C,$68.00,Hace 3 días
+28,Carolina Silva,carolina.s@gmail.com,user,8,Aloe vera,Aloe vera,Succulents,Minimum,Minimum,Full sun,10°C,30°C,$16.00,Hace 5 días
+29,Alejandro González,alejandro.g@gmail.com,user,38,Staghorn fern,Platycerium bifurcatum,Rare Finds,Frequent,Frequent,Part shade,15°C,24°C,$48.00,Hace 1 semana
+30,Laura Sánchez,laura.s@gmail.com,user,22,Moth orchid,Phalaenopsis aphrodite,Rare Finds,Average,Average,Part shade,15°C,25°C,$52.00,Hace 10 días
+30,Laura Sánchez,laura.s@gmail.com,user,27,Prayer plant,Maranta leuconeura,Interior,Average,Average,Part shade,18°C,27°C,$29.00,Hace 1 día
+31,Martín Herrera,martin.h@gmail.com,user,85,Pink princess philodendron,Philodendron 'Pink Princess',Rare Finds,Average,Average,Part shade,18°C,27°C,$124.00,Hace 2 semanas
+32,Paola Rodríguez,paola.r@gmail.com,user,17,Baby rubberplant,Peperomia obtusifolia,Beginner Friendly,Average,Average,Part shade,18°C,27°C,$22.00,Hoy
+33,Francisco Díaz,francisco.d@gmail.com,user,52,English lavender,Lavandula angustifolia,Air Purifying,Minimum,Minimum,Full sun,10°C,25°C,$19.00,Hace 1 día
+34,Andrea Martínez,andrea.m@gmail.com,user,60,Bird of paradise,Strelitzia reginae,Rare Finds,Average,Average,Full sun,15°C,30°C,$68.00,Hace 2 días
+34,Andrea Martínez,andrea.m@gmail.com,user,91,Stromanthe triostar,Stromanthe sanguinea 'Triostar',Rare Finds,Average,Frequent,Part shade,18°C,27°C,$46.00,Hace 1 semana
+35,Luisa Fernández,luisa.f@gmail.com,user,21,Poinsettia,Euphorbia pulcherrima,Interior,Minimum,Minimum,Full sun,10°C,30°C,$18.00,Hace 3 días
+36,Ricardo Sánchez,ricardo.s@gmail.com,user,54,Gardenia,Gardenia jasminoides,Interior,Average,Frequent,Part shade,16°C,24°C,$44.00,Hace 5 días
+37,Valentina Gómez,valentina.g@gmail.com,user,68,Hens and chicks,Sempervivum tectorum,Succulents,Minimum,Minimum,Full sun,−20°C,30°C,$13.00,Hace 1 semana
+38,Eduardo Torres,eduardo.t@gmail.com,user,81,Neon pothos,Epipremnum aureum 'Neon',Beginner Friendly,Average,Average,Part shade,18°C,27°C,$24.00,Hace 10 días
+39,Sofía Martínez,sofia.m@gmail.com,user,13,English ivy,Hedera helix,Hanging Plants,Average,Average,Part shade,15°C,25°C,$20.00,Hace 2 semanas
+39,Sofía Martínez,sofia.m@gmail.com,user,29,Spineless yucca,Yucca elephantipes,Low Light,Minimum,Minimum,Full sun,10°C,30°C,$52.00,Hace 2 días
+40,Alejandro Ramírez,alejandro.r@gmail.com,user,30,Norfolk Island pine,Araucaria heterophylla,Interior,Average,Average,Part shade,15°C,25°C,$58.00,Hoy
+41,Daniela Gutiérrez,daniela.g@gmail.com,user,40,Persian cyclamen,Cyclamen persicum,Interior,Average,Average,Part shade,15°C,25°C,$21.00,Hace 1 día
+42,Guillermo López,guillermo.l@gmail.com,user,94,Rattlesnake plant,Calathea lancifolia,Interior,Average,Average,Part shade,18°C,27°C,$34.00,Hace 2 días
+43,María José Ramírez,mariajose.r@gmail.com,user,28,Ponytail palm,Beaucarnea recurvata,Beginner Friendly,Minimum,Minimum,Full sun,10°C,30°C,$45.00,Hace 3 días
+43,María José Ramírez,mariajose.r@gmail.com,user,89,Watermelon peperomia,Peperomia argyreia,Beginner Friendly,Average,Average,Part shade,18°C,25°C,$28.00,Hace 10 días
+44,Francisco Sánchez,francisco.s@gmail.com,user,70,Barrel cactus,Echinocactus grusonii,Succulents,Minimum,Minimum,Full sun,5°C,35°C,$34.00,Hace 5 días
+45,Valeria González,valeria.g@gmail.com,user,63,Pitcher plant,Nepenthes alata,Rare Finds,Average,Frequent,Part shade,15°C,30°C,$52.00,Hace 1 semana
+46,Javier Martínez,javier.m@gmail.com,user,45,Paper plant,Fatsia japonica,Low Light,Average,Average,Part shade,15°C,25°C,$39.00,Hace 10 días
+47,Adriana Díaz,adriana.d@gmail.com,user,37,Delta maidenhair fern,Adiantum raddianum,Pet Friendly,Frequent,Frequent,Part shade,15°C,24°C,$28.00,Hace 2 semanas
+47,Adriana Díaz,adriana.d@gmail.com,user,75,Old man cactus,Cephalocereus senilis,Rare Finds,Minimum,Minimum,Full sun,10°C,35°C,$38.00,Hace 2 días
+48,Alejandro Torres,alejandro.t@gmail.com,user,26,Nerve plant,Fittonia albivenis,Pet Friendly,Average,Average,Part shade,15°C,25°C,$17.00,Hoy
+49,Carla Fernández,carla.f@gmail.com,user,39,African violet,Saintpaulia ionantha,Pet Friendly,Average,Average,Part shade,15°C,25°C,$15.00,Hace 1 día
+50,Manuel Gómez,manuel.g@gmail.com,user,71,Prickly pear,Opuntia ficus-indica,Succulents,Minimum,Minimum,Full sun,−5°C,40°C,$25.00,Hace 2 días
+51,Roberto Díaz,roberto.d@gmail.com,user,46,Cast iron plant,Aspidistra elatior,Low Light,Average,Average,Part shade,15°C,25°C,$33.00,Hace 3 días
+52,Ana Sofía Martínez,anasofia.m@gmail.com,user,66,Haworthia,Haworthia attenuata,Succulents,Minimum,Minimum,Part shade,10°C,25°C,$18.00,Hace 5 días
+53,Diego Ramírez,diego.r@gmail.com,user,50,Spanish moss,Tillandsia usneoides,Air Purifying,Average,Average,Part shade,15°C,25°C,$12.00,Hace 1 semana
+54,Gabriela López,gabriela.l@gmail.com,user,84,Burgundy rubber plant,Ficus elastica 'Burgundy',Air Purifying,Average,Average,Part shade,18°C,27°C,$42.00,Hace 10 días
+54,Gabriela López,gabriela.l@gmail.com,user,16,Inch plant,Tradescantia zebrina,Hanging Plants,Average,Average,Part shade,15°C,25°C,$19.00,Hace 1 día
+55,Martín Gómez,martin.g@gmail.com,user,87,Monstera albo,Monstera deliciosa 'Albo Variegata',Rare Finds,Average,Average,Part shade,18°C,27°C,$186.00,Hace 2 semanas
+56,Carolina Ramírez,carolina.r@gmail.com,user,92,Calathea ornata,Calathea ornata,Interior,Average,Average,Part shade,18°C,27°C,$39.00,Hoy
+57,Javier Torres,javier.t2@gmail.com,user,36,Bird's nest fern,Asplenium nidus,Air Purifying,Frequent,Frequent,Part shade,15°C,24°C,$32.00,Hace 1 día
+58,Valentina Martínez,valentina.m@gmail.com,user,41,Flaming katy,Kalanchoe blossfeldiana,Succulents,Minimum,Minimum,Full sun,10°C,30°C,$19.00,Hace 2 días
+58,Valentina Martínez,valentina.m@gmail.com,user,83,Variegated rubber plant,Ficus elastica 'Tineke',Rare Finds,Average,Average,Part shade,18°C,27°C,$48.00,Hace 1 semana
+59,Alejandro Díaz,alejandro.d2@gmail.com,user,57,Caladium,Caladium bicolor,Rare Finds,Average,Average,Part shade,20°C,28°C,$36.00,Hace 3 días
+60,María José Gutiérrez,mariajose.g@gmail.com,user,95,White bird of paradise,Strelitzia nicolai,Rare Finds,Average,Average,Full sun,15°C,30°C,$78.00,Hace 5 días
+61,Andrea Sánchez,andrea.s@gmail.com,user,74,Bunny ear cactus,Opuntia microdasys,Beginner Friendly,Minimum,Minimum,Full sun,10°C,35°C,$19.00,Hace 1 semana
+62,Sebastián Ramírez,sebastian.r@gmail.com,user,47,Porcelainflower,Hoya carnosa,Hanging Plants,Average,Average,Part shade,15°C,25°C,$41.00,Hace 10 días
+63,Sofía Martínez,sofia.m2@gmail.com,user,78,Aluminum plant,Pilea cadierei,Beginner Friendly,Average,Average,Part shade,15°C,25°C,$21.00,Hace 2 semanas
+64,Carlos López,carlos.l@gmail.com,user,59,Dumb cane,Dieffenbachia seguine,Low Light,Average,Average,Part shade,18°C,27°C,$31.00,Hoy
+64,Carlos López,carlos.l@gmail.com,user,73,Moon cactus,Gymnocalycium mihanovichii,Rare Finds,Minimum,Minimum,Part shade,10°C,30°C,$16.00,Hace 3 días
+65,Valentina Gómez,valentina.g2@gmail.com,user,58,Bromeliad,Guzmania lingulata,Air Purifying,Average,Average,Part shade,16°C,27°C,$40.00,Hace 1 día
+66,Andrés Díaz,andres.d@gmail.com,user,61,Lucky bamboo,Dracaena sanderiana,Beginner Friendly,Minimum,Frequent,Part shade,15°C,32°C,$14.00,Hace 2 días
+67,Carolina Torres,carolina.t@gmail.com,user,69,Living stones,Lithops aucampiae,Rare Finds,Minimum,Minimum,Full sun,10°C,35°C,$22.00,Hace 3 días
+68,Eduardo Martínez,eduardo.m@gmail.com,user,51,Boston ivy,Parthenocissus tricuspidata,Hanging Plants,Average,Average,Part shade,15°C,25°C,$23.00,Hace 5 días
+69,Daniela Gutiérrez,daniela.g2@gmail.com,user,20,Christmas cactus,Schlumbergera truncata,Succulents,Minimum,Minimum,Full sun,10°C,30°C,$21.00,Hace 1 semana
+70,Juan Martínez,juan.m@gmail.com,user,98,Goldfish plant,Columnea gloriosa,Hanging Plants,Average,Average,Part shade,18°C,24°C,$33.00,Hace 10 días
+70,Juan Martínez,juan.m@gmail.com,user,32,Areca palm,Dypsis lutescens,Air Purifying,Average,Average,Part shade,16°C,28°C,$62.00,Hace 1 día
+71,María Fernández,maria.f@gmail.com,user,82,Marble queen pothos,Epipremnum aureum 'Marble Queen',Beginner Friendly,Average,Average,Part shade,18°C,27°C,$26.00,Hace 2 semanas
+72,Roberto Gómez,roberto.g@gmail.com,user,93,Calathea medallion,Calathea roseopicta,Interior,Average,Average,Part shade,18°C,27°C,$37.00,Hoy
+73,Valeria Díaz,valeria.d@gmail.com,user,64,Sundew,Drosera capensis,Rare Finds,Average,Frequent,Full sun,5°C,35°C,$24.00,Hace 1 día
+74,Francisco Martínez,francisco.m@gmail.com,user,53,Jasmine,Jasminum polyanthum,Rare Finds,Average,Average,Full sun,10°C,25°C,$37.00,Hace 2 días
+75,Ana Torres,ana.t@gmail.com,user,76,Zebra plant,Aphelandra squarrosa,Interior,Average,Average,Part shade,18°C,27°C,$42.00,Hace 3 días
+76,Diego Gutiérrez,diego.g@gmail.com,user,24,Polka dot begonia,Begonia maculata,Rare Finds,Average,Average,Part shade,15°C,25°C,$58.00,Hace 5 días
+77,Carolina Díaz,carolina.d@gmail.com,user,86,Monstera adansonii,Monstera adansonii,Interior,Average,Average,Part shade,18°C,27°C,$38.00,Hace 1 semana
+78,Alejandro Ramírez,alejandro.r2@gmail.com,user,43,Croton,Codiaeum variegatum,Rare Finds,Minimum,Minimum,Full sun,10°C,30°C,$35.00,Hace 10 días
+78,Alejandro Ramírez,alejandro.r2@gmail.com,user,97,Purple waffle plant,Hemigraphis alternata,Pet Friendly,Average,Frequent,Part shade,18°C,27°C,$19.00,Hace 1 día
+79,Laura Martínez,laura.m2@gmail.com,user,35,Boston fern,Nephrolepis exaltata,Hanging Plants,Frequent,Frequent,Part shade,15°C,24°C,$24.00,Hace 2 semanas
+80,José Torres,jose.t@gmail.com,user,67,Sedum,Sedum morganianum,Hanging Plants,Minimum,Minimum,Full sun,10°C,30°C,$17.00,Hoy
+81,Marta Díaz,marta.d@gmail.com,user,79,Purple shamrock,Oxalis triangularis,Interior,Average,Average,Part shade,15°C,25°C,$18.00,Hace 1 día
+82,Santiago Gómez,santiago.g@gmail.com,user,96,Lipstick plant,Aeschynanthus radicans,Hanging Plants,Average,Average,Part shade,18°C,27°C,$31.00,Hace 2 días
+83,Valentina Ramírez,valentina.r@gmail.com,user,9,Jade plant,Crassula ovata,Succulents,Minimum,Minimum,Full sun,10°C,30°C,$24.00,Hace 3 días
+84,Eduardo Gutiérrez,eduardo.g@gmail.com,user,88,Raven ZZ plant,Zamioculcas zamiifolia 'Raven',Rare Finds,Average,Minimum,Low light,18°C,27°C,$52.00,Hace 5 días
+84,Eduardo Gutiérrez,eduardo.g@gmail.com,user,11,Chinese money plant,Pilea peperomioides,Beginner Friendly,Average,Average,Part shade,18°C,27°C,$26.00,Hace 2 semanas
+85,Sofía Torres,sofia.t@gmail.com,user,15,Chinese evergreen,Aglaonema commutatum,Low Light,Average,Average,Part shade,18°C,27°C,$34.00,Hace 1 semana
+86,Javier Díaz,javier.d@gmail.com,user,21,Poinsettia,Euphorbia pulcherrima,Interior,Minimum,Minimum,Full sun,10°C,30°C,$18.00,Hace 10 días
+87,Gabriela Martínez,gabriela.m@gmail.com,user,31,Parlor palm,Chamaedorea elegans,Air Purifying,Average,Average,Part shade,16°C,28°C,$38.00,Hace 2 semanas
+88,Alejandro Torres,alejandro.t2@gmail.com,user,8,Aloe vera,Aloe vera,Succulents,Minimum,Minimum,Full sun,10°C,30°C,$16.00,Hoy
+89,Martina Gómez,martina.g@gmail.com,user,30,Norfolk Island pine,Araucaria heterophylla,Interior,Average,Average,Part shade,15°C,25°C,$58.00,Hace 1 día
+89,Martina Gómez,martina.g@gmail.com,user,52,English lavender,Lavandula angustifolia,Air Purifying,Minimum,Minimum,Full sun,10°C,25°C,$19.00,Hace 5 días
+90,Andrés Díaz,andres.d2@gmail.com,user,2,Fiddle-leaf fig,Ficus lyrata,Rare Finds,Average,Average,Part shade,18°C,27°C,$55.00,Hace 2 días
+91,Diego Ramírez,diego.r2@gmail.com,user,7,Spider plant,Chlorophytum comosum,Hanging Plants,Average,Average,Part shade,15°C,25°C,$18.00,Hace 3 días
+92,Carolina Gómez,carolina.g2@gmail.com,user,6,Peace lily,Spathiphyllum wallisii,Air Purifying,Average,Average,Part shade,18°C,27°C,$32.00,Hace 5 días
+93,Javier Martínez,javier.m2@gmail.com,user,42,Coleus,Solenostemon scutellarioides,Interior,Average,Average,Part shade,15°C,25°C,$16.00,Hace 1 semana
+94,Valentina Díaz,valentina.d@gmail.com,user,3,Rubber fig,Ficus elastica,Air Purifying,Average,Average,Part shade,18°C,27°C,$38.00,Hace 10 días
+94,Valentina Díaz,valentina.d@gmail.com,user,84,Burgundy rubber plant,Ficus elastica 'Burgundy',Air Purifying,Average,Average,Part shade,18°C,27°C,$42.00,Hace 1 día
+95,Eduardo Torres,eduardo.t2@gmail.com,user,50,Spanish moss,Tillandsia usneoides,Air Purifying,Average,Average,Part shade,15°C,25°C,$12.00,Hace 2 semanas
+96,Marta Gutiérrez,marta.g@gmail.com,user,12,Peacock plant,Goeppertia makoyana,Rare Finds,Average,Average,Part shade,18°C,27°C,$44.00,Hoy
+97,Alejandro Martínez,alejandro.m@gmail.com,user,33,Lady palm,Rhapis excelsa,Interior,Average,Average,Part shade,16°C,28°C,$68.00,Hace 1 día
+98,Sofía Díaz,sofia.d@gmail.com,user,19,Heartleaf philodendron,Philodendron hederaceum,Beginner Friendly,Average,Average,Part shade,18°C,27°C,$27.00,Hace 2 días
+99,Carlos Gómez,carlos.g@gmail.com,user,25,African mask,Alocasia amazonica,Rare Finds,Average,Average,Part shade,18°C,27°C,$64.00,Hace 3 días
+100,Valeria Rodríguez,valeria.r2@gmail.com,user,60,Bird of paradise,Strelitzia reginae,Rare Finds,Average,Average,Full sun,15°C,30°C,$68.00,Hace 5 días
+100,Valeria Rodríguez,valeria.r2@gmail.com,user,5,Snake plant,Dracaena trifasciata,Low Light,Average,Minimum,Part shade,15°C,25°C,$28.00,Hace 2 semanas
+100,Valeria Rodríguez,valeria.r2@gmail.com,user,99,String of bananas,Senecio radicans,Succulents,Minimum,Minimum,Part shade,10°C,30°C,$23.00,Hace 2 días

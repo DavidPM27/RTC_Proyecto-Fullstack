@@ -74,6 +74,37 @@ async function runSeed() {
     await Plant.insertMany(plantsData);
     console.log(`Inserted ${plantsData.length} plants.`);
 
+    // 4. Build user-plant associations from user_plants_report.csv
+    const reportPath = path.join(__dirname, '../data/user_plants_report.csv');
+    const reportLines = fs.readFileSync(reportPath, 'utf-8').trim().split('\n');
+    const userPlantsMap = {}; // Maps user CSV ID -> [{ plant, lastWatered }]
+
+    const parseLastWatered = (text) => {
+      const t = (text || '').trim().toLowerCase();
+      const now = new Date();
+      if (t === 'hoy') return now;
+      const match = t.match(/hace (\d+) (día|días|semana|semanas)/);
+      if (!match) return now;
+      const n = parseInt(match[1]);
+      const unit = match[2];
+      const ms = (unit.startsWith('semana') ? n * 7 : n) * 24 * 60 * 60 * 1000;
+      return new Date(now.getTime() - ms);
+    };
+
+    for (let i = 1; i < reportLines.length; i++) {
+      const row = reportLines[i].split(',');
+      if (row.length < 5) continue;
+      const userId = row[0].trim();
+      const plantCsvId = row[4].trim();
+      const lastWateredText = row[14] ? row[14].trim() : '';
+      if (!plantIdMap[plantCsvId]) continue;
+      if (!userPlantsMap[userId]) userPlantsMap[userId] = [];
+      userPlantsMap[userId].push({
+        plant: plantIdMap[plantCsvId],
+        lastWatered: parseLastWatered(lastWateredText),
+      });
+    }
+
     // 5. Process Clients Catalog
     const clientsCsvPath = path.join(__dirname, '../data/users_catalog.csv');
     const clientsCsvData = fs.readFileSync(clientsCsvPath, 'utf-8').trim().split('\n');
@@ -82,35 +113,24 @@ async function runSeed() {
     for (let i = 1; i < clientsCsvData.length; i++) {
       const rowStr = clientsCsvData[i].trim();
       if (!rowStr) continue;
-      
+
       const row = rowStr.split(',');
-      const id_cliente = row[0];
+      const id_cliente = row[0].trim();
       const nombre = row[1];
       const email = row[2];
-      const plantas_id = row[3] ? row[3].split(';') : [];
       const role = row[4] ? row[4].trim() : 'user';
       const rawPassword = row[5] ? row[5].trim() : '123456';
 
-      const parsedPlants = plantas_id.map(id => {
-          if (plantIdMap[id]) {
-            return {
-              plant: plantIdMap[id],
-              lastWatered: new Date() // Set a default lastWatered date
-            };
-          }
-          return null;
-      }).filter(p => p !== null);
-
       const username = nombre.toLowerCase().replace(/ /g, '') + id_cliente;
       const hashedPassword = bcrypt.hashSync(rawPassword, 10);
-      
+
       clientsData.push({
         _id: new mongoose.Types.ObjectId(),
         username: username,
         email: email,
         password: hashedPassword,
         role: role,
-        plants: parsedPlants
+        plants: userPlantsMap[id_cliente] || [],
       });
     }
 
