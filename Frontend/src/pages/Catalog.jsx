@@ -172,9 +172,10 @@ const Catalog = () => {
                       onKeyDown={handleKeyDown}
                     />
                   </Box>
-                  <Flex gap={2}>
+                  <Flex gap={2} w={{ base: "100%", sm: "auto" }}>
                     <Button
                       h="14"
+                      w={{ base: "100%", sm: "auto" }}
                       px={8}
                       bg="brandSecondary.500"
                       color="white"

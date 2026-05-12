@@ -20,7 +20,6 @@ const logout = () => {
 const navItems = [
   { label: "Home", icon: LuLayoutGrid, href: "/" },
   { label: "Explorer", icon: LuSearch, href: "/catalog" },
-  { label: "Profile", icon: LuUser, href: "/profile" },
 ];
 
 const DesktopMenu = ({ pathname, navigate }) => (
@@ -29,20 +28,25 @@ const DesktopMenu = ({ pathname, navigate }) => (
     bg="bg.primary"
     borderRight="1px solid"
     borderColor="brand.800/40"
-    minHeight="100vh"
+    height="100vh"
+    position="sticky"
+    top="0"
+    overflowY="auto"
     px={8}
-    display={{ base: "none", md: "block" }}
+    display={{ base: "none", md: "flex" }}
+    flexDirection="column"
   >
     <VStack
       as="nav"
-      maxW="container.2xl"
+      height="100%"
       mx="auto"
       px={2}
       pt={8}
-      justify="space-between"
+      pb={6}
       align="center"
+      spacing={0}
     >
-      <HStack gap="3" mb={10}>
+      <HStack gap="3" mb={10} w="100%">
         <Box py={2} px={2.5} borderRadius="xl" bg="brand.600">
           <Icon as={LuLeaf} boxSize={5} color="text.primary" />
         </Box>
@@ -50,12 +54,11 @@ const DesktopMenu = ({ pathname, navigate }) => (
           HydroGrow
         </Text>
       </HStack>
+
       <VStack
         as="ul"
         gap={10}
         listStyleType="none"
-        flex="1"
-        justify="flex-start"
         w="100%"
       >
         {navItems.map((item) => {
@@ -71,9 +74,7 @@ const DesktopMenu = ({ pathname, navigate }) => (
               borderRadius="lg"
               bg={isActive ? "brand.400" : "transparent"}
               transition="all 0.3s ease"
-              _hover={{
-                bg: "brand.600/80",
-              }}
+              _hover={{ bg: "brand.600/80" }}
               cursor="pointer"
               onClick={() => navigate(item.href)}
             >
@@ -98,12 +99,13 @@ const DesktopMenu = ({ pathname, navigate }) => (
         })}
       </VStack>
 
+      <Box flex="1" />
+
       <HStack
         w="100%"
         gap={4}
         px={4}
         py={3}
-        mt={10}
         borderRadius="lg"
         transition="all 0.3s ease"
         _hover={{ bg: "state.alert/20" }}

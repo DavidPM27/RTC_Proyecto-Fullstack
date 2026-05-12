@@ -2,7 +2,6 @@ import { Navigate, Route, Routes } from 'react-router-dom'
 import Home from './pages/Home'
 import Catalog from './pages/Catalog'
 import Detail from './pages/Detail'
-import Profile from './pages/Profile'
 import Login from './pages/Login'
 import Default from './pages/Default'
 import ProtectedRoute from './components/common/ProtectedRoute'
@@ -24,7 +23,6 @@ function App() {
         <Route path='/' element={<Home />} />
         <Route path='/catalog' element={<Catalog />} />
         <Route path='/plant/:id' element={<Detail />} />
-        <Route path='/profile' element={<Profile />} />
       </Route>
 
       <Route path='*' element={<Default />} />
