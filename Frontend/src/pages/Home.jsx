@@ -114,7 +114,7 @@ const Home = () => {
         ) : myGarden.length === 0 ? (
           <Flex justify="center" py={12}>
             <Text fontSize="lg" color="text.secondary">
-              No tienes plantas todavía. ¡Añade tu primera planta!
+              You don't have any plants yet. Click the "Add Plant" button to start your garden!
             </Text>
           </Flex>
         ) : (

@@ -1,4 +1,5 @@
 const Plant = require("../models/plant.model");
+const User = require("../models/user.model");
 
 const getAllPlants = async (req, res) => {
     try {
@@ -70,20 +71,14 @@ const addPlantToUser = async (req, res) => {
             return res.status(404).json({ message: "Plant not found" });
         }
 
-        const user = await User.findById(req.user.id);
-        if (!user) {
+        const updatedUser = await User.findByIdAndUpdate(
+            req.user._id,
+            { $push: { plants: { plant: plant._id, lastWatered: new Date() } } },
+            { new: true }
+        );
+        if (!updatedUser) {
             return res.status(404).json({ message: "User not found" });
         }
-
-        user.plants.push({
-            plant: plant,
-            lastWatered: new Date()
-        });
-        await user.save();  
-        // Check if the plant has been successfully added to the user
-        if (!user.plants.includes(plant)) {
-            return res.status(400).json({ message: "Plant not added to user" });
-        }   
         return res.status(200).json(plant);
     } catch (error) {
         return res.status(500).json({ message: error.message });

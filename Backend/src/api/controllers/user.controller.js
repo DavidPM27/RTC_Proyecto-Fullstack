@@ -1,4 +1,5 @@
 const User = require('../models/user.model')
+const Plant = require('../models/plant.model')
 const bcrypt = require('bcrypt')
 const { generateToken } = require('../../utils/token');
 const { deleteImgCloudinary } = require('../../utils/cloudinary');
@@ -189,4 +190,66 @@ async function getUserGarden(req, res, _) {
   }
 }
 
-module.exports = { getAllUsers, registerUser, loginUser, deleteUser, updateUser, changeUserRole, getUser, resetPassword, getUserGarden }
+// Remove a plant entry from user's garden
+async function removeUserPlant(req, res, _) {
+  try {
+    const { entryId } = req.params;
+    const user = await User.findByIdAndUpdate(
+      req.user._id,
+      { $pull: { plants: { _id: entryId } } },
+      { new: true }
+    );
+    if (!user) return res.status(404).json("User not found");
+    return res.status(200).json({ message: "Plant removed from garden" });
+  } catch (error) {
+    return res.status(400).json("Error removing plant from garden");
+  }
+}
+
+// Update lastWatered for a plant entry in user's garden
+async function waterUserPlant(req, res, _) {
+  try {
+    const { entryId } = req.params;
+    const user = await User.findOneAndUpdate(
+      { _id: req.user._id, 'plants._id': entryId },
+      { $set: { 'plants.$.lastWatered': new Date() } },
+      { new: true }
+    );
+    if (!user) return res.status(404).json("Plant entry not found");
+    return res.status(200).json({ message: "Plant watered successfully" });
+  } catch (error) {
+    return res.status(400).json("Error watering plant");
+  }
+}
+
+// Create a custom plant and add it to user's garden
+async function addCustomPlantToGarden(req, res, _) {
+  try {
+    const { common_name, scientific_name, wateringFrequency, default_image } = req.body;
+    if (!common_name) return res.status(400).json("Plant name is required");
+
+    const plant = new Plant({
+      common_name,
+      scientific_name: scientific_name || common_name,
+      family: "Custom",
+      genus: "Custom",
+      species: scientific_name || common_name,
+      default_image: default_image || '',
+      watering_general_benchmark: { value: String(wateringFrequency || 7) },
+    });
+    const savedPlant = await plant.save();
+
+    const user = await User.findByIdAndUpdate(
+      req.user._id,
+      { $push: { plants: { plant: savedPlant._id, lastWatered: new Date() } } },
+      { new: true }
+    );
+    if (!user) return res.status(404).json("User not found");
+
+    return res.status(201).json(savedPlant);
+  } catch (error) {
+    return res.status(400).json("Error adding custom plant to garden");
+  }
+}
+
+module.exports = { getAllUsers, registerUser, loginUser, deleteUser, updateUser, changeUserRole, getUser, resetPassword, getUserGarden, removeUserPlant, waterUserPlant, addCustomPlantToGarden }

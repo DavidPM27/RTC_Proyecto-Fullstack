@@ -33,8 +33,8 @@ const AddPlant = ({ onAddPlant, onClose }) => {
   const imageUrl = watch("imageUrl");
 
   const onSubmit = (data) => {
-    // Preparar datos con valores por defecto
     const plantData = {
+      name: data.nickname,
       species: data.species || data.nickname,
       imageUrl: data.imageUrl || "https://images.unsplash.com/photo-1463936575829-25148e1db1b8?q=80&w=400",
       category: "Custom Plant",
