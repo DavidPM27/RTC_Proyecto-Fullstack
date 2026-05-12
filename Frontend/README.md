@@ -13,19 +13,21 @@ Consiste en la interfaz de usuario para la gestión de usuarios, colecciones de 
 
 ## Qué hace este proyecto
 - Interfaz de usuario: Vistas interactivas y dinámicas para visualizar catálogos y colecciones de plantas.
-- Gestión de rutas: Navegación estructurada (ej. Home, Perfil de Usuario, Catálogo de plantas, Registro, Login).
-- Consumo de API: Integración con los endpoints del backend para leer información, actualizar el perfil del usuario, añadir plantas a su colección personal o la administración completa para el rol de `admin`.
-- Diseño y UX: Uso del framework Chakra UI para garantizar una interfaz moderna, responsive y accesible.
-- Manejo de Formularios: Utilización de `react-hook-form` para realizar operaciones complejas como inicio de sesión, registro con subida de imagen, y añadir plantas nuevas al catálogo.
+- Gestión de rutas: Navegación estructurada (Home, Catálogo de plantas, Detalle de planta, Login). Rutas protegidas mediante `ProtectedRoute`.
+- Consumo de API: Integración completa con todos los endpoints del backend — autenticación, jardín del usuario (añadir del catálogo, añadir planta personalizada, eliminar, regar) y administración del catálogo para el rol `admin`.
+- Subida de imágenes: Las plantas personalizadas se envían como `FormData` al backend, que las sube a Cloudinary y devuelve la URL pública.
+- Diseño y UX: Chakra UI para una interfaz moderna, responsive y accesible. Menú lateral fijo (`position: sticky`) en escritorio y barra inferior fija en móvil.
+- Manejo de Formularios: `react-hook-form` para login, registro, restablecimiento de contraseña y creación de plantas personalizadas.
+- Detección de rol admin: El JWT se decodifica en el cliente para mostrar u ocultar controles exclusivos de administrador (ej. botón de eliminar planta del catálogo).
 
 ## Estructura relevante
-- `src/api/` — Controladores o servicios para interactuar directametne con la API de Hydrogrow.
-- `src/components/` — Componentes reutilizables de UI (Botones, Tarjetas de Plantas, Formularios).
-- `src/pages/` — Vistas o pantallas principales enrutadas por React Router.
-- `src/context/` — Contexto de React para manejo de estado global (como la sesión del usuario actual).
-- `src/hooks/` — Custom hooks enfocados en dividir la lógica y las operaciones de estados.
+- `src/api/` — Servicios para interactuar con la API de Hydrogrow (`authApi.js`, `plantsApi.js`).
+- `src/components/` — Componentes reutilizables de UI (Botones, Tarjetas de Plantas, Formularios, Menú).
+- `src/pages/` — Vistas principales enrutadas por React Router (Home, Catalog, Detail, Login, AddPlant).
+- `src/context/` — `GardenContext`: estado global del jardín del usuario. Todas las operaciones (añadir, eliminar, regar) persisten en el backend.
+- `src/hooks/` — Custom hooks (`useGarden`, `useWeather`) para separar lógica de los componentes.
 - `src/theme/` — Configuración personalizada y tokens de diseño para Chakra UI.
-- `src/utils/` — Utilidades externas.
+- `src/utils/` — Utilidades: `capitalize.js`, `cloudinaryOptimize.js` y `auth.js` (decodificación de JWT y detección de rol `admin`).
 - `src/assets/` — Imágenes estáticas, fuentes o recursos.
 
 ## Instalación
@@ -48,11 +50,13 @@ npm install
 ```
 
 3. Variables de Entorno:
-Crea un archivo `.env` en la raíz de `Frontend` con las variables de conexión a tu API:
+En **desarrollo local** no se necesita ningún `.env` — Vite proxifica automáticamente `/api/*` al backend en `http://localhost:3000` (configurado en `vite.config.js`).
+
+Para **producción**, crea un archivo `.env` en la raíz de `Frontend`:
 ```
-VITE_API_URL=http://localhost:3000/api/v1
+VITE_API_URL=https://tu-backend.onrender.com
 ```
-*(Asegúrate de comprobar en qué puerto se está ejecutando el Backend y ajustar la URL de manera acorde. No requiere comillas la URL).*
+
 
 4. Inicia el servidor en modo desarrollo:
 ```powershell
@@ -69,9 +73,12 @@ La aplicación estará disponible a través de lo que indique Vite (típicamente
 - `npm run lint`: Aplica Prettier en el formato y comprueba posibles errores con ESLint.
 
 ## Notas técnicas
-- Toda la comunicación autenticada se debe realizar pasando el token (almacenado habitualmente tras el login en localStorage o en memoria del `context`) al header `Authorization: Bearer <token>`.
-- React Hook Form está configurado para aliviar la carga de re-renderizados continuos a la hora de tipear los datos.
-- Chakra UI se configura globalmente desde `src/theme/` y envuelve la aplicación en su Provider central en `src/main.jsx`.
+- Toda la comunicación autenticada pasa el token (almacenado en `localStorage` o `sessionStorage` tras el login) en el header `Authorization: Bearer <token>`.
+- `GardenContext` expone `addPlant`, `removePlant` y `waterPlant` como funciones asíncronas que persisten los cambios en el backend antes de actualizar el estado local.
+- Las plantas personalizadas (formulario "Add Plant") se envían como `FormData` para permitir la subida de imagen. El backend usa multer + Cloudinary y devuelve la URL pública que se almacena en el documento `Plant`.
+- El rol del usuario se obtiene decodificando el payload del JWT en `src/utils/auth.js` (sin necesidad del secret, solo lectura base64). El backend incluye `role` en el token desde el login. Esta información se usa solo para decisiones de UI; la seguridad real la aplica el backend.
+- El menú lateral usa `position: sticky` con `height: 100vh` para permanecer visible mientras el contenido de cada página scrollea de forma independiente.
+- React Hook Form alivia la carga de re-renderizados al tipear. Chakra UI se configura globalmente desde `src/theme/` en `src/main.jsx`.
 
 ## Contact
 
