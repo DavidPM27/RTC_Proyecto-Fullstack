@@ -43,7 +43,7 @@ async function loginUser(req, res, _) {
       return res.status(400).json("Error: Incorrect username or password");
     }
     if (bcrypt.compareSync(req.body.password, user.password)) {
-      const token = generateToken(user._id, user.email);
+      const token = generateToken(user._id, user.email, user.role);
       return res.status(200).json(token);
     } else {
       return res.status(400).json("Error: Incorrect username or password"); 
@@ -234,7 +234,7 @@ async function addCustomPlantToGarden(req, res, _) {
       family: "Custom",
       genus: "Custom",
       species: scientific_name || common_name,
-      default_image: default_image || '',
+      default_image: req.file?.path || default_image || '',
       watering_general_benchmark: { value: String(wateringFrequency || 7) },
     });
     const savedPlant = await plant.save();

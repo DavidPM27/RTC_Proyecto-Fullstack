@@ -1,3 +1,4 @@
+import { useState } from "react";
 import {
   Stack,
   HStack,
@@ -14,29 +15,30 @@ import NumericInput from "../components/ui/NumberInput";
 import DateInput from "../components/ui/DateInput";
 
 const AddPlant = ({ onAddPlant, onClose }) => {
-  const { 
-    register, 
-    handleSubmit, 
-    formState: { errors, isDirty }, 
+  const {
+    register,
+    handleSubmit,
+    formState: { errors, isDirty },
     setValue,
-    watch 
+    watch
   } = useForm({
     defaultValues: {
       nickname: "",
       species: "",
       plantedAt: new Date().toISOString().split('T')[0],
       wateringFrequency: 7,
-      imageUrl: "",
+      imagePreview: "",
     },
   });
 
-  const imageUrl = watch("imageUrl");
+  const [imageFile, setImageFile] = useState(null);
+  const imagePreview = watch("imagePreview");
 
   const onSubmit = (data) => {
     const plantData = {
       name: data.nickname,
       species: data.species || data.nickname,
-      imageUrl: data.imageUrl || "https://images.unsplash.com/photo-1463936575829-25148e1db1b8?q=80&w=400",
+      imageFile,
       category: "Custom Plant",
       stats: {
         plantedAt: data.plantedAt,
@@ -57,9 +59,10 @@ const AddPlant = ({ onAddPlant, onClose }) => {
   const handleFileChange = (e) => {
     const file = e.target.files?.[0];
     if (file) {
+      setImageFile(file);
       const reader = new FileReader();
       reader.onload = (event) => {
-        setValue("imageUrl", event.target?.result, { shouldDirty: true });
+        setValue("imagePreview", event.target?.result, { shouldDirty: true });
       };
       reader.readAsDataURL(file);
     }
@@ -74,17 +77,17 @@ const AddPlant = ({ onAddPlant, onClose }) => {
             bg="brand.900"
             borderRadius="md"
             border="2px dashed"
-            borderColor={imageUrl ? "brand.500" : "brand.600"}
+            borderColor={imagePreview ? "brand.500" : "brand.600"}
             p="4"
             transition="all 0.3s ease"
             _hover={{ borderColor: "brand.500", bg: "brand.800/40" }}
           >
-            <Icon size="md" color={imageUrl ? "brand.500" : "fg.muted"}>
+            <Icon size="md" color={imagePreview ? "brand.500" : "fg.muted"}>
               <LuUpload />
             </Icon>
             <FileUpload.DropzoneContent>
               <Box color="text.secondary">
-                {imageUrl ? "Image uploaded!" : "Upload photo"}
+                {imagePreview ? "Image uploaded!" : "Upload photo"}
               </Box>
               <Box color="brandTertiary.900" fontSize="xs">
                 .png, .jpg up to 5MB

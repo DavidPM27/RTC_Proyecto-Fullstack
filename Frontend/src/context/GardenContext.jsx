@@ -86,13 +86,15 @@ export const GardenProvider = ({ children }) => {
         // Catalog plant from Detail page
         await addPlantToUserGarden(plantData._id, token);
       } else {
-        // Custom plant from AddPlant form
-        await addCustomPlantToGarden({
-          common_name: plantData.name || plantData.species,
-          scientific_name: plantData.species,
-          wateringFrequency: plantData.stats?.wateringFrequency || 7,
-          default_image: plantData.imageUrl || '',
-        }, token);
+        // Custom plant from AddPlant form — send as FormData so multer can upload to Cloudinary
+        const formData = new FormData();
+        formData.append('common_name', plantData.name || plantData.species);
+        formData.append('scientific_name', plantData.species || plantData.name);
+        formData.append('wateringFrequency', String(plantData.stats?.wateringFrequency || 7));
+        if (plantData.imageFile) {
+          formData.append('image', plantData.imageFile);
+        }
+        await addCustomPlantToGarden(formData, token);
       }
       await loadGarden(token);
       setNotification({ type: 'success', message: '¡Planta añadida al huerto!' });

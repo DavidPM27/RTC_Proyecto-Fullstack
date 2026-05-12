@@ -48,14 +48,23 @@ export const waterUserGardenPlant = async (entryId, token) => {
   return res.json();
 };
 
-export const addCustomPlantToGarden = async (plantData, token) => {
+export const deletePlantFromCatalog = async (plantId, token) => {
+  const res = await fetch(`/api/plants/${plantId}`, {
+    method: 'DELETE',
+    headers: { Authorization: `Bearer ${token || getToken()}` },
+  });
+  if (!res.ok) throw new Error('Failed to delete plant');
+  return res.json();
+};
+
+export const addCustomPlantToGarden = async (formData, token) => {
   const res = await fetch('/api/users/me/garden/custom', {
     method: 'POST',
     headers: {
-      'Content-Type': 'application/json',
+      // No Content-Type: el navegador lo establece automáticamente con el boundary correcto
       Authorization: `Bearer ${token || getToken()}`,
     },
-    body: JSON.stringify(plantData),
+    body: formData,
   });
   if (!res.ok) throw new Error('Failed to add custom plant');
   return res.json();

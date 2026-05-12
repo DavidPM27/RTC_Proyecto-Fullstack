@@ -22,7 +22,7 @@ userRouter.post('/register', upload.single("image"), registerUser);
 userRouter.post('/login', loginUser);
 userRouter.put('/reset-password', resetPassword);
 userRouter.get('/me/garden', auth(), getUserGarden);
-userRouter.post('/me/garden/custom', auth(), addCustomPlantToGarden);
+userRouter.post('/me/garden/custom', auth(), upload.single('image'), addCustomPlantToGarden);
 userRouter.delete('/me/garden/:entryId', auth(), removeUserPlant);
 userRouter.put('/me/garden/:entryId/water', auth(), waterUserPlant);
 userRouter.delete('/:id', auth(), deleteUser);

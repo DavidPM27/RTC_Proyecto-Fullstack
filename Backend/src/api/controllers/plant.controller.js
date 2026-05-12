@@ -1,5 +1,6 @@
 const Plant = require("../models/plant.model");
 const User = require("../models/user.model");
+const { deleteImgCloudinary } = require("../../utils/cloudinary");
 
 const getAllPlants = async (req, res) => {
     try {
@@ -57,6 +58,15 @@ const deletePlant = async (req, res) => {
         if (!plant) {
             return res.status(404).json({ message: "Plant not found" });
         }
+
+        // Remove all references to this plant from every user's garden
+        await User.updateMany({}, { $pull: { plants: { plant: plant._id } } });
+
+        // Delete the image from Cloudinary if it was stored there
+        if (plant.default_image && plant.default_image.includes('cloudinary')) {
+            deleteImgCloudinary(plant.default_image);
+        }
+
         return res.status(200).json(plant);
     } catch (error) {
         return res.status(500).json({ message: error.message });

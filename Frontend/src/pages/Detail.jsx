@@ -11,13 +11,20 @@ import {
   Badge,
   Button,
   Grid,
+  Dialog,
+  Portal,
+  CloseButton,
+  HStack,
+  Icon,
 } from "@chakra-ui/react";
 import { useState, useEffect } from "react";
 import { FiArrowLeft } from "react-icons/fi";
+import { LuX } from "react-icons/lu";
 import { capitalize } from "../utils/capitalize";
+import { isAdmin } from "../utils/auth";
 import Menu from "../components/layout/Menu";
 import { useGarden } from "../hooks/useGarden";
-import { fetchPlantById } from "../api/plantsApi";
+import { fetchPlantById, deletePlantFromCatalog } from "../api/plantsApi";
 
 const Detail = () => {
   const { id } = useParams();
@@ -26,6 +33,9 @@ const Detail = () => {
   const [plant, setPlant] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
+  const [deleteOpen, setDeleteOpen] = useState(false);
+  const [deleting, setDeleting] = useState(false);
+  const admin = isAdmin();
 
   useEffect(() => {
     const loadPlant = async () => {
@@ -255,26 +265,114 @@ const Detail = () => {
                   )}
                 </Stack>
 
-                <Button
-                  mt={10}
-                  bg="brandSecondary.500"
-                  color="white"
-                  h="14"
-                  borderRadius="2xl"
-                  _hover={{
-                    bg: "brandSecondary.400",
-                    transform: "translateY(-2px)",
-                  }}
-                  transition="all 0.2s"
-                  fontSize="md"
-                  fontWeight="bold"
-                  onClick={() => {
-                    addPlant(plant);
-                    navigate("/");
-                  }}
-                >
-                  Add to my garden
-                </Button>
+                <Stack mt={10} gap={3}>
+                  <Button
+                    bg="brandSecondary.500"
+                    color="white"
+                    h="14"
+                    borderRadius="2xl"
+                    _hover={{
+                      bg: "brandSecondary.400",
+                      transform: "translateY(-2px)",
+                    }}
+                    transition="all 0.2s"
+                    fontSize="md"
+                    fontWeight="bold"
+                    onClick={() => {
+                      addPlant(plant);
+                      navigate("/");
+                    }}
+                  >
+                    Add to my garden
+                  </Button>
+
+                  {admin && (
+                    <Button
+                      bg="red.600/20"
+                      color="red.300"
+                      h="12"
+                      borderRadius="2xl"
+                      border="1px solid"
+                      borderColor="red.600/40"
+                      _hover={{ bg: "red.600/35", borderColor: "red.500" }}
+                      transition="all 0.2s"
+                      fontSize="sm"
+                      fontWeight="semibold"
+                      onClick={() => setDeleteOpen(true)}
+                    >
+                      Delete plant from catalog
+                    </Button>
+                  )}
+                </Stack>
+
+                {/* Delete confirmation dialog */}
+                <Dialog.Root open={deleteOpen} onOpenChange={(e) => setDeleteOpen(e.open)}>
+                  <Portal>
+                    <Dialog.Backdrop backdropFilter="blur(4px)" bg="rgba(0,0,0,0.6)" />
+                    <Dialog.Positioner>
+                      <Dialog.Content
+                        p="0"
+                        m="2rem"
+                        borderRadius="2xl"
+                        bg="bg.primary"
+                        border="1px solid"
+                        borderColor="red.600/40"
+                        maxW="400px"
+                      >
+                        <Dialog.Header>
+                          <Stack gap="2">
+                            <Dialog.Title fontSize="xl" fontWeight="bold" color="text.primary">
+                              Delete plant
+                            </Dialog.Title>
+                            <Dialog.Description fontSize="sm" color="text.secondary" fontWeight="medium">
+                              Are you sure you want to permanently delete <strong>{capitalize(plant.common_name || plant.scientific_name)}</strong> from the catalog? This will also remove it from all users' gardens and cannot be undone.
+                            </Dialog.Description>
+                          </Stack>
+                        </Dialog.Header>
+                        <Dialog.Footer>
+                          <HStack w="full" gap={3}>
+                            <Button
+                              flex={1}
+                              bg="whiteAlpha.100"
+                              color="text.primary"
+                              borderRadius="xl"
+                              _hover={{ bg: "whiteAlpha.200" }}
+                              onClick={() => setDeleteOpen(false)}
+                              disabled={deleting}
+                            >
+                              Cancel
+                            </Button>
+                            <Button
+                              flex={1}
+                              bg="red.600"
+                              color="white"
+                              borderRadius="xl"
+                              _hover={{ bg: "red.700" }}
+                              loading={deleting}
+                              onClick={async () => {
+                                setDeleting(true);
+                                try {
+                                  await deletePlantFromCatalog(plant._id);
+                                  navigate("/catalog");
+                                } catch {
+                                  setDeleting(false);
+                                  setDeleteOpen(false);
+                                }
+                              }}
+                            >
+                              Delete permanently
+                            </Button>
+                          </HStack>
+                        </Dialog.Footer>
+                        <Dialog.CloseTrigger asChild>
+                          <CloseButton size="sm" disabled={deleting}>
+                            <Icon as={LuX} boxSize={6} color="brand.500" />
+                          </CloseButton>
+                        </Dialog.CloseTrigger>
+                      </Dialog.Content>
+                    </Dialog.Positioner>
+                  </Portal>
+                </Dialog.Root>
               </Box>
             </Flex>
           </Box>
