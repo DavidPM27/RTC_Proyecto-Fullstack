@@ -146,13 +146,15 @@ const Detail = () => {
           >
             <Flex direction={{ base: "column", lg: "row" }} align="stretch">
               {/* Image box */}
-              <Box 
-                flex="1" 
-                maxH={{ base: "400px", lg: "auto" }} 
+              <Box
+                flex="1"
+                h={{ base: "280px", lg: "auto" }}
+                minH={{ lg: "420px" }}
                 bg="brand.800/40"
                 display="flex"
                 alignItems="center"
                 justifyContent="center"
+                overflow="hidden"
                 p={4}
               >
                 <Image
@@ -162,6 +164,7 @@ const Detail = () => {
                   }
                   objectFit="contain"
                   maxH="100%"
+                  maxW="100%"
                   borderRadius="2xl"
                   alt={plant.common_name}
                 />

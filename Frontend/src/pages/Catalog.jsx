@@ -175,7 +175,7 @@ const Catalog = () => {
                   <Flex gap={2} w={{ base: "100%", sm: "auto" }}>
                     <Button
                       h="14"
-                      w={{ base: "100%", sm: "auto" }}
+                      flex={{ base: "1", sm: "none" }}
                       px={8}
                       bg="brandSecondary.500"
                       color="white"
@@ -193,6 +193,7 @@ const Catalog = () => {
                     {searchQuery && (
                       <Button
                         h="14"
+                        flex={{ base: "1", sm: "none" }}
                         px={6}
                         bg="whiteAlpha.200"
                         color="white"
