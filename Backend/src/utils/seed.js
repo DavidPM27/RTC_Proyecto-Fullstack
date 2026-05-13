@@ -15,7 +15,13 @@ async function runSeed() {
     console.log('Connected to DB');
     connectCloudinary();
 
-    // 1. Drop collections
+    // 1. Clear all cloudinary data
+    const result = await cloudinary.api.delete_all_resources();
+    if(result) {
+      console.log(`Deleted all images from Cloudinary.`);
+    }
+
+    // 2. Drop collections
     await Plant.collection.drop().catch(() => {});
     await User.collection.drop().catch(() => {});
 
