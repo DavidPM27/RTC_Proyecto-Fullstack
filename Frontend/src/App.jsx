@@ -4,6 +4,7 @@ import Catalog from './pages/Catalog'
 import Detail from './pages/Detail'
 import Login from './pages/Login'
 import Default from './pages/Default'
+import Profile from './pages/Profile'
 import ProtectedRoute from './components/common/ProtectedRoute'
 
 import './App.css'
@@ -22,6 +23,7 @@ function App() {
       <Route element={<ProtectedRoute />}>
         <Route path='/' element={<Home />} />
         <Route path='/catalog' element={<Catalog />} />
+        <Route path='/profile' element={<Profile />} />
         <Route path='/plant/:id' element={<Detail />} />
       </Route>
 

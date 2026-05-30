@@ -97,6 +97,14 @@ async function updateUser(req, res, _) {
       return res.status(400).json("Error: User not found");
     }
 
+    // If a new image was uploaded, persist it and clean up the old one
+    if (req.file) {
+      if (user.image) {
+        deleteImgCloudinary(user.image);
+      }
+      updateData.image = req.file.path;
+    }
+
     // If updating password, hash it
     if (updateData.password) {
       updateData.password = bcrypt.hashSync(updateData.password, 10);
@@ -142,7 +150,7 @@ async function changeUserRole(req, res, _) {
 async function getUser(req, res, _) {
   try {
     const { id } = req.params;
-    const user = await User.findById(id);
+    const user = await User.findById(id).select('-password');
     if (!user) {
       return res.status(404).json("User not found");
     }

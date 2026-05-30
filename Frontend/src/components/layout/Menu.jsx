@@ -20,6 +20,7 @@ const logout = () => {
 const navItems = [
   { label: "Home", icon: LuLayoutGrid, href: "/" },
   { label: "Explorer", icon: LuSearch, href: "/catalog" },
+  { label: "Profile", icon: LuUser, href: "/profile" },
 ];
 
 const DesktopMenu = ({ pathname, navigate }) => (

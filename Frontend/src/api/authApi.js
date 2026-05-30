@@ -30,6 +30,22 @@ export const registerUser = async ({ username, email, password }) => {
   return data;
 };
 
+export const updateUserProfile = async (id, formData, token) => {
+  const res = await fetch(`/api/users/${id}`, {
+    method: 'PUT',
+    headers: { Authorization: `Bearer ${token}` },
+    body: formData,
+  });
+
+  const data = await res.json();
+
+  if (!res.ok) {
+    throw new Error(data || 'Error updating profile');
+  }
+
+  return data;
+};
+
 export const resetPassword = async (email, newPassword) => {
   const res = await fetch('/api/users/reset-password', {
     method: 'PUT',
