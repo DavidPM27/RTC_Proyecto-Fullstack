@@ -41,7 +41,8 @@ Consiste en la interfaz de usuario para la gestión de usuarios, colecciones de 
 
 1. Asegúrate de estar en la carpeta del repositorio y sitúate en el frontend:
 ```powershell
-cd /camino/a/RTC_Proyecto-Backend/Frontend
+git clone https://github.com/DavidPM27/RTC_Proyecto-Fullstack.git
+cd Frontend
 ```
 
 2. Instala las dependencias:

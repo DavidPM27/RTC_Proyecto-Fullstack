@@ -38,8 +38,8 @@ Se basa en un servidor para manejar colecciones de usuarios y de plantas.
 
 1. Clona el repositorio:
 ```powershell
-git clone https://github.com/DavidPM27/RTC_Proyecto-Backend.git
-cd RTC_Proyecto-Backend
+git clone https://github.com/DavidPM27/RTC_Proyecto-Fullstack.git
+cd Backend
 ```
 
 2. Instala las dependencias:
