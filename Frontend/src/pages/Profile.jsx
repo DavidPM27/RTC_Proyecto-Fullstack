@@ -9,21 +9,28 @@ import {
   Grid,
   GridItem,
   Spinner,
-  Button,
+  Dialog,
+  Portal,
+  CloseButton,
+  Stack,
+  useDisclosure,
 } from "@chakra-ui/react";
 import {
   LuLeaf,
   LuDroplets,
   LuTrendingUp,
-  LuSettings,
   LuFlame,
   LuUser,
   LuCalendar,
   LuMail,
+  LuX,
 } from "react-icons/lu";
+import { useNavigate } from "react-router-dom";
 import Menu from "../components/layout/Menu";
 import GlassCard from "../components/ui/GlassCard";
 import EditProfileDialog from "../components/common/EditProfileDialog";
+import ButtonCustom from "../components/ui/ButtonCustom";
+import { deleteUser } from "../api/authApi";
 import { useGarden } from "../hooks/useGarden";
 
 const decodeToken = (token) => {
@@ -63,6 +70,9 @@ const StatCard = ({ icon, value, label }) => (
 
 const Profile = () => {
   const { myGarden, gardenLoading } = useGarden();
+  const navigate = useNavigate();
+  const { open: deleteOpen, onOpen: onDeleteOpen, onClose: onDeleteClose } = useDisclosure();
+  const [deleting, setDeleting] = useState(false);
   const [user, setUser] = useState(null);
   const [userLoading, setUserLoading] = useState(() => {
     const token = getToken();
@@ -81,6 +91,21 @@ const Profile = () => {
       .catch(() => setUser({ email: decoded.email, role: decoded.role }))
       .finally(() => setUserLoading(false));
   }, []);
+
+  const handleDeleteAccount = async () => {
+    const token = getToken();
+    if (!token || !user?._id) return;
+    setDeleting(true);
+    try {
+      await deleteUser(user._id, token);
+      localStorage.removeItem("token");
+      sessionStorage.removeItem("token");
+      navigate("/login");
+    } finally {
+      setDeleting(false);
+      onDeleteClose();
+    }
+  };
 
   const now = PAGE_LOAD_TIME;
   const oneWeek = 7 * 24 * 60 * 60 * 1000;
@@ -305,21 +330,81 @@ const Profile = () => {
               </Text>
             </VStack>
             <HStack gap={3} flexShrink={0}>
-              <Button
-                variant="outline"
-                size="sm"
-                borderRadius="xl"
-                borderColor="brand.600"
-                color="text.primary"
-                _hover={{ bg: "brand.700/60" }}
-              >
-                Change Password
-              </Button>
               <EditProfileDialog user={user} onUserUpdated={setUser} />
+              <ButtonCustom
+                variant="primary"
+                textValue="Delete Account"
+                width="auto"
+                bg="red.600"
+                _hover={{ bg: "red.700" }}
+                onClick={onDeleteOpen}
+              />
             </HStack>
           </Flex>
         </GlassCard>
       </Box>
+
+      {/* Delete account confirmation dialog */}
+      <Dialog.Root open={deleteOpen} onOpenChange={(e) => e.open ? onDeleteOpen() : onDeleteClose()}>
+        <Portal>
+          <Dialog.Backdrop backdropFilter="blur(4px)" bg="rgba(0, 0, 0, 0.6)" />
+          <Dialog.Positioner>
+            <Dialog.Content
+              p="0"
+              m="2rem"
+              borderRadius="2xl"
+              bg="bg.primary"
+              border="1px solid"
+              borderColor="brand.600"
+              transition="all 0.3s ease"
+              maxW="400px"
+            >
+              <Dialog.Header>
+                <Stack gap="2">
+                  <Dialog.Title fontSize="xl" fontWeight="bold" color="text.primary">
+                    Delete account
+                  </Dialog.Title>
+                  <Dialog.Description fontSize="sm" color="text.secondary" fontWeight="medium">
+                    Are you sure you want to permanently delete your account? This action cannot be undone and you will lose all your garden data.
+                  </Dialog.Description>
+                </Stack>
+              </Dialog.Header>
+
+              <Dialog.Footer>
+                <HStack w="full" gap={3}>
+                  <Dialog.ActionTrigger asChild>
+                    <ButtonCustom
+                      variant="secondary"
+                      textValue="Cancel"
+                      onClick={onDeleteClose}
+                      flex={1}
+                      mt={0}
+                    />
+                  </Dialog.ActionTrigger>
+                  <ButtonCustom
+                    variant="primary"
+                    textValue={deleting ? "" : "Delete"}
+                    onClick={handleDeleteAccount}
+                    flex={1}
+                    bg="red.500"
+                    _hover={{ bg: "red.600" }}
+                    loading={deleting}
+                    disabled={deleting}
+                  >
+                    {deleting && <Spinner size="sm" />}
+                  </ButtonCustom>
+                </HStack>
+              </Dialog.Footer>
+
+              <Dialog.CloseTrigger asChild>
+                <CloseButton size="sm">
+                  <Icon as={LuX} boxSize={6} color="brand.500" />
+                </CloseButton>
+              </Dialog.CloseTrigger>
+            </Dialog.Content>
+          </Dialog.Positioner>
+        </Portal>
+      </Dialog.Root>
     </Flex>
   );
 };

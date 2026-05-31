@@ -53,6 +53,21 @@ export const updateUserProfile = async (id, formData, token) => {
   return data;
 };
 
+export const deleteUser = async (id, token) => {
+  const res = await fetch(`/api/users/${id}`, {
+    method: 'DELETE',
+    headers: { Authorization: `Bearer ${token}` },
+  });
+
+  const data = await res.json();
+
+  if (!res.ok) {
+    throw new Error(data || 'Error deleting account');
+  }
+
+  return data;
+};
+
 export const resetPassword = async (email, currentPassword, newPassword) => {
   const res = await fetch('/api/users/reset-password', {
     method: 'PUT',
