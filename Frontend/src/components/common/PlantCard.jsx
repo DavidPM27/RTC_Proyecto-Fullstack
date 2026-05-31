@@ -142,14 +142,16 @@ const PlantCard = (plant) => {
 
         <Card.Footer>
           <HStack w="full" gap={2}>
-            <ButtonCustom
-              variant="secondary"
-              textValue="Water"
-              onClick={handleWaterPlant}
-              loading={isWatering}
-              flex={1}
-              mt={0}
-            />
+            {wateringStatus.percentage < 100 && (
+              <ButtonCustom
+                variant="secondary"
+                textValue="Water"
+                onClick={handleWaterPlant}
+                loading={isWatering}
+                flex={1}
+                mt={0}
+              />
+            )}
             <ButtonCustom
               variant="primary"
               textValue="View Details"
