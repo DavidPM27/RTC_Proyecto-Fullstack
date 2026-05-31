@@ -87,7 +87,7 @@ const Login = () => {
         loadGarden(token);
         navigate("/");
       } else if (mode === "forgot") {
-        await resetPassword(data.email, data.newPassword);
+        await resetPassword(data.email, data.currentPassword, data.newPassword);
         setResetSuccess(true);
       }
     } catch (error) {
@@ -192,10 +192,10 @@ const Login = () => {
         ) : (
           <VStack gap={1} mb={6}>
             <Text fontSize="lg" fontWeight="semibold" color="text.primary">
-              Reset Password
+              Change Password
             </Text>
             <Text fontSize="sm" color="text.secondary" textAlign="center">
-              Enter your email and choose a new password
+              Enter your email, current password, and choose a new one
             </Text>
           </VStack>
         )}
@@ -212,10 +212,10 @@ const Login = () => {
               <Icon as={LuCheck} boxSize={10} color="state.success" />
             </Box>
             <Text color="text.primary" fontWeight="semibold" fontSize="lg">
-              Password Updated!
+              Password Changed!
             </Text>
             <Text color="text.secondary" fontSize="sm" textAlign="center">
-              Your password has been reset successfully. You can now sign in with your new password.
+              Your password has been changed successfully. You can now sign in with your new password.
             </Text>
             <ButtonCustom
               variant="primary"
@@ -438,6 +438,53 @@ const Login = () => {
             </FieldForm>
             )}
 
+            {/* Current Password (forgot mode) */}
+            {mode === "forgot" && (
+              <FieldForm label="Current Password" error={errors.currentPassword}>
+                <Box position="relative" w="full">
+                  <Box
+                    position="absolute"
+                    left={3}
+                    top="50%"
+                    transform="translateY(-50%)"
+                    zIndex={2}
+                    color="text.secondary"
+                    pointerEvents="none"
+                  >
+                    <Icon as={LuLock} boxSize={4} />
+                  </Box>
+                  <Box
+                    as="input"
+                    w="100%"
+                    pl={10}
+                    pr={12}
+                    py={2.5}
+                    bg="brand.900"
+                    border="1px solid"
+                    borderColor="brand.600"
+                    borderRadius="xl"
+                    color="text.primary"
+                    fontSize="sm"
+                    outline="none"
+                    transition="all 0.2s"
+                    _focus={{
+                      borderColor: "brand.500",
+                    }}
+                    _placeholder={{ color: "text.secondary", opacity: 0.6, fontSize: "sm" }}
+                    placeholder="••••••••"
+                    type="password"
+                    {...register("currentPassword", {
+                      required: "Current password is required",
+                      minLength: {
+                        value: 6,
+                        message: "At least 6 characters",
+                      },
+                    })}
+                  />
+                </Box>
+              </FieldForm>
+            )}
+
             {/* New Password (forgot mode) */}
             {mode === "forgot" && (
               <FieldForm label="New Password" error={errors.newPassword}>
@@ -578,7 +625,7 @@ const Login = () => {
                   cursor="pointer"
                   onClick={() => switchMode("forgot")}
                 >
-                  Forgot Password?
+                  Change Password?
                 </ChakraLink>
               </HStack>
             )}

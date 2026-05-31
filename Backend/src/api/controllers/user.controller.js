@@ -160,13 +160,13 @@ async function getUser(req, res, _) {
   }
 } 
 
-// Reset password (no email verification)
+// Change password (requires current password verification)
 async function resetPassword(req, res, _) {
   try {
-    const { email, newPassword } = req.body;
+    const { email, currentPassword, newPassword } = req.body;
 
-    if (!email || !newPassword) {
-      return res.status(400).json("Email and new password are required");
+    if (!email || !currentPassword || !newPassword) {
+      return res.status(400).json("Email, current password, and new password are required");
     }
 
     if (newPassword.length < 6) {
@@ -178,12 +178,16 @@ async function resetPassword(req, res, _) {
       return res.status(404).json("No account found with that email");
     }
 
+    if (!bcrypt.compareSync(currentPassword, user.password)) {
+      return res.status(401).json("Current password is incorrect");
+    }
+
     user.password = newPassword; // pre-save hook will hash it
     await user.save();
 
-    return res.status(200).json("Password reset successfully");
+    return res.status(200).json("Password changed successfully");
   } catch (error) {
-    return res.status(400).json("Error resetting password");
+    return res.status(400).json("Error changing password");
   }
 }
 

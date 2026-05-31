@@ -53,11 +53,11 @@ export const updateUserProfile = async (id, formData, token) => {
   return data;
 };
 
-export const resetPassword = async (email, newPassword) => {
+export const resetPassword = async (email, currentPassword, newPassword) => {
   const res = await fetch('/api/users/reset-password', {
     method: 'PUT',
     headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({ email, newPassword }),
+    body: JSON.stringify({ email, currentPassword, newPassword }),
   });
 
   const data = await res.json();
