@@ -14,11 +14,18 @@ export const loginUser = async (email, password) => {
   return data; // JWT token
 };
 
-export const registerUser = async ({ username, email, password }) => {
+export const registerUser = async ({ username, email, password, imageFile }) => {
+  const formData = new FormData();
+  formData.append('username', username);
+  formData.append('email', email);
+  formData.append('password', password);
+  if (imageFile) {
+    formData.append('image', imageFile);
+  }
+
   const res = await fetch('/api/users/register', {
     method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({ username, email, password }),
+    body: formData,
   });
 
   const data = await res.json();

@@ -13,7 +13,7 @@ import {
 } from "@chakra-ui/react";
 import { useForm } from "react-hook-form";
 import { useNavigate } from "react-router-dom";
-import { LuLeaf, LuMail, LuLock, LuEye, LuEyeOff, LuUser, LuArrowLeft, LuCheck } from "react-icons/lu";
+import { LuLeaf, LuMail, LuLock, LuEye, LuEyeOff, LuUser, LuArrowLeft, LuCheck, LuCamera } from "react-icons/lu";
 import GlassCard from "../components/ui/GlassCard";
 import ButtonCustom from "../components/ui/ButtonCustom";
 import FieldForm from "../components/common/FieldForm";
@@ -26,6 +26,8 @@ const Login = () => {
   const [rememberMe, setRememberMe] = useState(false);
   const [apiError, setApiError] = useState(null);
   const [isLoading, setIsLoading] = useState(false);
+  const [imageFile, setImageFile] = useState(null);
+  const [imagePreview, setImagePreview] = useState(null);
   const navigate = useNavigate();
   const { loadGarden } = useContext(GardenContext);
 
@@ -41,7 +43,18 @@ const Login = () => {
     setMode(newMode);
     setApiError(null);
     setResetSuccess(false);
+    setImageFile(null);
+    setImagePreview(null);
     reset();
+  };
+
+  const handleImageChange = (e) => {
+    const file = e.target.files?.[0];
+    if (!file) return;
+    setImageFile(file);
+    const reader = new FileReader();
+    reader.onload = (event) => setImagePreview(event.target?.result);
+    reader.readAsDataURL(file);
   };
 
   const onSubmit = async (data) => {
@@ -65,6 +78,7 @@ const Login = () => {
           username: data.username,
           email: data.email,
           password: data.password,
+          imageFile,
         });
 
         // Auto-login after successful register
@@ -92,37 +106,37 @@ const Login = () => {
       justify="center"
       bg="bg.primary"
       px={4}
-      py={8}
+      py={4}
     >
       <GlassCard
         w="full"
         maxW="420px"
-        p={{ base: 6, sm: 8 }}
+        p={{ base: 4, sm: 6 }}
         mb={0}
         bg="brand.800/70"
         borderColor="brand.600/40"
         boxShadow="0 25px 60px rgba(0,0,0,0.5)"
       >
         {/* Logo & Branding */}
-        <VStack gap={1} mb={8}>
+        <VStack gap={1} mb={4}>
           <Box
             bg="brand.600"
             borderRadius="full"
-            p={4}
-            mb={2}
+            p={2.5}
+            mb={1}
             boxShadow="0 8px 30px rgba(64, 145, 108, 0.3)"
           >
-            <Icon as={LuLeaf} boxSize={8} color="text.primary" />
+            <Icon as={LuLeaf} boxSize={6} color="text.primary" />
           </Box>
           <Text
-            fontSize="2xl"
+            fontSize="xl"
             fontWeight="bold"
             color="text.primary"
             letterSpacing="tight"
           >
             HydroGrow
           </Text>
-          <Text fontSize="sm" color="text.secondary">
+          <Text fontSize="xs" color="text.secondary">
             Your digital urban garden companion
           </Text>
         </VStack>
@@ -133,7 +147,7 @@ const Login = () => {
             bg="brand.900/60"
             borderRadius="xl"
             p={1}
-            mb={8}
+            mb={4}
             w="full"
           >
             <Box
@@ -207,15 +221,74 @@ const Login = () => {
               variant="primary"
               textValue="Back to Sign In"
               width="full"
-              size="lg"
-              py={6}
-              fontSize="md"
+              size="md"
+              py={3}
+              fontSize="sm"
               onClick={() => switchMode("login")}
             />
           </VStack>
         ) : (
         <form onSubmit={handleSubmit(onSubmit)}>
-          <VStack gap={5} w="full">
+          <VStack gap={3} w="full">
+            {/* Avatar upload (only for register) */}
+            {mode === "register" && (
+              <Box w="full" display="flex" flexDirection="column" alignItems="center" gap={1}>
+                <Box
+                  as="label"
+                  htmlFor="register-image"
+                  cursor="pointer"
+                  position="relative"
+                  display="inline-block"
+                >
+                  <Box
+                    boxSize="64px"
+                    borderRadius="full"
+                    border="2px dashed"
+                    borderColor={imagePreview ? "brand.500" : "brand.600"}
+                    bg="brand.900"
+                    overflow="hidden"
+                    display="flex"
+                    alignItems="center"
+                    justifyContent="center"
+                    transition="all 0.2s"
+                    _hover={{ borderColor: "brand.500", bg: "brand.800" }}
+                  >
+                    {imagePreview ? (
+                      <img
+                        src={imagePreview}
+                        alt="preview"
+                        style={{ width: "100%", height: "100%", objectFit: "cover" }}
+                      />
+                    ) : (
+                      <Icon as={LuUser} boxSize={6} color="text.secondary" />
+                    )}
+                  </Box>
+                  <Box
+                    position="absolute"
+                    bottom="0"
+                    right="0"
+                    bg="brand.400"
+                    borderRadius="full"
+                    p="4px"
+                    border="2px solid"
+                    borderColor="bg.primary"
+                  >
+                    <Icon as={LuCamera} boxSize={2.5} color="text.primary" />
+                  </Box>
+                  <input
+                    id="register-image"
+                    type="file"
+                    accept="image/png, image/jpeg, image/webp"
+                    style={{ display: "none" }}
+                    onChange={handleImageChange}
+                  />
+                </Box>
+                <Text fontSize="xs" color="text.secondary">
+                  {imagePreview ? "Photo selected" : "Add profile photo (optional)"}
+                </Text>
+              </Box>
+            )}
+
             {/* Username (only for register) */}
             {mode === "register" && (
               <FieldForm label="Username" error={errors.username}>
@@ -542,9 +615,9 @@ const Login = () => {
                 )
               }
               width="full"
-              size="lg"
-              py={6}
-              fontSize="md"
+              size="md"
+              py={3}
+              fontSize="sm"
               type="submit"
               disabled={isLoading}
             />
