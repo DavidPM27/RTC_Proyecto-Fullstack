@@ -1,4 +1,4 @@
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import {
   Image,
   Card,
@@ -17,8 +17,9 @@ import { GardenContext } from "../../context/GardenContext";
 
 const PlantCard = (plant) => {
   const navigate = useNavigate();
-  const { removePlant } = useContext(GardenContext);
+  const { removePlant, waterPlant } = useContext(GardenContext);
   const { open, onOpen, onClose } = useDisclosure();
+  const [isWatering, setIsWatering] = useState(false);
 
   const handleRemovePlant = () => {
     removePlant(plant.id);
@@ -28,6 +29,15 @@ const PlantCard = (plant) => {
   const handleIconClick = (e) => {
     e.stopPropagation();
     onOpen();
+  };
+
+  const handleWaterPlant = async () => {
+    setIsWatering(true);
+    try {
+      await waterPlant(plant.id);
+    } finally {
+      setIsWatering(false);
+    }
   };
 
   const calculateWateringStatus = () => {
@@ -131,11 +141,22 @@ const PlantCard = (plant) => {
         </Card.Body>
 
         <Card.Footer>
-          <ButtonCustom 
-            variant="primary" 
-            textValue="View Details" 
-            onClick={() => navigate(`/plant/${plant.apiId}`)}
-          />
+          <HStack w="full" gap={2}>
+            <ButtonCustom
+              variant="secondary"
+              textValue="Water"
+              onClick={handleWaterPlant}
+              loading={isWatering}
+              flex={1}
+              mt={0}
+            />
+            <ButtonCustom
+              variant="primary"
+              textValue="View Details"
+              onClick={() => navigate(`/plant/${plant.apiId}`)}
+              flex={1}
+            />
+          </HStack>
         </Card.Footer>
       </Card.Root>
 

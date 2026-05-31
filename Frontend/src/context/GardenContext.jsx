@@ -124,13 +124,15 @@ export const GardenProvider = ({ children }) => {
         prev.map(p =>
           p.id !== plantId ? p : {
             ...p,
-            stats: { ...p.stats, lastWatered: new Date().toISOString() },
+            stats: { ...p.stats, lastWatered: Date.now() },
           }
         )
       );
+      setNotification({ type: 'success', message: '¡Planta regada correctamente!' });
     } catch {
-      // fallo silencioso: el estado local ya se actualizó
+      setNotification({ type: 'error', message: 'Error al regar la planta.' });
     }
+    setTimeout(() => setNotification(null), 3000);
   }, []);
 
   const value = {
