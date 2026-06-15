@@ -335,8 +335,9 @@ const Profile = () => {
                 variant="primary"
                 textValue="Delete Account"
                 width="auto"
-                bg="red.600"
-                _hover={{ bg: "red.700" }}
+                bg="red.700"
+                color="white"
+                _hover={{ bg: "red.600" }}
                 onClick={onDeleteOpen}
               />
             </HStack>
@@ -386,7 +387,8 @@ const Profile = () => {
                     textValue={deleting ? "" : "Delete"}
                     onClick={handleDeleteAccount}
                     flex={1}
-                    bg="red.500"
+                    bg="red.700"
+                    color="white"
                     _hover={{ bg: "red.600" }}
                     loading={deleting}
                     disabled={deleting}

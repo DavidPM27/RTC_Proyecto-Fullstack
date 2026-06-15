@@ -98,10 +98,16 @@ export const GardenProvider = ({ children }) => {
       }
       await loadGarden(token);
       setNotification({ type: 'success', message: '¡Planta añadida al huerto!' });
-    } catch {
+      setTimeout(() => setNotification(null), 3000);
+      return { success: true };
+    } catch (err) {
+      setTimeout(() => setNotification(null), 3000);
+      if (err.status === 409) {
+        return { success: false, duplicate: true, message: err.message };
+      }
       setNotification({ type: 'error', message: 'Error al añadir la planta.' });
+      return { success: false };
     }
-    setTimeout(() => setNotification(null), 3000);
   }, [loadGarden]);
 
   const removePlant = useCallback(async (plantId) => {

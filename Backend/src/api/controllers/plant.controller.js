@@ -81,14 +81,23 @@ const addPlantToUser = async (req, res) => {
             return res.status(404).json({ message: "Plant not found" });
         }
 
+        const user = await User.findById(req.user._id);
+        if (!user) {
+            return res.status(404).json({ message: "User not found" });
+        }
+
+        const alreadyInGarden = user.plants.some(
+            (entry) => entry.plant.toString() === plant._id.toString()
+        );
+        if (alreadyInGarden) {
+            return res.status(409).json({ message: "Esta planta ya está en tu huerto" });
+        }
+
         const updatedUser = await User.findByIdAndUpdate(
             req.user._id,
             { $push: { plants: { plant: plant._id, lastWatered: new Date() } } },
             { new: true }
         );
-        if (!updatedUser) {
-            return res.status(404).json({ message: "User not found" });
-        }
         return res.status(200).json(plant);
     } catch (error) {
         return res.status(500).json({ message: error.message });

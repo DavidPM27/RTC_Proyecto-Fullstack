@@ -25,6 +25,7 @@ import { isAdmin } from "../utils/auth";
 import Menu from "../components/layout/Menu";
 import { useGarden } from "../hooks/useGarden";
 import { fetchPlantById, deletePlantFromCatalog } from "../api/plantsApi";
+import ButtonCustom from "../components/ui/ButtonCustom";
 
 const Detail = () => {
   const { id } = useParams();
@@ -35,6 +36,7 @@ const Detail = () => {
   const [error, setError] = useState(null);
   const [deleteOpen, setDeleteOpen] = useState(false);
   const [deleting, setDeleting] = useState(false);
+  const [duplicateOpen, setDuplicateOpen] = useState(false);
   const admin = isAdmin();
 
   useEffect(() => {
@@ -85,7 +87,7 @@ const Detail = () => {
               _hover={{ bg: "whiteAlpha.300" }}
               onClick={() => navigate("/catalog")}
             >
-              <FiArrowLeft style={{ marginRight: '8px' }} /> Back
+              <FiArrowLeft style={{ marginRight: "8px" }} /> Back
             </Button>
             <Text color="brand.200" fontSize="lg">
               {error || "Plant not found"}
@@ -132,7 +134,7 @@ const Detail = () => {
             _hover={{ bg: "whiteAlpha.200" }}
             onClick={() => navigate(-1)}
           >
-            <FiArrowLeft style={{ marginRight: '8px' }} /> Explorer
+            <FiArrowLeft style={{ marginRight: "8px" }} /> Explorer
           </Button>
 
           {/* Card principal */}
@@ -185,9 +187,7 @@ const Detail = () => {
                       color="brand.50"
                       mb={2}
                     >
-                      {capitalize(
-                        plant.common_name || plant.scientific_name
-                      )}
+                      {capitalize(plant.common_name || plant.scientific_name)}
                     </Heading>
                     <Text
                       color="brandSecondary.500"
@@ -201,37 +201,72 @@ const Detail = () => {
                   <Grid templateColumns="repeat(2, 1fr)" gap={6}>
                     {plant.family && (
                       <Box>
-                        <Text color="brand.300" fontSize="xs" fontWeight="bold" textTransform="uppercase" mb={1}>
+                        <Text
+                          color="brand.300"
+                          fontSize="xs"
+                          fontWeight="bold"
+                          textTransform="uppercase"
+                          mb={1}
+                        >
                           Family
                         </Text>
-                        <Text color="brand.50" fontSize="sm">{plant.family}</Text>
+                        <Text color="brand.50" fontSize="sm">
+                          {plant.family}
+                        </Text>
                       </Box>
                     )}
 
                     {plant.cycle && (
                       <Box>
-                        <Text color="brand.300" fontSize="xs" fontWeight="bold" textTransform="uppercase" mb={1}>
+                        <Text
+                          color="brand.300"
+                          fontSize="xs"
+                          fontWeight="bold"
+                          textTransform="uppercase"
+                          mb={1}
+                        >
                           Cycle
                         </Text>
-                        <Text color="brand.50" fontSize="sm">{plant.cycle}</Text>
+                        <Text color="brand.50" fontSize="sm">
+                          {plant.cycle}
+                        </Text>
                       </Box>
                     )}
 
                     {plant.watering && (
                       <Box>
-                        <Text color="brand.300" fontSize="xs" fontWeight="bold" textTransform="uppercase" mb={1}>
+                        <Text
+                          color="brand.300"
+                          fontSize="xs"
+                          fontWeight="bold"
+                          textTransform="uppercase"
+                          mb={1}
+                        >
                           Watering
                         </Text>
-                        <Text color="brand.50" fontSize="sm">{plant.watering}</Text>
+                        <Text color="brand.50" fontSize="sm">
+                          {plant.watering}
+                        </Text>
                       </Box>
                     )}
 
-                  {plant.sunlight && typeof plant.sunlight === "string" && (
+                    {plant.sunlight && typeof plant.sunlight === "string" && (
                       <Box>
-                        <Text color="brand.300" fontSize="xs" fontWeight="bold" textTransform="uppercase" mb={2}>
+                        <Text
+                          color="brand.300"
+                          fontSize="xs"
+                          fontWeight="bold"
+                          textTransform="uppercase"
+                          mb={2}
+                        >
                           Sunlight
                         </Text>
-                        <Flex wrap="wrap" gap={2} alignItems="center" justifyContent="center">
+                        <Flex
+                          wrap="wrap"
+                          gap={2}
+                          alignItems="center"
+                          justifyContent="center"
+                        >
                           <Badge
                             bg="brandSecondary.500/20"
                             color="brandSecondary.300"
@@ -248,12 +283,17 @@ const Detail = () => {
                         </Flex>
                       </Box>
                     )}
-
                   </Grid>
 
                   {plant.description && (
                     <Box>
-                      <Text color="brand.300" fontSize="xs" fontWeight="bold" textTransform="uppercase" mb={2}>
+                      <Text
+                        color="brand.300"
+                        fontSize="xs"
+                        fontWeight="bold"
+                        textTransform="uppercase"
+                        mb={2}
+                      >
                         Description
                       </Text>
                       <Text
@@ -281,9 +321,13 @@ const Detail = () => {
                     transition="all 0.2s"
                     fontSize="md"
                     fontWeight="bold"
-                    onClick={() => {
-                      addPlant(plant);
-                      navigate("/");
+                    onClick={async () => {
+                      const result = await addPlant(plant);
+                      if (result?.success) {
+                        navigate("/");
+                      } else if (result?.duplicate) {
+                        setDuplicateOpen(true);
+                      }
                     }}
                   >
                     Add to my garden
@@ -308,10 +352,77 @@ const Detail = () => {
                   )}
                 </Stack>
 
-                {/* Delete confirmation dialog */}
-                <Dialog.Root open={deleteOpen} onOpenChange={(e) => setDeleteOpen(e.open)}>
+                {/* Duplicate plant error dialog */}
+                <Dialog.Root
+                  open={duplicateOpen}
+                  onOpenChange={(e) => setDuplicateOpen(e.open)}
+                >
                   <Portal>
-                    <Dialog.Backdrop backdropFilter="blur(4px)" bg="rgba(0,0,0,0.6)" />
+                    <Dialog.Backdrop
+                      backdropFilter="blur(4px)"
+                      bg="rgba(0,0,0,0.6)"
+                    />
+                    <Dialog.Positioner>
+                      <Dialog.Content
+                        p="0"
+                        m="2rem"
+                        borderRadius="2xl"
+                        bg="bg.primary"
+                        border="1px solid"
+                        borderColor="brand.600"
+                        maxW="400px"
+                      >
+                        <Dialog.Header>
+                          <Stack gap="2">
+                            <Dialog.Title
+                              fontSize="xl"
+                              fontWeight="bold"
+                              color="text.primary"
+                            >
+                              Plant already in your garden
+                            </Dialog.Title>
+                            <Dialog.Description
+                              fontSize="sm"
+                              color="text.secondary"
+                              fontWeight="medium"
+                            >
+                              <strong>
+                                {capitalize(
+                                  plant.common_name || plant.scientific_name,
+                                )}
+                              </strong>{" "}
+                              is already in your garden. You cannot add it
+                              twice.
+                            </Dialog.Description>
+                          </Stack>
+                        </Dialog.Header>
+                        <Dialog.Footer>
+                          <ButtonCustom
+                            variant="secondary"
+                            textValue="Close"
+                            onClick={() => setDuplicateOpen(false)}
+                          />
+                        </Dialog.Footer>
+                        <Dialog.CloseTrigger asChild>
+                          <CloseButton size="sm">
+                            <Icon as={LuX} boxSize={6} color="brand.500" />
+                          </CloseButton>
+                        </Dialog.CloseTrigger>
+                      </Dialog.Content>
+                    </Dialog.Positioner>
+                  </Portal>
+                </Dialog.Root>
+
+                {/* Delete confirmation dialog */}
+                <Dialog.Root
+                  open={deleteOpen}
+                  onOpenChange={(e) => setDeleteOpen(e.open)}
+                >
+                  <Portal>
+                    <Dialog.Backdrop
+                      backdropFilter="blur(4px)"
+                      bg="rgba(0,0,0,0.6)"
+                    />
                     <Dialog.Positioner>
                       <Dialog.Content
                         p="0"
@@ -324,11 +435,26 @@ const Detail = () => {
                       >
                         <Dialog.Header>
                           <Stack gap="2">
-                            <Dialog.Title fontSize="xl" fontWeight="bold" color="text.primary">
+                            <Dialog.Title
+                              fontSize="xl"
+                              fontWeight="bold"
+                              color="text.primary"
+                            >
                               Delete plant
                             </Dialog.Title>
-                            <Dialog.Description fontSize="sm" color="text.secondary" fontWeight="medium">
-                              Are you sure you want to permanently delete <strong>{capitalize(plant.common_name || plant.scientific_name)}</strong> from the catalog? This will also remove it from all users' gardens and cannot be undone.
+                            <Dialog.Description
+                              fontSize="sm"
+                              color="text.secondary"
+                              fontWeight="medium"
+                            >
+                              Are you sure you want to permanently delete{" "}
+                              <strong>
+                                {capitalize(
+                                  plant.common_name || plant.scientific_name,
+                                )}
+                              </strong>{" "}
+                              from the catalog? This will also remove it from
+                              all users' gardens and cannot be undone.
                             </Dialog.Description>
                           </Stack>
                         </Dialog.Header>
@@ -386,4 +512,3 @@ const Detail = () => {
 };
 
 export default Detail;
-

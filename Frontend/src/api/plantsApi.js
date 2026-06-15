@@ -26,7 +26,12 @@ export const addPlantToUserGarden = async (plantId, token) => {
     method: 'POST',
     headers: { Authorization: `Bearer ${token || getToken()}` },
   });
-  if (!res.ok) throw new Error('Failed to add plant to garden');
+  if (!res.ok) {
+    const data = await res.json().catch(() => ({}));
+    const err = new Error(data.message || 'Failed to add plant to garden');
+    err.status = res.status;
+    throw err;
+  }
   return res.json();
 };
 

@@ -97,6 +97,8 @@ async function updateUser(req, res, _) {
       return res.status(400).json("Error: User not found");
     }
 
+    console.log(user);
+
     // If a new image was uploaded, persist it and clean up the old one
     if (req.file) {
       if (user.image) {
