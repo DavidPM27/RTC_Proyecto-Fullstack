@@ -150,24 +150,20 @@ const Detail = () => {
               {/* Image box */}
               <Box
                 flex="1"
-                h={{ base: "280px", lg: "auto" }}
-                minH={{ lg: "420px" }}
+                h={{ base: "280px", lg: "420px" }}
+                maxH="420px"
                 bg="brand.800/40"
-                display="flex"
-                alignItems="center"
-                justifyContent="center"
                 overflow="hidden"
-                p={4}
+                borderRadius="2xl"
               >
                 <Image
                   src={
                     plant.default_image ||
                     "https://via.placeholder.com/500x500?text=No+Image"
                   }
-                  objectFit="contain"
-                  maxH="100%"
-                  maxW="100%"
-                  borderRadius="2xl"
+                  objectFit="cover"
+                  w="100%"
+                  h="100%"
                   alt={plant.common_name}
                 />
               </Box>
