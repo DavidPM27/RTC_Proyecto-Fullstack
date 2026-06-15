@@ -1,5 +1,7 @@
+const BASE = import.meta.env.VITE_API_BASE_URL || '/api';
+
 export const loginUser = async (email, password) => {
-  const res = await fetch('/api/users/login', {
+  const res = await fetch(`${BASE}/users/login`, {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ email, password }),
@@ -23,7 +25,7 @@ export const registerUser = async ({ username, email, password, imageFile }) => 
     formData.append('image', imageFile);
   }
 
-  const res = await fetch('/api/users/register', {
+  const res = await fetch(`${BASE}/users/register`, {
     method: 'POST',
     body: formData,
   });
@@ -38,7 +40,7 @@ export const registerUser = async ({ username, email, password, imageFile }) => 
 };
 
 export const updateUserProfile = async (id, formData, token) => {
-  const res = await fetch(`/api/users/${id}`, {
+  const res = await fetch(`${BASE}/users/${id}`, {
     method: 'PUT',
     headers: { Authorization: `Bearer ${token}` },
     body: formData,
@@ -54,7 +56,7 @@ export const updateUserProfile = async (id, formData, token) => {
 };
 
 export const deleteUser = async (id, token) => {
-  const res = await fetch(`/api/users/${id}`, {
+  const res = await fetch(`${BASE}/users/${id}`, {
     method: 'DELETE',
     headers: { Authorization: `Bearer ${token}` },
   });
@@ -69,7 +71,7 @@ export const deleteUser = async (id, token) => {
 };
 
 export const resetPassword = async (email, currentPassword, newPassword) => {
-  const res = await fetch('/api/users/reset-password', {
+  const res = await fetch(`${BASE}/users/reset-password`, {
     method: 'PUT',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ email, currentPassword, newPassword }),
