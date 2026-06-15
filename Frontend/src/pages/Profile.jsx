@@ -30,7 +30,7 @@ import Menu from "../components/layout/Menu";
 import GlassCard from "../components/ui/GlassCard";
 import EditProfileDialog from "../components/common/EditProfileDialog";
 import ButtonCustom from "../components/ui/ButtonCustom";
-import { deleteUser } from "../api/authApi";
+import { deleteUser, getUser } from "../api/authApi";
 import { useGarden } from "../hooks/useGarden";
 
 const decodeToken = (token) => {
@@ -85,8 +85,7 @@ const Profile = () => {
     if (!token) return;
     const decoded = decodeToken(token);
     if (!decoded) return;
-    fetch(`/api/users/${decoded.id}`)
-      .then((res) => res.json())
+    getUser(decoded.id)
       .then((data) => setUser(data))
       .catch(() => setUser({ email: decoded.email, role: decoded.role }))
       .finally(() => setUserLoading(false));

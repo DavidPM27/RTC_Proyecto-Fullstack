@@ -55,6 +55,15 @@ export const updateUserProfile = async (id, formData, token) => {
   return data;
 };
 
+export const getUser = async (id) => {
+  const res = await fetch(`${BASE}/users/${id}`);
+  const data = await res.json();
+  if (!res.ok) {
+    throw new Error(data || 'Error fetching user');
+  }
+  return data;
+};
+
 export const deleteUser = async (id, token) => {
   const res = await fetch(`${BASE}/users/${id}`, {
     method: 'DELETE',
