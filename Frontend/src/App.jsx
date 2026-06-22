@@ -5,7 +5,9 @@ import Detail from './pages/Detail'
 import Login from './pages/Login'
 import Default from './pages/Default'
 import Profile from './pages/Profile'
+import Administrate from './pages/Administrate'
 import ProtectedRoute from './components/common/ProtectedRoute'
+import AdminRoute from './components/common/AdminRoute'
 
 import './App.css'
 
@@ -25,6 +27,10 @@ function App() {
         <Route path='/catalog' element={<Catalog />} />
         <Route path='/profile' element={<Profile />} />
         <Route path='/plant/:id' element={<Detail />} />
+
+        <Route element={<AdminRoute />}>
+          <Route path='/administrate' element={<Administrate />} />
+        </Route>
       </Route>
 
       <Route path='*' element={<Default />} />

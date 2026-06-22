@@ -7,9 +7,10 @@ import {
   Link as ChakraLink,
   Flex,
 } from "@chakra-ui/react";
-import { LuLeaf, LuLayoutGrid, LuSearch, LuUser, LuLogOut } from "react-icons/lu";
+import { LuLeaf, LuLayoutGrid, LuSearch, LuUser, LuLogOut, LuShield } from "react-icons/lu";
 import { useLocation, useNavigate } from "react-router-dom";
 import GlassCard from "../ui/GlassCard";
+import { isAdmin } from "../../utils/auth";
 
 const logout = () => {
   localStorage.removeItem('token');
@@ -17,13 +18,15 @@ const logout = () => {
   window.location.replace('/login');
 };
 
-const navItems = [
+const baseNavItems = [
   { label: "Home", icon: LuLayoutGrid, href: "/" },
   { label: "Explorer", icon: LuSearch, href: "/catalog" },
   { label: "Profile", icon: LuUser, href: "/profile" },
 ];
 
-const DesktopMenu = ({ pathname, navigate }) => (
+const adminNavItem = { label: "Administrate", icon: LuShield, href: "/administrate" };
+
+const DesktopMenu = ({ pathname, navigate, navItems }) => (
   <Box
     as="aside"
     bg="bg.primary"
@@ -122,7 +125,7 @@ const DesktopMenu = ({ pathname, navigate }) => (
   </Box>
 );
 
-const MobileMenu = ({ pathname, navigate }) => (
+const MobileMenu = ({ pathname, navigate, navItems }) => (
   <Box
     display={{ base: "block", md: "none" }}
     position="fixed"
@@ -231,10 +234,12 @@ const Menu = () => {
   const location = useLocation();
   const navigate = useNavigate();
 
+  const navItems = isAdmin() ? [...baseNavItems, adminNavItem] : baseNavItems;
+
   return (
     <>
-      <DesktopMenu pathname={location.pathname} navigate={navigate} />
-      <MobileMenu pathname={location.pathname} navigate={navigate} />
+      <DesktopMenu pathname={location.pathname} navigate={navigate} navItems={navItems} />
+      <MobileMenu pathname={location.pathname} navigate={navigate} navItems={navItems} />
     </>
   );
 };

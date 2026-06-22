@@ -55,6 +55,39 @@ export const updateUserProfile = async (id, formData, token) => {
   return data;
 };
 
+export const getAllUsers = async (token) => {
+  const res = await fetch(`${BASE}/users`, {
+    headers: { Authorization: `Bearer ${token}` },
+  });
+
+  const data = await res.json();
+
+  if (!res.ok) {
+    throw new Error(data || 'Error fetching users');
+  }
+
+  return data;
+};
+
+export const changeUserRole = async (id, role, token) => {
+  const res = await fetch(`${BASE}/users/changeRole/${id}`, {
+    method: 'PUT',
+    headers: {
+      'Content-Type': 'application/json',
+      Authorization: `Bearer ${token}`,
+    },
+    body: JSON.stringify({ role }),
+  });
+
+  const data = await res.json();
+
+  if (!res.ok) {
+    throw new Error(data || 'Error changing user role');
+  }
+
+  return data;
+};
+
 export const getUser = async (id) => {
   const res = await fetch(`${BASE}/users/${id}`);
   const data = await res.json();
