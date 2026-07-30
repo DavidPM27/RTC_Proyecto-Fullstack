@@ -16,16 +16,26 @@ import {
   CloseButton,
   HStack,
   Icon,
+  Textarea,
+  NativeSelect,
+  FileUpload,
 } from "@chakra-ui/react";
 import { useState, useEffect } from "react";
+import { useForm } from "react-hook-form";
 import { FiArrowLeft } from "react-icons/fi";
-import { LuX } from "react-icons/lu";
+import { LuX, LuUpload } from "react-icons/lu";
 import { capitalize } from "../utils/capitalize";
 import { isAdmin } from "../utils/auth";
 import Menu from "../components/layout/Menu";
 import { useGarden } from "../hooks/useGarden";
-import { fetchPlantById, deletePlantFromCatalog } from "../api/plantsApi";
+import {
+  fetchPlantById,
+  deletePlantFromCatalog,
+  updatePlantInCatalog,
+} from "../api/plantsApi";
 import ButtonCustom from "../components/ui/ButtonCustom";
+import FieldForm from "../components/common/FieldForm";
+import TextInput from "../components/ui/TextInput";
 
 const Detail = () => {
   const { id } = useParams();
@@ -37,7 +47,17 @@ const Detail = () => {
   const [deleteOpen, setDeleteOpen] = useState(false);
   const [deleting, setDeleting] = useState(false);
   const [duplicateOpen, setDuplicateOpen] = useState(false);
+  const [editOpen, setEditOpen] = useState(false);
+  const [saving, setSaving] = useState(false);
+  const [editImageFile, setEditImageFile] = useState(null);
+  const [editImagePreview, setEditImagePreview] = useState("");
   const admin = isAdmin();
+  const {
+    register,
+    handleSubmit,
+    reset,
+    formState: { errors },
+  } = useForm();
 
   useEffect(() => {
     const loadPlant = async () => {
@@ -56,6 +76,42 @@ const Detail = () => {
     };
     loadPlant();
   }, [id]);
+
+  const openEdit = () => {
+    reset({
+      common_name: plant.common_name || "",
+      scientific_name: plant.scientific_name || "",
+      family: plant.family || "",
+      cycle: plant.cycle || "",
+      watering: plant.watering || "",
+      sunlight: plant.sunlight || "",
+      description: plant.description || "",
+    });
+    setEditImageFile(null);
+    setEditImagePreview(plant.default_image || "");
+    setEditOpen(true);
+  };
+
+  const handleEditImageChange = (e) => {
+    const file = e.target.files?.[0];
+    if (file) {
+      setEditImageFile(file);
+      const reader = new FileReader();
+      reader.onload = (event) => setEditImagePreview(event.target?.result);
+      reader.readAsDataURL(file);
+    }
+  };
+
+  const onSubmitEdit = async (data) => {
+    setSaving(true);
+    try {
+      const updated = await updatePlantInCatalog(plant._id, data, editImageFile);
+      setPlant(updated);
+      setEditOpen(false);
+    } finally {
+      setSaving(false);
+    }
+  };
 
   if (loading) {
     return (
@@ -331,6 +387,24 @@ const Detail = () => {
 
                   {admin && (
                     <Button
+                      bg="whiteAlpha.100"
+                      color="brand.50"
+                      h="12"
+                      borderRadius="2xl"
+                      border="1px solid"
+                      borderColor="whiteAlpha.300"
+                      _hover={{ bg: "whiteAlpha.200" }}
+                      transition="all 0.2s"
+                      fontSize="sm"
+                      fontWeight="semibold"
+                      onClick={openEdit}
+                    >
+                      Edit plant data
+                    </Button>
+                  )}
+
+                  {admin && (
+                    <Button
                       bg="red.600/20"
                       color="red.300"
                       h="12"
@@ -401,6 +475,167 @@ const Detail = () => {
                         </Dialog.Footer>
                         <Dialog.CloseTrigger asChild>
                           <CloseButton size="sm">
+                            <Icon as={LuX} boxSize={6} color="brand.500" />
+                          </CloseButton>
+                        </Dialog.CloseTrigger>
+                      </Dialog.Content>
+                    </Dialog.Positioner>
+                  </Portal>
+                </Dialog.Root>
+
+                {/* Edit plant dialog */}
+                <Dialog.Root
+                  open={editOpen}
+                  onOpenChange={(e) => setEditOpen(e.open)}
+                >
+                  <Portal>
+                    <Dialog.Backdrop
+                      backdropFilter="blur(4px)"
+                      bg="rgba(0,0,0,0.6)"
+                    />
+                    <Dialog.Positioner>
+                      <Dialog.Content
+                        p="0"
+                        m="2rem"
+                        borderRadius="2xl"
+                        bg="bg.primary"
+                        border="1px solid"
+                        borderColor="brand.600"
+                        maxW="480px"
+                        maxH="calc(100vh - 4rem)"
+                        display="flex"
+                        flexDirection="column"
+                      >
+                        <form
+                          onSubmit={handleSubmit(onSubmitEdit)}
+                          style={{ display: "flex", flexDirection: "column", minHeight: 0 }}
+                        >
+                          <Dialog.Header>
+                            <Stack gap="2">
+                              <Dialog.Title
+                                fontSize="xl"
+                                fontWeight="bold"
+                                color="text.primary"
+                              >
+                                Edit plant data
+                              </Dialog.Title>
+                              <Dialog.Description
+                                fontSize="sm"
+                                color="text.secondary"
+                                fontWeight="medium"
+                              >
+                                Update the catalog information for this plant
+                              </Dialog.Description>
+                            </Stack>
+                          </Dialog.Header>
+                          <Dialog.Body overflowY="auto" minH="0">
+                            <Stack gap="4">
+                              <FieldForm label="Photo">
+                                <FileUpload.Root maxW="xl" alignItems="stretch" maxFiles={1}>
+                                  <FileUpload.HiddenInput onChange={handleEditImageChange} />
+                                  <FileUpload.Dropzone
+                                    bg="brand.900"
+                                    borderRadius="md"
+                                    border="2px dashed"
+                                    borderColor={editImagePreview ? "brand.500" : "brand.600"}
+                                    p="4"
+                                    transition="all 0.3s ease"
+                                    _hover={{ borderColor: "brand.500", bg: "brand.800/40" }}
+                                  >
+                                    <Icon size="md" color={editImagePreview ? "brand.500" : "fg.muted"}>
+                                      <LuUpload />
+                                    </Icon>
+                                    <FileUpload.DropzoneContent>
+                                      <Box color="text.secondary">
+                                        {editImagePreview ? "Image ready" : "Upload photo"}
+                                      </Box>
+                                      <Box color="brandTertiary.900" fontSize="xs">
+                                        .png, .jpg up to 5MB
+                                      </Box>
+                                    </FileUpload.DropzoneContent>
+                                  </FileUpload.Dropzone>
+                                  <FileUpload.List />
+                                </FileUpload.Root>
+                              </FieldForm>
+                              <FieldForm label="Common name" error={errors.common_name}>
+                                <TextInput
+                                  {...register("common_name", {
+                                    required: "Common name is required",
+                                  })}
+                                />
+                              </FieldForm>
+                              <FieldForm label="Scientific name" error={errors.scientific_name}>
+                                <TextInput
+                                  {...register("scientific_name", {
+                                    required: "Scientific name is required",
+                                  })}
+                                />
+                              </FieldForm>
+                              <FieldForm label="Family" error={errors.family}>
+                                <TextInput {...register("family")} />
+                              </FieldForm>
+                              <FieldForm label="Cycle" error={errors.cycle}>
+                                <TextInput {...register("cycle")} />
+                              </FieldForm>
+                              <FieldForm label="Watering" error={errors.watering}>
+                                <TextInput {...register("watering")} />
+                              </FieldForm>
+                              <FieldForm label="Sunlight" error={errors.sunlight}>
+                                <NativeSelect.Root>
+                                  <NativeSelect.Field
+                                    {...register("sunlight")}
+                                    border="1px solid"
+                                    borderColor="brand.600"
+                                    borderRadius="xl"
+                                    color="text.primary"
+                                    bg="brand.900"
+                                  >
+                                    <option value="">Select sunlight</option>
+                                    <option value="Full sun">Full sun</option>
+                                    <option value="Part shade">Part shade</option>
+                                    <option value="Shade">Shade</option>
+                                    <option value="Indirect light">Indirect light</option>
+                                  </NativeSelect.Field>
+                                  <NativeSelect.Indicator />
+                                </NativeSelect.Root>
+                              </FieldForm>
+                              <FieldForm label="Description" error={errors.description}>
+                                <Textarea
+                                  border="1px solid"
+                                  borderColor="brand.600"
+                                  borderRadius="xl"
+                                  color="text.primary"
+                                  bg="brand.900"
+                                  rows={4}
+                                  {...register("description")}
+                                />
+                              </FieldForm>
+                            </Stack>
+                          </Dialog.Body>
+                          <Dialog.Footer>
+                            <HStack w="full" gap={3}>
+                              <Dialog.ActionTrigger asChild>
+                                <ButtonCustom 
+                                  variant="secondary" 
+                                  textValue="Cancel" 
+                                  onClick={() => setEditOpen(false)}
+                                  flex={1}
+                                  mt={0}
+                                />
+                              </Dialog.ActionTrigger>
+                              <ButtonCustom
+                                variant="primary"
+                                textValue="Save changes"
+                                type="submit"
+                                loading={saving}
+                                flex={1}
+                                color="text.primary"
+                              />
+                            </HStack>
+                          </Dialog.Footer>
+                        </form>
+                        <Dialog.CloseTrigger asChild>
+                          <CloseButton size="sm" disabled={saving}>
                             <Icon as={LuX} boxSize={6} color="brand.500" />
                           </CloseButton>
                         </Dialog.CloseTrigger>

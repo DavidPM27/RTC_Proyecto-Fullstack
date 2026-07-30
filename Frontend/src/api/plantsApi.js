@@ -55,6 +55,27 @@ export const waterUserGardenPlant = async (entryId, token) => {
   return res.json();
 };
 
+export const updatePlantInCatalog = async (plantId, plantData, imageFile, token) => {
+  const formData = new FormData();
+  Object.entries(plantData).forEach(([key, value]) => {
+    if (value !== undefined && value !== null) formData.append(key, value);
+  });
+  if (imageFile) formData.append('image', imageFile);
+
+  const res = await fetch(`${BASE}/plants/${plantId}`, {
+    method: 'PUT',
+    headers: {
+      Authorization: `Bearer ${token || getToken()}`,
+    },
+    body: formData,
+  });
+  if (!res.ok) {
+    const data = await res.json().catch(() => ({}));
+    throw new Error(data.message || 'Failed to update plant');
+  }
+  return res.json();
+};
+
 export const deletePlantFromCatalog = async (plantId, token) => {
   const res = await fetch(`${BASE}/plants/${plantId}`, {
     method: 'DELETE',

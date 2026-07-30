@@ -30,7 +30,11 @@ const createPlant = async (req, res) => {
         }
 
         // Validate that the plant is well formed
-        const plant = new Plant(req.body);
+        const plantData = { ...req.body };
+        if (req.file) {
+            plantData.default_image = req.file.path;
+        }
+        const plant = new Plant(plantData);
         const plantDB = await plant.save();
         return res.status(201).json(plantDB);
     } catch (error) {
@@ -41,10 +45,22 @@ const createPlant = async (req, res) => {
 const updatePlant = async (req, res) => {
     try {
         const { id } = req.params;
-        const plant = await Plant.findByIdAndUpdate(id, req.body, { new: true });
-        if (!plant) {
+        const existingPlant = await Plant.findById(id);
+        if (!existingPlant) {
             return res.status(404).json({ message: "Plant not found" });
         }
+
+        const updateData = { ...req.body };
+        if (req.file) {
+            updateData.default_image = req.file.path;
+        }
+
+        const plant = await Plant.findByIdAndUpdate(id, updateData, { new: true });
+
+        if (req.file && existingPlant.default_image && existingPlant.default_image.includes('cloudinary')) {
+            deleteImgCloudinary(existingPlant.default_image);
+        }
+
         return res.status(200).json(plant);
     } catch (error) {
         return res.status(500).json({ message: error.message });
