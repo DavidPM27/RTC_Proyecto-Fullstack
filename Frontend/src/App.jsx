@@ -14,13 +14,12 @@ import './App.css'
 const getToken = () =>
   localStorage.getItem('token') || sessionStorage.getItem('token')
 
+const LoginRoute = () => (getToken() ? <Navigate to='/' replace /> : <Login />)
+
 function App() {
   return (
     <Routes>
-      <Route
-        path='/login'
-        element={getToken() ? <Navigate to='/' replace /> : <Login />}
-      />
+      <Route path='/login' element={<LoginRoute />} />
 
       <Route element={<ProtectedRoute />}>
         <Route path='/' element={<Home />} />
