@@ -8,9 +8,10 @@ import {
   Menu,
 } from "@chakra-ui/react";
 import { useDisclosure } from "@chakra-ui/react";
+import { useState } from "react";
 import { LuX, LuSearch, LuLeaf } from "react-icons/lu";
-import { useNavigate } from "react-router-dom";
 import AddPlant from "../../pages/AddPlant";
+import AddExistingPlant from "./AddExistingPlant";
 import ButtonCustom from "../ui/ButtonCustom";
 import { useGarden } from "../../hooks/useGarden";
 import { isAdmin } from "../../utils/auth";
@@ -18,8 +19,13 @@ import { isAdmin } from "../../utils/auth";
 const PlantDialog = () => {
   const { open, onOpen, onClose } = useDisclosure();
   const { addPlant } = useGarden();
-  const navigate = useNavigate();
   const admin = isAdmin();
+  const [mode, setMode] = useState("existing");
+
+  const openMode = (nextMode) => {
+    setMode(nextMode);
+    onOpen();
+  };
 
   const handleAddPlant = (plantData) => {
     addPlant(plantData);
@@ -50,7 +56,7 @@ const PlantDialog = () => {
                   _hover={{ bg: "brand.700" }}
                   borderRadius="lg"
                   gap={2}
-                  onClick={() => navigate("/catalog")}
+                  onClick={() => openMode("existing")}
                 >
                   <Icon as={LuSearch} boxSize={4} color="brandSecondary.400" />
                   Add existing plant
@@ -61,7 +67,7 @@ const PlantDialog = () => {
                   _hover={{ bg: "brand.700" }}
                   borderRadius="lg"
                   gap={2}
-                  onClick={onOpen}
+                  onClick={() => openMode("new")}
                 >
                   <Icon as={LuLeaf} boxSize={4} color="brandSecondary.400" />
                   Add new plant
@@ -75,7 +81,7 @@ const PlantDialog = () => {
           variant="primary"
           textValue="+ Add Plant"
           width="8rem"
-          onClick={() => navigate("/catalog")}
+          onClick={() => openMode("existing")}
         />
       )}
 
@@ -99,19 +105,25 @@ const PlantDialog = () => {
                     fontWeight="bold"
                     color="text.primary"
                   >
-                    New plant
+                    {mode === "new" ? "New plant" : "Add existing plant"}
                   </Dialog.Title>
                   <Dialog.Description
                     fontSize="sm"
                     color="text.secondary"
                     fontWeight="medium"
                   >
-                    Register the details of a new plant to your collection
+                    {mode === "new"
+                      ? "Register the details of a new plant to your collection"
+                      : "Pick a plant from the catalog to add to your garden"}
                   </Dialog.Description>
                 </Stack>
               </Dialog.Header>
               <Dialog.Body pb="0">
-                <AddPlant onAddPlant={handleAddPlant} onClose={onClose} />
+                {mode === "new" ? (
+                  <AddPlant onAddPlant={handleAddPlant} onClose={onClose} />
+                ) : (
+                  <AddExistingPlant onAddPlant={handleAddPlant} onClose={onClose} />
+                )}
               </Dialog.Body>
               <Dialog.Footer>
                 <Stack w="full">

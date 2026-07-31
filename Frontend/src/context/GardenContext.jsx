@@ -83,8 +83,8 @@ export const GardenProvider = ({ children }) => {
     const token = getToken();
     try {
       if (plantData._id) {
-        // Catalog plant from Detail page
-        await addPlantToUserGarden(plantData._id, token);
+        // Catalog plant selected from the "Add existing plant" modal (or Detail page)
+        await addPlantToUserGarden(plantData._id, token, plantData.lastWatered);
       } else {
         // Custom plant from AddPlant form — send as FormData so multer can upload to Cloudinary
         const formData = new FormData();

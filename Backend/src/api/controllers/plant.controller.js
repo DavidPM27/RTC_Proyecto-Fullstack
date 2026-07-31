@@ -109,9 +109,11 @@ const addPlantToUser = async (req, res) => {
             return res.status(409).json({ message: "Esta planta ya está en tu huerto" });
         }
 
+        const { lastWatered } = req.body;
+
         const updatedUser = await User.findByIdAndUpdate(
             req.user._id,
-            { $push: { plants: { plant: plant._id, lastWatered: new Date() } } },
+            { $push: { plants: { plant: plant._id, lastWatered: lastWatered ? new Date(lastWatered) : new Date() } } },
             { new: true }
         );
         return res.status(200).json(plant);

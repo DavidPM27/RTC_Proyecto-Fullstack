@@ -23,10 +23,14 @@ export const fetchUserGarden = async (token) => {
   return res.json();
 };
 
-export const addPlantToUserGarden = async (plantId, token) => {
+export const addPlantToUserGarden = async (plantId, token, lastWatered) => {
   const res = await fetch(`${BASE}/plants/${plantId}/addToUser`, {
     method: 'POST',
-    headers: { Authorization: `Bearer ${token || getToken()}` },
+    headers: {
+      Authorization: `Bearer ${token || getToken()}`,
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify({ lastWatered }),
   });
   if (!res.ok) {
     const data = await res.json().catch(() => ({}));
