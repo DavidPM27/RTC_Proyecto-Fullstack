@@ -106,6 +106,8 @@ async function runSeed() {
       if (!plantIdMap[plantCsvId]) continue;
       if (!userPlantsMap[userId]) userPlantsMap[userId] = [];
       userPlantsMap[userId].push({
+        // Include a stable _id for each garden entry to avoid missing IDs
+        _id: new mongoose.Types.ObjectId(),
         plant: plantIdMap[plantCsvId],
         lastWatered: parseLastWatered(lastWateredText),
       });
@@ -143,6 +145,17 @@ async function runSeed() {
     await mongoose.connection.collection('users').insertMany(clientsData);
     console.log(`Inserted ${clientsData.length} users from CSV.`);
 
+    // Ensure every garden entry has a stable _id
+    const withoutEntryId = await mongoose.connection.collection('users').countDocuments({
+      'plants.0': { $exists: true },
+      'plants._id': { $exists: false },
+    });
+    
+    if (withoutEntryId > 0) {
+      throw new Error(`Seed aborted: ${withoutEntryId} users have garden entries without an _id.`);
+    }
+
+    console.log('Verified: every garden entry has a stable _id.');
   } catch (err) {
     console.error('Seed error:', err);
   } finally {
