@@ -19,11 +19,14 @@ Consiste en la interfaz de usuario para la gestión de usuarios, colecciones de 
 - Diseño y UX: Chakra UI para una interfaz moderna, responsive y accesible. Menú lateral fijo (`position: sticky`) en escritorio y barra inferior fija en móvil.
 - Manejo de Formularios: `react-hook-form` para login, registro, restablecimiento de contraseña y creación de plantas personalizadas.
 - Detección de rol admin: El JWT se decodifica en el cliente para mostrar u ocultar controles exclusivos de administrador (ej. botón de eliminar planta del catálogo).
+- Panel de administración: Página `/administrate` (protegida con `AdminRoute`) donde un admin puede listar todos los usuarios y cambiar su rol (`user`/`admin`).
+- Edición de plantas del catálogo: Desde la página de Detalle, un admin puede editar los datos de una planta existente (incluida su imagen).
+- Añadir planta existente al jardín: Modal (`AddExistingPlant`) para seleccionar una planta del catálogo e indicar manualmente su fecha de último riego al añadirla al jardín.
 
 ## Estructura relevante
 - `src/api/` — Servicios para interactuar con la API de Hydrogrow (`authApi.js`, `plantsApi.js`).
-- `src/components/` — Componentes reutilizables de UI (Botones, Tarjetas de Plantas, Formularios, Menú).
-- `src/pages/` — Vistas principales enrutadas por React Router (Home, Catalog, Detail, Login, AddPlant).
+- `src/components/` — Componentes reutilizables de UI (Botones, Tarjetas de Plantas, Formularios, Menú, `AdminRoute`, `AddExistingPlant`).
+- `src/pages/` — Vistas principales enrutadas por React Router (Home, Catalog, Detail, Login, AddPlant, Administrate).
 - `src/context/` — `GardenContext`: estado global del jardín del usuario. Todas las operaciones (añadir, eliminar, regar) persisten en el backend.
 - `src/hooks/` — Custom hooks (`useGarden`, `useWeather`) para separar lógica de los componentes.
 - `src/theme/` — Configuración personalizada y tokens de diseño para Chakra UI.

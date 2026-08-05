@@ -98,7 +98,7 @@ El servidor estará disponible en `http://localhost:3000` (o el puerto que hayas
 | POST | `/plants` | `isAdmin` | Crear una nueva planta en el catálogo (con imagen) |
 | PUT | `/plants/:id` | `isAdmin` | Actualizar información de una planta (con imagen) |
 | DELETE | `/plants/:id` | `isAdmin` | Borrar una planta del catálogo: elimina el documento, borra la imagen de Cloudinary y elimina todas las referencias en los jardines de los usuarios |
-| POST | `/plants/:id/addToUser` | `isAuth` | Añadir una planta del catálogo al jardín del usuario autenticado |
+| POST | `/plants/:id/addToUser` | `isAuth` | Añadir una planta del catálogo al jardín del usuario autenticado (acepta `lastWatered` opcional en el body) |
 
 ## Variables de entorno
 Crear un archivo `.env` con al menos las siguientes variables:
@@ -109,7 +109,7 @@ Crear un archivo `.env` con al menos las siguientes variables:
 - `CLOUDINARY_CLOUD_NAME`, `CLOUDINARY_API_KEY`, `CLOUDINARY_API_SECRET` — credenciales de Cloudinary para la subida y eliminación de imágenes
 
 ## Seed (poblar BD)
-Hay un script de seed extenso que inserta plantas procesando los csv de `src/data/`, sube las fotos a Cloudinary y asocia a los usuarios también hasheando contraseñas.
+Hay un script de seed extenso que inserta plantas procesando los csv de `src/data/`, sube las fotos a Cloudinary y asocia a los usuarios también hasheando contraseñas. Cada entrada de jardín se crea con un `_id` estable, y al finalizar el seed se verifica que ninguna quede sin él (aborta con error si detecta alguna).
 
 Ejecutar en PowerShell desde la raíz del proyecto:
 
@@ -127,7 +127,7 @@ node index.js
 ```
 
 ## Notas técnicas
-- El modelo `User` guarda el jardín como un array de subdocumentos `{ plant: ObjectId, lastWatered: Date }`. El `_id` de cada subdocumento se usa como `entryId` para las operaciones de jardín.
+- El modelo `User` guarda el jardín como un array de subdocumentos `{ plant: ObjectId, lastWatered: Date }`. El `_id` de cada subdocumento se usa como `entryId` para las operaciones de jardín; el script de seed garantiza que este `_id` siempre exista.
 - Las operaciones que modifican el documento de usuario (añadir/eliminar planta, regar) usan `findByIdAndUpdate` con operadores `$push`, `$pull` y `$set` para evitar disparar el pre-hook de bcrypt del modelo.
 - El token JWT incluye `id`, `email` y `role`, lo que permite al frontend determinar los permisos sin una petición adicional.
 - Al eliminar una planta del catálogo (`DELETE /plants/:id`) se ejecutan tres operaciones: borrado del documento Plant, `User.updateMany` con `$pull` para limpiar todos los jardines, y eliminación de la imagen en Cloudinary si la URL contiene el dominio de Cloudinary.
