@@ -18,6 +18,8 @@ app.use(cors({
 }));
 app.use(express.json());
 
+app.get('/health', (req, res) => res.sendStatus(200)); // ping target to prevent Render free-tier spin-down
+
 app.use('/users', userRouter);
 app.use('/plants', plantRouter);
 
